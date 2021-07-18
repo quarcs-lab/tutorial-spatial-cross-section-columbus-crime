@@ -1,0 +1,4776 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<kml xmlns:gx="http://www.google.com/kml/ext/2.2" xmlns:atom="http://www.w3.org/2005/Atom" xmlns="http://www.opengis.net/kml/2.2">
+<Document>
+<name>columbus</name>
+<visibility>1</visibility>
+<Schema name="columbus" id="kml_schema_ft_columbus">
+<SimpleField type="xsd:float" name="AREA">
+<displayName>AREA</displayName>
+</SimpleField>
+<SimpleField type="xsd:float" name="PERIMETER">
+<displayName>PERIMETER</displayName>
+</SimpleField>
+<SimpleField type="xsd:double" name="COLUMBUS_">
+<displayName>COLUMBUS_</displayName>
+</SimpleField>
+<SimpleField type="xsd:double" name="COLUMBUS_I">
+<displayName>COLUMBUS_I</displayName>
+</SimpleField>
+<SimpleField type="xsd:double" name="POLYID">
+<displayName>POLYID</displayName>
+</SimpleField>
+<SimpleField type="xsd:short" name="NEIG">
+<displayName>NEIG</displayName>
+</SimpleField>
+<SimpleField type="xsd:float" name="HOVAL">
+<displayName>HOVAL</displayName>
+</SimpleField>
+<SimpleField type="xsd:float" name="INC">
+<displayName>INC</displayName>
+</SimpleField>
+<SimpleField type="xsd:float" name="CRIME">
+<displayName>CRIME</displayName>
+</SimpleField>
+<SimpleField type="xsd:float" name="OPEN">
+<displayName>OPEN</displayName>
+</SimpleField>
+<SimpleField type="xsd:float" name="PLUMB">
+<displayName>PLUMB</displayName>
+</SimpleField>
+<SimpleField type="xsd:float" name="DISCBD">
+<displayName>DISCBD</displayName>
+</SimpleField>
+<SimpleField type="xsd:float" name="X">
+<displayName>X</displayName>
+</SimpleField>
+<SimpleField type="xsd:float" name="Y">
+<displayName>Y</displayName>
+</SimpleField>
+<SimpleField type="xsd:float" name="NSA">
+<displayName>NSA</displayName>
+</SimpleField>
+<SimpleField type="xsd:float" name="NSB">
+<displayName>NSB</displayName>
+</SimpleField>
+<SimpleField type="xsd:float" name="EW">
+<displayName>EW</displayName>
+</SimpleField>
+<SimpleField type="xsd:float" name="CP">
+<displayName>CP</displayName>
+</SimpleField>
+<SimpleField type="xsd:float" name="THOUS">
+<displayName>THOUS</displayName>
+</SimpleField>
+<SimpleField type="xsd:float" name="NEIGNO">
+<displayName>NEIGNO</displayName>
+</SimpleField>
+</Schema>
+<Folder id="kml_ft_columbus">
+<name>columbus</name>
+<Placemark id="kml_1">
+<name>kml_1</name>
+<snippet> </snippet>
+<description><![CDATA[<center><table><tr><th colspan='2' align='center'><em>Attributes</em></th></tr><tr bgcolor="#E3E3F3">
+<th>AREA</th>
+<td>0.309441</td>
+</tr><tr bgcolor="">
+<th>PERIMETER</th>
+<td>2.440629</td>
+</tr><tr bgcolor="#E3E3F3">
+<th>COLUMBUS_</th>
+<td>2</td>
+</tr><tr bgcolor="">
+<th>COLUMBUS_I</th>
+<td>5</td>
+</tr><tr bgcolor="#E3E3F3">
+<th>POLYID</th>
+<td>1</td>
+</tr><tr bgcolor="">
+<th>NEIG</th>
+<td>5</td>
+</tr><tr bgcolor="#E3E3F3">
+<th>HOVAL</th>
+<td>80.467003</td>
+</tr><tr bgcolor="">
+<th>INC</th>
+<td>19.531</td>
+</tr><tr bgcolor="#E3E3F3">
+<th>CRIME</th>
+<td>15.72598</td>
+</tr><tr bgcolor="">
+<th>OPEN</th>
+<td>2.850747</td>
+</tr><tr bgcolor="#E3E3F3">
+<th>PLUMB</th>
+<td>0.217155</td>
+</tr><tr bgcolor="">
+<th>DISCBD</th>
+<td>5.03</td>
+</tr><tr bgcolor="#E3E3F3">
+<th>X</th>
+<td>38.799999</td>
+</tr><tr bgcolor="">
+<th>Y</th>
+<td>44.07</td>
+</tr><tr bgcolor="#E3E3F3">
+<th>NSA</th>
+<td>1</td>
+</tr><tr bgcolor="">
+<th>NSB</th>
+<td>1</td>
+</tr><tr bgcolor="#E3E3F3">
+<th>EW</th>
+<td>1</td>
+</tr><tr bgcolor="">
+<th>CP</th>
+<td>0</td>
+</tr><tr bgcolor="#E3E3F3">
+<th>THOUS</th>
+<td>1000</td>
+</tr><tr bgcolor="">
+<th>NEIGNO</th>
+<td>1005</td>
+</tr></table></center>]]></description>
+<ExtendedData>
+<SchemaData schemaUrl="#kml_schema_ft_columbus">
+<SimpleData name="AREA">0.309441</SimpleData>
+<SimpleData name="PERIMETER">2.440629</SimpleData>
+<SimpleData name="COLUMBUS_">2</SimpleData>
+<SimpleData name="COLUMBUS_I">5</SimpleData>
+<SimpleData name="POLYID">1</SimpleData>
+<SimpleData name="NEIG">5</SimpleData>
+<SimpleData name="HOVAL">80.467003</SimpleData>
+<SimpleData name="INC">19.531</SimpleData>
+<SimpleData name="CRIME">15.72598</SimpleData>
+<SimpleData name="OPEN">2.850747</SimpleData>
+<SimpleData name="PLUMB">0.217155</SimpleData>
+<SimpleData name="DISCBD">5.03</SimpleData>
+<SimpleData name="X">38.799999</SimpleData>
+<SimpleData name="Y">44.07</SimpleData>
+<SimpleData name="NSA">1</SimpleData>
+<SimpleData name="NSB">1</SimpleData>
+<SimpleData name="EW">1</SimpleData>
+<SimpleData name="CP">0</SimpleData>
+<SimpleData name="THOUS">1000</SimpleData>
+<SimpleData name="NEIGNO">1005</SimpleData>
+</SchemaData>
+</ExtendedData>
+<Polygon>
+<outerBoundaryIs>
+<LinearRing>
+<coordinates>8.62412929534912,14.2369804382324,0 8.55970001220703,14.742449760437,0 8.80945205688477,14.7344303131104,0 8.80841255187988,14.6365203857422,0 8.91930484771729,14.638500213623,0 9.08713817596436,14.6304903030396,0 9.09996509552002,14.2448301315308,0 9.01504707336426,14.2418403625488,0 9.00895118713379,13.995059967041,0 8.81814002990723,14.0020503997803,0 8.65330505371094,14.0080900192261,0 8.64290237426758,14.0897102355957,0 8.63259220123291,14.1705904006958,0 8.62582588195801,14.2236700057983,0 8.62412929534912,14.2369804382324,0 </coordinates>
+</LinearRing>
+</outerBoundaryIs>
+</Polygon>
+</Placemark>
+<Placemark id="kml_2">
+<name>kml_2</name>
+<snippet> </snippet>
+<description><![CDATA[<center><table><tr><th colspan='2' align='center'><em>Attributes</em></th></tr><tr bgcolor="#E3E3F3">
+<th>AREA</th>
+<td>0.259329</td>
+</tr><tr bgcolor="">
+<th>PERIMETER</th>
+<td>2.236939</td>
+</tr><tr bgcolor="#E3E3F3">
+<th>COLUMBUS_</th>
+<td>3</td>
+</tr><tr bgcolor="">
+<th>COLUMBUS_I</th>
+<td>1</td>
+</tr><tr bgcolor="#E3E3F3">
+<th>POLYID</th>
+<td>2</td>
+</tr><tr bgcolor="">
+<th>NEIG</th>
+<td>1</td>
+</tr><tr bgcolor="#E3E3F3">
+<th>HOVAL</th>
+<td>44.567001</td>
+</tr><tr bgcolor="">
+<th>INC</th>
+<td>21.232</td>
+</tr><tr bgcolor="#E3E3F3">
+<th>CRIME</th>
+<td>18.801754</td>
+</tr><tr bgcolor="">
+<th>OPEN</th>
+<td>5.29672</td>
+</tr><tr bgcolor="#E3E3F3">
+<th>PLUMB</th>
+<td>0.320581</td>
+</tr><tr bgcolor="">
+<th>DISCBD</th>
+<td>4.27</td>
+</tr><tr bgcolor="#E3E3F3">
+<th>X</th>
+<td>35.619999</td>
+</tr><tr bgcolor="">
+<th>Y</th>
+<td>42.380001</td>
+</tr><tr bgcolor="#E3E3F3">
+<th>NSA</th>
+<td>1</td>
+</tr><tr bgcolor="">
+<th>NSB</th>
+<td>1</td>
+</tr><tr bgcolor="#E3E3F3">
+<th>EW</th>
+<td>0</td>
+</tr><tr bgcolor="">
+<th>CP</th>
+<td>0</td>
+</tr><tr bgcolor="#E3E3F3">
+<th>THOUS</th>
+<td>1000</td>
+</tr><tr bgcolor="">
+<th>NEIGNO</th>
+<td>1001</td>
+</tr></table></center>]]></description>
+<ExtendedData>
+<SchemaData schemaUrl="#kml_schema_ft_columbus">
+<SimpleData name="AREA">0.259329</SimpleData>
+<SimpleData name="PERIMETER">2.236939</SimpleData>
+<SimpleData name="COLUMBUS_">3</SimpleData>
+<SimpleData name="COLUMBUS_I">1</SimpleData>
+<SimpleData name="POLYID">2</SimpleData>
+<SimpleData name="NEIG">1</SimpleData>
+<SimpleData name="HOVAL">44.567001</SimpleData>
+<SimpleData name="INC">21.232</SimpleData>
+<SimpleData name="CRIME">18.801754</SimpleData>
+<SimpleData name="OPEN">5.29672</SimpleData>
+<SimpleData name="PLUMB">0.320581</SimpleData>
+<SimpleData name="DISCBD">4.27</SimpleData>
+<SimpleData name="X">35.619999</SimpleData>
+<SimpleData name="Y">42.380001</SimpleData>
+<SimpleData name="NSA">1</SimpleData>
+<SimpleData name="NSB">1</SimpleData>
+<SimpleData name="EW">0</SimpleData>
+<SimpleData name="CP">0</SimpleData>
+<SimpleData name="THOUS">1000</SimpleData>
+<SimpleData name="NEIGNO">1001</SimpleData>
+</SchemaData>
+</ExtendedData>
+<Polygon>
+<outerBoundaryIs>
+<LinearRing>
+<coordinates>8.2527904510498,14.2369403839111,0 8.28275775909424,14.2299404144287,0 8.33071136474609,14.2299404144287,0 8.38365840911865,14.2289304733276,0 8.44460010528564,14.2289199829102,0 8.54450416564941,14.2349004745483,0 8.62412929534912,14.2369804382324,0 8.62582588195801,14.2236700057983,0 8.63259220123291,14.1705904006958,0 8.64290237426758,14.0897102355957,0 8.65330505371094,14.0080900192261,0 8.66218852996826,13.9098997116089,0 8.6665506362915,13.8617000579834,0 8.60528182983398,13.8392496109009,0 8.57931041717529,13.8412504196167,0 8.56257724761963,13.8425397872925,0 8.540358543396,13.842399597168,0 8.51638698577881,13.8416795730591,0 8.5029354095459,13.8387298583984,0 8.47340774536133,13.8322696685791,0 8.45949935913086,13.8203496932983,0 8.43143272399902,13.7933101654053,0 8.41544723510742,13.7903099060059,0 8.38715553283691,13.7889699935913,0 8.37348747253418,13.7883195877075,0 8.32354640960693,13.7860803604126,0 8.28457164764404,13.784330368042,0 8.29154777526855,13.7413702011108,0 8.2296028137207,13.7273902893066,0 8.22661304473877,13.7443799972534,0 8.21564388275146,13.7943296432495,0 8.19868659973145,13.8582801818848,0 8.16972541809082,13.8832597732544,0 8.12777042388916,13.8922595977783,0 8.0938024520874,13.8912601470947,0 8.06383800506592,13.9052600860596,0 8.04487228393555,13.9432201385498,0 8.0378885269165,13.9672002792358,0 7.99911594390869,14.0245704650879,0 7.99936580657959,14.0349702835083,0 8.00301361083984,14.1870203018188,0 7.95008897781372,14.2439699172974,0 8.11193943023682,14.2639303207397,0 8.14789199829102,14.2329597473145,0 8.18185520172119,14.225959777832,0 8.20982837677002,14.2269496917725,0 8.2527904510498,14.2369403839111,0 </coordinates>
+</LinearRing>
+</outerBoundaryIs>
+</Polygon>
+</Placemark>
+<Placemark id="kml_3">
+<name>kml_3</name>
+<snippet> </snippet>
+<description><![CDATA[<center><table><tr><th colspan='2' align='center'><em>Attributes</em></th></tr><tr bgcolor="#E3E3F3">
+<th>AREA</th>
+<td>0.192468</td>
+</tr><tr bgcolor="">
+<th>PERIMETER</th>
+<td>2.187547</td>
+</tr><tr bgcolor="#E3E3F3">
+<th>COLUMBUS_</th>
+<td>4</td>
+</tr><tr bgcolor="">
+<th>COLUMBUS_I</th>
+<td>6</td>
+</tr><tr bgcolor="#E3E3F3">
+<th>POLYID</th>
+<td>3</td>
+</tr><tr bgcolor="">
+<th>NEIG</th>
+<td>6</td>
+</tr><tr bgcolor="#E3E3F3">
+<th>HOVAL</th>
+<td>26.35</td>
+</tr><tr bgcolor="">
+<th>INC</th>
+<td>15.956</td>
+</tr><tr bgcolor="#E3E3F3">
+<th>CRIME</th>
+<td>30.626781</td>
+</tr><tr bgcolor="">
+<th>OPEN</th>
+<td>4.534649</td>
+</tr><tr bgcolor="#E3E3F3">
+<th>PLUMB</th>
+<td>0.374404</td>
+</tr><tr bgcolor="">
+<th>DISCBD</th>
+<td>3.89</td>
+</tr><tr bgcolor="#E3E3F3">
+<th>X</th>
+<td>39.82</td>
+</tr><tr bgcolor="">
+<th>Y</th>
+<td>41.18</td>
+</tr><tr bgcolor="#E3E3F3">
+<th>NSA</th>
+<td>1</td>
+</tr><tr bgcolor="">
+<th>NSB</th>
+<td>1</td>
+</tr><tr bgcolor="#E3E3F3">
+<th>EW</th>
+<td>1</td>
+</tr><tr bgcolor="">
+<th>CP</th>
+<td>0</td>
+</tr><tr bgcolor="#E3E3F3">
+<th>THOUS</th>
+<td>1000</td>
+</tr><tr bgcolor="">
+<th>NEIGNO</th>
+<td>1006</td>
+</tr></table></center>]]></description>
+<ExtendedData>
+<SchemaData schemaUrl="#kml_schema_ft_columbus">
+<SimpleData name="AREA">0.192468</SimpleData>
+<SimpleData name="PERIMETER">2.187547</SimpleData>
+<SimpleData name="COLUMBUS_">4</SimpleData>
+<SimpleData name="COLUMBUS_I">6</SimpleData>
+<SimpleData name="POLYID">3</SimpleData>
+<SimpleData name="NEIG">6</SimpleData>
+<SimpleData name="HOVAL">26.35</SimpleData>
+<SimpleData name="INC">15.956</SimpleData>
+<SimpleData name="CRIME">30.626781</SimpleData>
+<SimpleData name="OPEN">4.534649</SimpleData>
+<SimpleData name="PLUMB">0.374404</SimpleData>
+<SimpleData name="DISCBD">3.89</SimpleData>
+<SimpleData name="X">39.82</SimpleData>
+<SimpleData name="Y">41.18</SimpleData>
+<SimpleData name="NSA">1</SimpleData>
+<SimpleData name="NSB">1</SimpleData>
+<SimpleData name="EW">1</SimpleData>
+<SimpleData name="CP">0</SimpleData>
+<SimpleData name="THOUS">1000</SimpleData>
+<SimpleData name="NEIGNO">1006</SimpleData>
+</SchemaData>
+</ExtendedData>
+<Polygon>
+<outerBoundaryIs>
+<LinearRing>
+<coordinates>8.65330505371094,14.0080900192261,0 8.81814002990723,14.0020503997803,0 9.00895118713379,13.995059967041,0 9.0089282989502,13.9381103515625,0 9.34359073638916,13.9130802154541,0 9.35148525238037,13.6752901077271,0 9.29850101470947,13.5893802642822,0 9.27382183074951,13.5885601043701,0 9.24455547332764,13.5913801193237,0 9.24254322052002,13.5584096908569,0 9.19658184051514,13.5444297790527,0 9.19060516357422,13.586389541626,0 9.16662693023682,13.5813999176025,0 9.16168403625488,13.7082901000977,0 8.90993976593018,13.7155303955078,0 8.67757701873779,13.7222099304199,0 8.6665506362915,13.8617000579834,0 8.66218852996826,13.9098997116089,0 8.65330505371094,14.0080900192261,0 </coordinates>
+</LinearRing>
+</outerBoundaryIs>
+</Polygon>
+</Placemark>
+<Placemark id="kml_4">
+<name>kml_4</name>
+<snippet> </snippet>
+<description><![CDATA[<center><table><tr><th colspan='2' align='center'><em>Attributes</em></th></tr><tr bgcolor="#E3E3F3">
+<th>AREA</th>
+<td>0.083841</td>
+</tr><tr bgcolor="">
+<th>PERIMETER</th>
+<td>1.427635</td>
+</tr><tr bgcolor="#E3E3F3">
+<th>COLUMBUS_</th>
+<td>5</td>
+</tr><tr bgcolor="">
+<th>COLUMBUS_I</th>
+<td>2</td>
+</tr><tr bgcolor="#E3E3F3">
+<th>POLYID</th>
+<td>4</td>
+</tr><tr bgcolor="">
+<th>NEIG</th>
+<td>2</td>
+</tr><tr bgcolor="#E3E3F3">
+<th>HOVAL</th>
+<td>33.200001</td>
+</tr><tr bgcolor="">
+<th>INC</th>
+<td>4.477</td>
+</tr><tr bgcolor="#E3E3F3">
+<th>CRIME</th>
+<td>32.38776</td>
+</tr><tr bgcolor="">
+<th>OPEN</th>
+<td>0.394427</td>
+</tr><tr bgcolor="#E3E3F3">
+<th>PLUMB</th>
+<td>1.186944</td>
+</tr><tr bgcolor="">
+<th>DISCBD</th>
+<td>3.7</td>
+</tr><tr bgcolor="#E3E3F3">
+<th>X</th>
+<td>36.5</td>
+</tr><tr bgcolor="">
+<th>Y</th>
+<td>40.52</td>
+</tr><tr bgcolor="#E3E3F3">
+<th>NSA</th>
+<td>1</td>
+</tr><tr bgcolor="">
+<th>NSB</th>
+<td>1</td>
+</tr><tr bgcolor="#E3E3F3">
+<th>EW</th>
+<td>0</td>
+</tr><tr bgcolor="">
+<th>CP</th>
+<td>0</td>
+</tr><tr bgcolor="#E3E3F3">
+<th>THOUS</th>
+<td>1000</td>
+</tr><tr bgcolor="">
+<th>NEIGNO</th>
+<td>1002</td>
+</tr></table></center>]]></description>
+<ExtendedData>
+<SchemaData schemaUrl="#kml_schema_ft_columbus">
+<SimpleData name="AREA">0.083841</SimpleData>
+<SimpleData name="PERIMETER">1.427635</SimpleData>
+<SimpleData name="COLUMBUS_">5</SimpleData>
+<SimpleData name="COLUMBUS_I">2</SimpleData>
+<SimpleData name="POLYID">4</SimpleData>
+<SimpleData name="NEIG">2</SimpleData>
+<SimpleData name="HOVAL">33.200001</SimpleData>
+<SimpleData name="INC">4.477</SimpleData>
+<SimpleData name="CRIME">32.38776</SimpleData>
+<SimpleData name="OPEN">0.394427</SimpleData>
+<SimpleData name="PLUMB">1.186944</SimpleData>
+<SimpleData name="DISCBD">3.7</SimpleData>
+<SimpleData name="X">36.5</SimpleData>
+<SimpleData name="Y">40.52</SimpleData>
+<SimpleData name="NSA">1</SimpleData>
+<SimpleData name="NSB">1</SimpleData>
+<SimpleData name="EW">0</SimpleData>
+<SimpleData name="CP">0</SimpleData>
+<SimpleData name="THOUS">1000</SimpleData>
+<SimpleData name="NEIGNO">1002</SimpleData>
+</SchemaData>
+</ExtendedData>
+<Polygon>
+<outerBoundaryIs>
+<LinearRing>
+<coordinates>8.45949935913086,13.8203496932983,0 8.47340774536133,13.8322696685791,0 8.5029354095459,13.8387298583984,0 8.51638698577881,13.8416795730591,0 8.540358543396,13.842399597168,0 8.56257724761963,13.8425397872925,0 8.57931041717529,13.8412504196167,0 8.60528182983398,13.8392496109009,0 8.6665506362915,13.8617000579834,0 8.67757701873779,13.7222099304199,0 8.68527412414551,13.6395196914673,0 8.62817859649658,13.6394596099854,0 8.58830165863037,13.6418199539185,0 8.57110977172852,13.6412696838379,0 8.54751586914062,13.64381980896,0 8.53726768493652,13.6444301605225,0 8.50529861450195,13.6444301605225,0 8.45934391021729,13.6444301605225,0 8.45057010650635,13.6045398712158,0 8.43933582305908,13.6055202484131,0 8.38041019439697,13.6164703369141,0 8.38541221618652,13.6344499588013,0 8.31647205352783,13.6164798736572,0 8.29444313049316,13.6045703887939,0 8.27950000762939,13.5965003967285,0 8.24752712249756,13.5865097045898,0 8.20157432556152,13.5915098190308,0 8.20158386230469,13.6144895553589,0 8.19859504699707,13.635479927063,0 8.23358917236328,13.7034101486206,0 8.2296028137207,13.7273902893066,0 8.29154777526855,13.7413702011108,0 8.28457164764404,13.784330368042,0 8.32354640960693,13.7860803604126,0 8.37348747253418,13.7883195877075,0 8.38715553283691,13.7889699935913,0 8.41544723510742,13.7903099060059,0 8.43143272399902,13.7933101654053,0 8.45949935913086,13.8203496932983,0 </coordinates>
+</LinearRing>
+</outerBoundaryIs>
+</Polygon>
+</Placemark>
+<Placemark id="kml_5">
+<name>kml_5</name>
+<snippet> </snippet>
+<description><![CDATA[<center><table><tr><th colspan='2' align='center'><em>Attributes</em></th></tr><tr bgcolor="#E3E3F3">
+<th>AREA</th>
+<td>0.488888</td>
+</tr><tr bgcolor="">
+<th>PERIMETER</th>
+<td>2.997133</td>
+</tr><tr bgcolor="#E3E3F3">
+<th>COLUMBUS_</th>
+<td>6</td>
+</tr><tr bgcolor="">
+<th>COLUMBUS_I</th>
+<td>7</td>
+</tr><tr bgcolor="#E3E3F3">
+<th>POLYID</th>
+<td>5</td>
+</tr><tr bgcolor="">
+<th>NEIG</th>
+<td>7</td>
+</tr><tr bgcolor="#E3E3F3">
+<th>HOVAL</th>
+<td>23.225</td>
+</tr><tr bgcolor="">
+<th>INC</th>
+<td>11.252</td>
+</tr><tr bgcolor="#E3E3F3">
+<th>CRIME</th>
+<td>50.73151</td>
+</tr><tr bgcolor="">
+<th>OPEN</th>
+<td>0.405664</td>
+</tr><tr bgcolor="#E3E3F3">
+<th>PLUMB</th>
+<td>0.624596</td>
+</tr><tr bgcolor="">
+<th>DISCBD</th>
+<td>2.83</td>
+</tr><tr bgcolor="#E3E3F3">
+<th>X</th>
+<td>40.009998</td>
+</tr><tr bgcolor="">
+<th>Y</th>
+<td>38</td>
+</tr><tr bgcolor="#E3E3F3">
+<th>NSA</th>
+<td>1</td>
+</tr><tr bgcolor="">
+<th>NSB</th>
+<td>1</td>
+</tr><tr bgcolor="#E3E3F3">
+<th>EW</th>
+<td>1</td>
+</tr><tr bgcolor="">
+<th>CP</th>
+<td>0</td>
+</tr><tr bgcolor="#E3E3F3">
+<th>THOUS</th>
+<td>1000</td>
+</tr><tr bgcolor="">
+<th>NEIGNO</th>
+<td>1007</td>
+</tr></table></center>]]></description>
+<ExtendedData>
+<SchemaData schemaUrl="#kml_schema_ft_columbus">
+<SimpleData name="AREA">0.488888</SimpleData>
+<SimpleData name="PERIMETER">2.997133</SimpleData>
+<SimpleData name="COLUMBUS_">6</SimpleData>
+<SimpleData name="COLUMBUS_I">7</SimpleData>
+<SimpleData name="POLYID">5</SimpleData>
+<SimpleData name="NEIG">7</SimpleData>
+<SimpleData name="HOVAL">23.225</SimpleData>
+<SimpleData name="INC">11.252</SimpleData>
+<SimpleData name="CRIME">50.73151</SimpleData>
+<SimpleData name="OPEN">0.405664</SimpleData>
+<SimpleData name="PLUMB">0.624596</SimpleData>
+<SimpleData name="DISCBD">2.83</SimpleData>
+<SimpleData name="X">40.009998</SimpleData>
+<SimpleData name="Y">38</SimpleData>
+<SimpleData name="NSA">1</SimpleData>
+<SimpleData name="NSB">1</SimpleData>
+<SimpleData name="EW">1</SimpleData>
+<SimpleData name="CP">0</SimpleData>
+<SimpleData name="THOUS">1000</SimpleData>
+<SimpleData name="NEIGNO">1007</SimpleData>
+</SchemaData>
+</ExtendedData>
+<Polygon>
+<outerBoundaryIs>
+<LinearRing>
+<coordinates>8.68527412414551,13.6395196914673,0 8.67757701873779,13.7222099304199,0 8.90993976593018,13.7155303955078,0 9.16168403625488,13.7082901000977,0 9.16662693023682,13.5813999176025,0 9.19060516357422,13.586389541626,0 9.19658184051514,13.5444297790527,0 9.24254322052002,13.5584096908569,0 9.24455547332764,13.5913801193237,0 9.27382183074951,13.5885601043701,0 9.29850101470947,13.5893802642822,0 9.310471534729,13.54541015625,0 9.4013843536377,13.5503997802734,0 9.33329677581787,13.2724199295044,0 9.23626708984375,12.8762798309326,0 9.2333869934082,12.8640003204346,0 8.94357299804688,12.8622198104858,0 8.75772857666016,12.8610897064209,0 8.73396968841553,13.1163396835327,0 8.68527412414551,13.6395196914673,0 </coordinates>
+</LinearRing>
+</outerBoundaryIs>
+</Polygon>
+</Placemark>
+<Placemark id="kml_6">
+<name>kml_6</name>
+<snippet> </snippet>
+<description><![CDATA[<center><table><tr><th colspan='2' align='center'><em>Attributes</em></th></tr><tr bgcolor="#E3E3F3">
+<th>AREA</th>
+<td>0.283079</td>
+</tr><tr bgcolor="">
+<th>PERIMETER</th>
+<td>2.335634</td>
+</tr><tr bgcolor="#E3E3F3">
+<th>COLUMBUS_</th>
+<td>7</td>
+</tr><tr bgcolor="">
+<th>COLUMBUS_I</th>
+<td>8</td>
+</tr><tr bgcolor="#E3E3F3">
+<th>POLYID</th>
+<td>6</td>
+</tr><tr bgcolor="">
+<th>NEIG</th>
+<td>8</td>
+</tr><tr bgcolor="#E3E3F3">
+<th>HOVAL</th>
+<td>28.75</td>
+</tr><tr bgcolor="">
+<th>INC</th>
+<td>16.028999</td>
+</tr><tr bgcolor="#E3E3F3">
+<th>CRIME</th>
+<td>26.066658</td>
+</tr><tr bgcolor="">
+<th>OPEN</th>
+<td>0.563075</td>
+</tr><tr bgcolor="#E3E3F3">
+<th>PLUMB</th>
+<td>0.25413</td>
+</tr><tr bgcolor="">
+<th>DISCBD</th>
+<td>3.78</td>
+</tr><tr bgcolor="#E3E3F3">
+<th>X</th>
+<td>43.75</td>
+</tr><tr bgcolor="">
+<th>Y</th>
+<td>39.279999</td>
+</tr><tr bgcolor="#E3E3F3">
+<th>NSA</th>
+<td>1</td>
+</tr><tr bgcolor="">
+<th>NSB</th>
+<td>1</td>
+</tr><tr bgcolor="#E3E3F3">
+<th>EW</th>
+<td>1</td>
+</tr><tr bgcolor="">
+<th>CP</th>
+<td>0</td>
+</tr><tr bgcolor="#E3E3F3">
+<th>THOUS</th>
+<td>1000</td>
+</tr><tr bgcolor="">
+<th>NEIGNO</th>
+<td>1008</td>
+</tr></table></center>]]></description>
+<ExtendedData>
+<SchemaData schemaUrl="#kml_schema_ft_columbus">
+<SimpleData name="AREA">0.283079</SimpleData>
+<SimpleData name="PERIMETER">2.335634</SimpleData>
+<SimpleData name="COLUMBUS_">7</SimpleData>
+<SimpleData name="COLUMBUS_I">8</SimpleData>
+<SimpleData name="POLYID">6</SimpleData>
+<SimpleData name="NEIG">8</SimpleData>
+<SimpleData name="HOVAL">28.75</SimpleData>
+<SimpleData name="INC">16.028999</SimpleData>
+<SimpleData name="CRIME">26.066658</SimpleData>
+<SimpleData name="OPEN">0.563075</SimpleData>
+<SimpleData name="PLUMB">0.25413</SimpleData>
+<SimpleData name="DISCBD">3.78</SimpleData>
+<SimpleData name="X">43.75</SimpleData>
+<SimpleData name="Y">39.279999</SimpleData>
+<SimpleData name="NSA">1</SimpleData>
+<SimpleData name="NSB">1</SimpleData>
+<SimpleData name="EW">1</SimpleData>
+<SimpleData name="CP">0</SimpleData>
+<SimpleData name="THOUS">1000</SimpleData>
+<SimpleData name="NEIGNO">1008</SimpleData>
+</SchemaData>
+</ExtendedData>
+<Polygon>
+<outerBoundaryIs>
+<LinearRing>
+<coordinates>9.4013843536377,13.5503997802734,0 9.43441104888916,13.6942701339722,0 9.60524654388428,13.6982402801514,0 9.651198387146,13.6922397613525,0 9.68716621398926,13.6972303390503,0 9.6861457824707,13.6452798843384,0 9.84599208831787,13.652250289917,0 10.0507898330688,13.6502304077148,0 10.1037197113037,13.6032600402832,0 10.1756296157837,13.5652904510498,0 10.1806001663208,13.4823598861694,0 10.1675996780396,13.4713697433472,0 10.1536102294922,13.4543895721436,0 10.1356201171875,13.4393997192383,0 10.1196298599243,13.4294099807739,0 10.121600151062,13.3444900512695,0 10.0966196060181,13.342490196228,0 10.0856304168701,13.3334999084473,0 10.0526599884033,13.3365001678467,0 10.0276699066162,13.2985401153564,0 9.7721061706543,13.2921104431152,0 9.67700958251953,13.2965898513794,0 9.67100715637207,13.2736101150513,0 9.33329677581787,13.2724199295044,0 9.4013843536377,13.5503997802734,0 </coordinates>
+</LinearRing>
+</outerBoundaryIs>
+</Polygon>
+</Placemark>
+<Placemark id="kml_7">
+<name>kml_7</name>
+<snippet> </snippet>
+<description><![CDATA[<center><table><tr><th colspan='2' align='center'><em>Attributes</em></th></tr><tr bgcolor="#E3E3F3">
+<th>AREA</th>
+<td>0.257084</td>
+</tr><tr bgcolor="">
+<th>PERIMETER</th>
+<td>2.554577</td>
+</tr><tr bgcolor="#E3E3F3">
+<th>COLUMBUS_</th>
+<td>8</td>
+</tr><tr bgcolor="">
+<th>COLUMBUS_I</th>
+<td>4</td>
+</tr><tr bgcolor="#E3E3F3">
+<th>POLYID</th>
+<td>7</td>
+</tr><tr bgcolor="">
+<th>NEIG</th>
+<td>4</td>
+</tr><tr bgcolor="#E3E3F3">
+<th>HOVAL</th>
+<td>75</td>
+</tr><tr bgcolor="">
+<th>INC</th>
+<td>8.438</td>
+</tr><tr bgcolor="#E3E3F3">
+<th>CRIME</th>
+<td>0.178269</td>
+</tr><tr bgcolor="">
+<th>OPEN</th>
+<td>0</td>
+</tr><tr bgcolor="#E3E3F3">
+<th>PLUMB</th>
+<td>2.402402</td>
+</tr><tr bgcolor="">
+<th>DISCBD</th>
+<td>2.74</td>
+</tr><tr bgcolor="#E3E3F3">
+<th>X</th>
+<td>33.360001</td>
+</tr><tr bgcolor="">
+<th>Y</th>
+<td>38.41</td>
+</tr><tr bgcolor="#E3E3F3">
+<th>NSA</th>
+<td>1</td>
+</tr><tr bgcolor="">
+<th>NSB</th>
+<td>1</td>
+</tr><tr bgcolor="#E3E3F3">
+<th>EW</th>
+<td>0</td>
+</tr><tr bgcolor="">
+<th>CP</th>
+<td>0</td>
+</tr><tr bgcolor="#E3E3F3">
+<th>THOUS</th>
+<td>1000</td>
+</tr><tr bgcolor="">
+<th>NEIGNO</th>
+<td>1004</td>
+</tr></table></center>]]></description>
+<ExtendedData>
+<SchemaData schemaUrl="#kml_schema_ft_columbus">
+<SimpleData name="AREA">0.257084</SimpleData>
+<SimpleData name="PERIMETER">2.554577</SimpleData>
+<SimpleData name="COLUMBUS_">8</SimpleData>
+<SimpleData name="COLUMBUS_I">4</SimpleData>
+<SimpleData name="POLYID">7</SimpleData>
+<SimpleData name="NEIG">4</SimpleData>
+<SimpleData name="HOVAL">75</SimpleData>
+<SimpleData name="INC">8.438</SimpleData>
+<SimpleData name="CRIME">0.178269</SimpleData>
+<SimpleData name="OPEN">0</SimpleData>
+<SimpleData name="PLUMB">2.402402</SimpleData>
+<SimpleData name="DISCBD">2.74</SimpleData>
+<SimpleData name="X">33.360001</SimpleData>
+<SimpleData name="Y">38.41</SimpleData>
+<SimpleData name="NSA">1</SimpleData>
+<SimpleData name="NSB">1</SimpleData>
+<SimpleData name="EW">0</SimpleData>
+<SimpleData name="CP">0</SimpleData>
+<SimpleData name="THOUS">1000</SimpleData>
+<SimpleData name="NEIGNO">1004</SimpleData>
+</SchemaData>
+</ExtendedData>
+<Polygon>
+<outerBoundaryIs>
+<LinearRing>
+<coordinates>8.03774070739746,13.6075201034546,0 8.06271553039551,13.6045198440552,0 8.07269477844238,13.5805397033691,0 8.1156530380249,13.5795402526855,0 8.13063716888428,13.5765399932861,0 8.1974515914917,13.5757703781128,0 8.18959045410156,13.5457601547241,0 8.17945003509521,13.5298299789429,0 8.16470527648926,13.5110597610474,0 8.14012622833252,13.4797697067261,0 8.12853622436523,13.470100402832,0 8.12171840667725,13.4610395431519,0 8.10984802246094,13.4326400756836,0 8.10498046875,13.4209899902344,0 8.18153667449951,13.4159097671509,0 8.29339790344238,13.4084901809692,0 8.38032245635986,13.4046602249146,0 8.45657253265381,13.1040697097778,0 8.42514991760254,13.0939197540283,0 8.41215229034424,13.0689496994019,0 8.35126972198486,13.066499710083,0 8.2882719039917,13.0639696121216,0 8.28026294708252,13.0260000228882,0 8.23230743408203,13.0200099945068,0 8.22030258178711,12.9790496826172,0 8.15436744689941,12.9780597686768,0 8.14520359039307,12.9420204162598,0 8.10440063476562,12.9430503845215,0 8.06244277954102,12.9441003799438,0 8.05246067047119,12.9630899429321,0 8.05249691009521,13.0520095825195,0 8.0485315322876,13.129940032959,0 8.03254318237305,13.1179504394531,0 8.01356029510498,13.1149597167969,0 7.98958396911621,13.1159601211548,0 7.96261978149414,13.1379404067993,0 7.9236798286438,13.1919002532959,0 7.89872598648071,13.243860244751,0 7.88774299621582,13.2578496932983,0 7.87175893783569,13.2588500976562,0 7.8687949180603,13.3387804031372,0 7.8668098449707,13.3717498779297,0 7.85183715820312,13.4007301330566,0 7.84485721588135,13.4327001571655,0 7.84089183807373,13.5086297988892,0 7.82492589950562,13.5525999069214,0 7.80396509170532,13.5965595245361,0 7.80197381973267,13.6155395507812,0 7.90187406539917,13.6085395812988,0 7.90288782119751,13.644510269165,0 7.9967942237854,13.6394996643066,0 7.99878120422363,13.614520072937,0 8.03774070739746,13.6075201034546,0 </coordinates>
+</LinearRing>
+</outerBoundaryIs>
+</Polygon>
+</Placemark>
+<Placemark id="kml_8">
+<name>kml_8</name>
+<snippet> </snippet>
+<description><![CDATA[<center><table><tr><th colspan='2' align='center'><em>Attributes</em></th></tr><tr bgcolor="#E3E3F3">
+<th>AREA</th>
+<td>0.204954</td>
+</tr><tr bgcolor="">
+<th>PERIMETER</th>
+<td>2.139524</td>
+</tr><tr bgcolor="#E3E3F3">
+<th>COLUMBUS_</th>
+<td>9</td>
+</tr><tr bgcolor="">
+<th>COLUMBUS_I</th>
+<td>3</td>
+</tr><tr bgcolor="#E3E3F3">
+<th>POLYID</th>
+<td>8</td>
+</tr><tr bgcolor="">
+<th>NEIG</th>
+<td>3</td>
+</tr><tr bgcolor="#E3E3F3">
+<th>HOVAL</th>
+<td>37.125</td>
+</tr><tr bgcolor="">
+<th>INC</th>
+<td>11.337</td>
+</tr><tr bgcolor="#E3E3F3">
+<th>CRIME</th>
+<td>38.425858</td>
+</tr><tr bgcolor="">
+<th>OPEN</th>
+<td>3.483478</td>
+</tr><tr bgcolor="#E3E3F3">
+<th>PLUMB</th>
+<td>2.739726</td>
+</tr><tr bgcolor="">
+<th>DISCBD</th>
+<td>2.89</td>
+</tr><tr bgcolor="#E3E3F3">
+<th>X</th>
+<td>36.709999</td>
+</tr><tr bgcolor="">
+<th>Y</th>
+<td>38.709999</td>
+</tr><tr bgcolor="#E3E3F3">
+<th>NSA</th>
+<td>1</td>
+</tr><tr bgcolor="">
+<th>NSB</th>
+<td>1</td>
+</tr><tr bgcolor="#E3E3F3">
+<th>EW</th>
+<td>0</td>
+</tr><tr bgcolor="">
+<th>CP</th>
+<td>0</td>
+</tr><tr bgcolor="#E3E3F3">
+<th>THOUS</th>
+<td>1000</td>
+</tr><tr bgcolor="">
+<th>NEIGNO</th>
+<td>1003</td>
+</tr></table></center>]]></description>
+<ExtendedData>
+<SchemaData schemaUrl="#kml_schema_ft_columbus">
+<SimpleData name="AREA">0.204954</SimpleData>
+<SimpleData name="PERIMETER">2.139524</SimpleData>
+<SimpleData name="COLUMBUS_">9</SimpleData>
+<SimpleData name="COLUMBUS_I">3</SimpleData>
+<SimpleData name="POLYID">8</SimpleData>
+<SimpleData name="NEIG">3</SimpleData>
+<SimpleData name="HOVAL">37.125</SimpleData>
+<SimpleData name="INC">11.337</SimpleData>
+<SimpleData name="CRIME">38.425858</SimpleData>
+<SimpleData name="OPEN">3.483478</SimpleData>
+<SimpleData name="PLUMB">2.739726</SimpleData>
+<SimpleData name="DISCBD">2.89</SimpleData>
+<SimpleData name="X">36.709999</SimpleData>
+<SimpleData name="Y">38.709999</SimpleData>
+<SimpleData name="NSA">1</SimpleData>
+<SimpleData name="NSB">1</SimpleData>
+<SimpleData name="EW">0</SimpleData>
+<SimpleData name="CP">0</SimpleData>
+<SimpleData name="THOUS">1000</SimpleData>
+<SimpleData name="NEIGNO">1003</SimpleData>
+</SchemaData>
+</ExtendedData>
+<Polygon>
+<outerBoundaryIs>
+<LinearRing>
+<coordinates>8.24752712249756,13.5865097045898,0 8.27950000762939,13.5965003967285,0 8.29444313049316,13.6045703887939,0 8.31647205352783,13.6164798736572,0 8.38541221618652,13.6344499588013,0 8.38041019439697,13.6164703369141,0 8.43933582305908,13.6055202484131,0 8.45057010650635,13.6045398712158,0 8.45934391021729,13.6444301605225,0 8.50529861450195,13.6444301605225,0 8.53726768493652,13.6444301605225,0 8.54751586914062,13.64381980896,0 8.57110977172852,13.6412696838379,0 8.58830165863037,13.6418199539185,0 8.62817859649658,13.6394596099854,0 8.68527412414551,13.6395196914673,0 8.73396968841553,13.1163396835327,0 8.65187740325928,13.1136703491211,0 8.59698963165283,13.1118898391724,0 8.58599758148193,13.1068897247314,0 8.51703262329102,13.1053895950317,0 8.45657253265381,13.1040697097778,0 8.38032245635986,13.4046602249146,0 8.29339790344238,13.4084901809692,0 8.18153667449951,13.4159097671509,0 8.10498046875,13.4209899902344,0 8.10984802246094,13.4326400756836,0 8.12171840667725,13.4610395431519,0 8.12853622436523,13.470100402832,0 8.14012622833252,13.4797697067261,0 8.16470527648926,13.5110597610474,0 8.17945003509521,13.5298299789429,0 8.18959045410156,13.5457601547241,0 8.1974515914917,13.5757703781128,0 8.20157432556152,13.5915098190308,0 8.24752712249756,13.5865097045898,0 </coordinates>
+</LinearRing>
+</outerBoundaryIs>
+</Polygon>
+</Placemark>
+<Placemark id="kml_9">
+<name>kml_9</name>
+<snippet> </snippet>
+<description><![CDATA[<center><table><tr><th colspan='2' align='center'><em>Attributes</em></th></tr><tr bgcolor="#E3E3F3">
+<th>AREA</th>
+<td>0.500755</td>
+</tr><tr bgcolor="">
+<th>PERIMETER</th>
+<td>3.169707</td>
+</tr><tr bgcolor="#E3E3F3">
+<th>COLUMBUS_</th>
+<td>10</td>
+</tr><tr bgcolor="">
+<th>COLUMBUS_I</th>
+<td>18</td>
+</tr><tr bgcolor="#E3E3F3">
+<th>POLYID</th>
+<td>9</td>
+</tr><tr bgcolor="">
+<th>NEIG</th>
+<td>18</td>
+</tr><tr bgcolor="#E3E3F3">
+<th>HOVAL</th>
+<td>52.599998</td>
+</tr><tr bgcolor="">
+<th>INC</th>
+<td>17.586</td>
+</tr><tr bgcolor="#E3E3F3">
+<th>CRIME</th>
+<td>30.515917</td>
+</tr><tr bgcolor="">
+<th>OPEN</th>
+<td>0.527488</td>
+</tr><tr bgcolor="#E3E3F3">
+<th>PLUMB</th>
+<td>0.890736</td>
+</tr><tr bgcolor="">
+<th>DISCBD</th>
+<td>3.17</td>
+</tr><tr bgcolor="#E3E3F3">
+<th>X</th>
+<td>43.439999</td>
+</tr><tr bgcolor="">
+<th>Y</th>
+<td>35.919998</td>
+</tr><tr bgcolor="#E3E3F3">
+<th>NSA</th>
+<td>1</td>
+</tr><tr bgcolor="">
+<th>NSB</th>
+<td>1</td>
+</tr><tr bgcolor="#E3E3F3">
+<th>EW</th>
+<td>1</td>
+</tr><tr bgcolor="">
+<th>CP</th>
+<td>0</td>
+</tr><tr bgcolor="#E3E3F3">
+<th>THOUS</th>
+<td>1000</td>
+</tr><tr bgcolor="">
+<th>NEIGNO</th>
+<td>1018</td>
+</tr></table></center>]]></description>
+<ExtendedData>
+<SchemaData schemaUrl="#kml_schema_ft_columbus">
+<SimpleData name="AREA">0.500755</SimpleData>
+<SimpleData name="PERIMETER">3.169707</SimpleData>
+<SimpleData name="COLUMBUS_">10</SimpleData>
+<SimpleData name="COLUMBUS_I">18</SimpleData>
+<SimpleData name="POLYID">9</SimpleData>
+<SimpleData name="NEIG">18</SimpleData>
+<SimpleData name="HOVAL">52.599998</SimpleData>
+<SimpleData name="INC">17.586</SimpleData>
+<SimpleData name="CRIME">30.515917</SimpleData>
+<SimpleData name="OPEN">0.527488</SimpleData>
+<SimpleData name="PLUMB">0.890736</SimpleData>
+<SimpleData name="DISCBD">3.17</SimpleData>
+<SimpleData name="X">43.439999</SimpleData>
+<SimpleData name="Y">35.919998</SimpleData>
+<SimpleData name="NSA">1</SimpleData>
+<SimpleData name="NSB">1</SimpleData>
+<SimpleData name="EW">1</SimpleData>
+<SimpleData name="CP">0</SimpleData>
+<SimpleData name="THOUS">1000</SimpleData>
+<SimpleData name="NEIGNO">1018</SimpleData>
+</SchemaData>
+</ExtendedData>
+<Polygon>
+<outerBoundaryIs>
+<LinearRing>
+<coordinates>9.33329677581787,13.2724199295044,0 9.67100715637207,13.2736101150513,0 9.67700958251953,13.2965898513794,0 9.7721061706543,13.2921104431152,0 10.0276699066162,13.2985401153564,0 9.9506139755249,12.9838304519653,0 10.0045604705811,12.9768295288086,0 10.0825099945068,13.0337696075439,0 10.0836496353149,13.0198698043823,0 10.0868196487427,12.9814300537109,0 10.0891704559326,12.9528102874756,0 10.0916299819946,12.9230403900146,0 10.0935096740723,12.9002199172974,0 10.0954303741455,12.8768997192383,0 10.0154399871826,12.7240495681763,0 9.76366806030273,12.6731300354004,0 9.72367477416992,12.5951995849609,0 9.55582809448242,12.5951900482178,0 9.47149753570557,12.5957098007202,0 9.38600540161133,12.5962400436401,0 9.38302135467529,12.6272096633911,0 9.25804805755615,12.6306104660034,0 9.12427711486816,12.6342401504517,0 9.14678764343262,12.6587400436401,0 9.16631126403809,12.6799802780151,0 9.18724632263184,12.7091703414917,0 9.20620822906494,12.7588396072388,0 9.21353244781494,12.7780303955078,0 9.22088527679443,12.8057203292847,0 9.2333869934082,12.8640003204346,0 9.23626708984375,12.8762798309326,0 9.33329677581787,13.2724199295044,0 </coordinates>
+</LinearRing>
+</outerBoundaryIs>
+</Polygon>
+</Placemark>
+<Placemark id="kml_10">
+<name>kml_10</name>
+<snippet> </snippet>
+<description><![CDATA[<center><table><tr><th colspan='2' align='center'><em>Attributes</em></th></tr><tr bgcolor="#E3E3F3">
+<th>AREA</th>
+<td>0.246689</td>
+</tr><tr bgcolor="">
+<th>PERIMETER</th>
+<td>2.087235</td>
+</tr><tr bgcolor="#E3E3F3">
+<th>COLUMBUS_</th>
+<td>11</td>
+</tr><tr bgcolor="">
+<th>COLUMBUS_I</th>
+<td>10</td>
+</tr><tr bgcolor="#E3E3F3">
+<th>POLYID</th>
+<td>10</td>
+</tr><tr bgcolor="">
+<th>NEIG</th>
+<td>10</td>
+</tr><tr bgcolor="#E3E3F3">
+<th>HOVAL</th>
+<td>96.400002</td>
+</tr><tr bgcolor="">
+<th>INC</th>
+<td>13.598</td>
+</tr><tr bgcolor="#E3E3F3">
+<th>CRIME</th>
+<td>34.000835</td>
+</tr><tr bgcolor="">
+<th>OPEN</th>
+<td>1.548348</td>
+</tr><tr bgcolor="#E3E3F3">
+<th>PLUMB</th>
+<td>0.557724</td>
+</tr><tr bgcolor="">
+<th>DISCBD</th>
+<td>4.33</td>
+</tr><tr bgcolor="#E3E3F3">
+<th>X</th>
+<td>47.610001</td>
+</tr><tr bgcolor="">
+<th>Y</th>
+<td>36.419998</td>
+</tr><tr bgcolor="#E3E3F3">
+<th>NSA</th>
+<td>1</td>
+</tr><tr bgcolor="">
+<th>NSB</th>
+<td>1</td>
+</tr><tr bgcolor="#E3E3F3">
+<th>EW</th>
+<td>1</td>
+</tr><tr bgcolor="">
+<th>CP</th>
+<td>0</td>
+</tr><tr bgcolor="#E3E3F3">
+<th>THOUS</th>
+<td>1000</td>
+</tr><tr bgcolor="">
+<th>NEIGNO</th>
+<td>1010</td>
+</tr></table></center>]]></description>
+<ExtendedData>
+<SchemaData schemaUrl="#kml_schema_ft_columbus">
+<SimpleData name="AREA">0.246689</SimpleData>
+<SimpleData name="PERIMETER">2.087235</SimpleData>
+<SimpleData name="COLUMBUS_">11</SimpleData>
+<SimpleData name="COLUMBUS_I">10</SimpleData>
+<SimpleData name="POLYID">10</SimpleData>
+<SimpleData name="NEIG">10</SimpleData>
+<SimpleData name="HOVAL">96.400002</SimpleData>
+<SimpleData name="INC">13.598</SimpleData>
+<SimpleData name="CRIME">34.000835</SimpleData>
+<SimpleData name="OPEN">1.548348</SimpleData>
+<SimpleData name="PLUMB">0.557724</SimpleData>
+<SimpleData name="DISCBD">4.33</SimpleData>
+<SimpleData name="X">47.610001</SimpleData>
+<SimpleData name="Y">36.419998</SimpleData>
+<SimpleData name="NSA">1</SimpleData>
+<SimpleData name="NSB">1</SimpleData>
+<SimpleData name="EW">1</SimpleData>
+<SimpleData name="CP">0</SimpleData>
+<SimpleData name="THOUS">1000</SimpleData>
+<SimpleData name="NEIGNO">1010</SimpleData>
+</SchemaData>
+</ExtendedData>
+<Polygon>
+<outerBoundaryIs>
+<LinearRing>
+<coordinates>10.0825099945068,13.0337696075439,0 10.0924997329712,13.0527496337891,0 10.1264896392822,13.0907096862793,0 10.1824598312378,13.1576499938965,0 10.2674198150635,13.2545499801636,0 10.2893896102905,13.2475500106812,0 10.3163604736328,13.2445497512817,0 10.3323497772217,13.2395496368408,0 10.368260383606,13.2464303970337,0 10.3942899703979,13.2465400695801,0 10.4172697067261,13.247540473938,0 10.4502401351929,13.2515296936035,0 10.4752197265625,13.2615203857422,0 10.4752197265625,13.2725095748901,0 10.5341596603394,13.2714996337891,0 10.5661296844482,13.2714996337891,0 10.6030902862549,13.2655000686646,0 10.6320600509644,13.2634897232056,0 10.6390495300293,13.2445096969604,0 10.640040397644,13.2195301055908,0 10.6490201950073,13.1995496749878,0 10.6460103988647,13.1765699386597,0 10.6470098495483,13.1575899124146,0 10.6459999084473,13.1445999145508,0 10.6379995346069,13.1296100616455,0 10.6389904022217,13.1046304702759,0 10.6319799423218,13.0706596374512,0 10.6269798278809,13.0516796112061,0 10.6279697418213,13.0267000198364,0 10.6319599151611,13.0087203979492,0 10.6339502334595,12.9837398529053,0 10.6289300918579,12.945779800415,0 10.6399097442627,12.9188003540039,0 10.637900352478,12.8908195495605,0 10.6458902359009,12.8658399581909,0 10.6478700637817,12.8428602218628,0 10.6496801376343,12.8301801681519,0 10.5010995864868,12.8053197860718,0 10.3565998077393,12.7811403274536,0 10.178409576416,12.7513198852539,0 10.0154399871826,12.7240495681763,0 10.0954303741455,12.8768997192383,0 10.0935096740723,12.9002199172974,0 10.0916299819946,12.9230403900146,0 10.0891704559326,12.9528102874756,0 10.0868196487427,12.9814300537109,0 10.0836496353149,13.0198698043823,0 10.0825099945068,13.0337696075439,0 </coordinates>
+</LinearRing>
+</outerBoundaryIs>
+</Polygon>
+</Placemark>
+<Placemark id="kml_11">
+<name>kml_11</name>
+<snippet> </snippet>
+<description><![CDATA[<center><table><tr><th colspan='2' align='center'><em>Attributes</em></th></tr><tr bgcolor="#E3E3F3">
+<th>AREA</th>
+<td>0.041012</td>
+</tr><tr bgcolor="">
+<th>PERIMETER</th>
+<td>0.919488</td>
+</tr><tr bgcolor="#E3E3F3">
+<th>COLUMBUS_</th>
+<td>12</td>
+</tr><tr bgcolor="">
+<th>COLUMBUS_I</th>
+<td>38</td>
+</tr><tr bgcolor="#E3E3F3">
+<th>POLYID</th>
+<td>11</td>
+</tr><tr bgcolor="">
+<th>NEIG</th>
+<td>38</td>
+</tr><tr bgcolor="#E3E3F3">
+<th>HOVAL</th>
+<td>19.700001</td>
+</tr><tr bgcolor="">
+<th>INC</th>
+<td>7.467</td>
+</tr><tr bgcolor="#E3E3F3">
+<th>CRIME</th>
+<td>62.275448</td>
+</tr><tr bgcolor="">
+<th>OPEN</th>
+<td>0</td>
+</tr><tr bgcolor="#E3E3F3">
+<th>PLUMB</th>
+<td>1.479915</td>
+</tr><tr bgcolor="">
+<th>DISCBD</th>
+<td>1.9</td>
+</tr><tr bgcolor="#E3E3F3">
+<th>X</th>
+<td>37.849998</td>
+</tr><tr bgcolor="">
+<th>Y</th>
+<td>36.299999</td>
+</tr><tr bgcolor="#E3E3F3">
+<th>NSA</th>
+<td>1</td>
+</tr><tr bgcolor="">
+<th>NSB</th>
+<td>1</td>
+</tr><tr bgcolor="#E3E3F3">
+<th>EW</th>
+<td>0</td>
+</tr><tr bgcolor="">
+<th>CP</th>
+<td>1</td>
+</tr><tr bgcolor="#E3E3F3">
+<th>THOUS</th>
+<td>1000</td>
+</tr><tr bgcolor="">
+<th>NEIGNO</th>
+<td>1038</td>
+</tr></table></center>]]></description>
+<ExtendedData>
+<SchemaData schemaUrl="#kml_schema_ft_columbus">
+<SimpleData name="AREA">0.041012</SimpleData>
+<SimpleData name="PERIMETER">0.919488</SimpleData>
+<SimpleData name="COLUMBUS_">12</SimpleData>
+<SimpleData name="COLUMBUS_I">38</SimpleData>
+<SimpleData name="POLYID">11</SimpleData>
+<SimpleData name="NEIG">38</SimpleData>
+<SimpleData name="HOVAL">19.700001</SimpleData>
+<SimpleData name="INC">7.467</SimpleData>
+<SimpleData name="CRIME">62.275448</SimpleData>
+<SimpleData name="OPEN">0</SimpleData>
+<SimpleData name="PLUMB">1.479915</SimpleData>
+<SimpleData name="DISCBD">1.9</SimpleData>
+<SimpleData name="X">37.849998</SimpleData>
+<SimpleData name="Y">36.299999</SimpleData>
+<SimpleData name="NSA">1</SimpleData>
+<SimpleData name="NSB">1</SimpleData>
+<SimpleData name="EW">0</SimpleData>
+<SimpleData name="CP">1</SimpleData>
+<SimpleData name="THOUS">1000</SimpleData>
+<SimpleData name="NEIGNO">1038</SimpleData>
+</SchemaData>
+</ExtendedData>
+<Polygon>
+<outerBoundaryIs>
+<LinearRing>
+<coordinates>8.58599758148193,13.1068897247314,0 8.59698963165283,13.1118898391724,0 8.65187740325928,13.1136703491211,0 8.73396968841553,13.1163396835327,0 8.75772857666016,12.8610897064209,0 8.70078277587891,12.8570995330811,0 8.69377136230469,12.8111400604248,0 8.6328296661377,12.8101501464844,0 8.6298885345459,12.9450302124023,0 8.57294654846191,12.9500303268433,0 8.58599758148193,13.1068897247314,0 </coordinates>
+</LinearRing>
+</outerBoundaryIs>
+</Polygon>
+</Placemark>
+<Placemark id="kml_12">
+<name>kml_12</name>
+<snippet> </snippet>
+<description><![CDATA[<center><table><tr><th colspan='2' align='center'><em>Attributes</em></th></tr><tr bgcolor="#E3E3F3">
+<th>AREA</th>
+<td>0.035769</td>
+</tr><tr bgcolor="">
+<th>PERIMETER</th>
+<td>0.902125</td>
+</tr><tr bgcolor="#E3E3F3">
+<th>COLUMBUS_</th>
+<td>13</td>
+</tr><tr bgcolor="">
+<th>COLUMBUS_I</th>
+<td>37</td>
+</tr><tr bgcolor="#E3E3F3">
+<th>POLYID</th>
+<td>12</td>
+</tr><tr bgcolor="">
+<th>NEIG</th>
+<td>37</td>
+</tr><tr bgcolor="#E3E3F3">
+<th>HOVAL</th>
+<td>19.9</td>
+</tr><tr bgcolor="">
+<th>INC</th>
+<td>10.048</td>
+</tr><tr bgcolor="#E3E3F3">
+<th>CRIME</th>
+<td>56.705669</td>
+</tr><tr bgcolor="">
+<th>OPEN</th>
+<td>3.157895</td>
+</tr><tr bgcolor="#E3E3F3">
+<th>PLUMB</th>
+<td>2.635046</td>
+</tr><tr bgcolor="">
+<th>DISCBD</th>
+<td>1.91</td>
+</tr><tr bgcolor="#E3E3F3">
+<th>X</th>
+<td>37.130001</td>
+</tr><tr bgcolor="">
+<th>Y</th>
+<td>36.119999</td>
+</tr><tr bgcolor="#E3E3F3">
+<th>NSA</th>
+<td>1</td>
+</tr><tr bgcolor="">
+<th>NSB</th>
+<td>1</td>
+</tr><tr bgcolor="#E3E3F3">
+<th>EW</th>
+<td>0</td>
+</tr><tr bgcolor="">
+<th>CP</th>
+<td>1</td>
+</tr><tr bgcolor="#E3E3F3">
+<th>THOUS</th>
+<td>1000</td>
+</tr><tr bgcolor="">
+<th>NEIGNO</th>
+<td>1037</td>
+</tr></table></center>]]></description>
+<ExtendedData>
+<SchemaData schemaUrl="#kml_schema_ft_columbus">
+<SimpleData name="AREA">0.035769</SimpleData>
+<SimpleData name="PERIMETER">0.902125</SimpleData>
+<SimpleData name="COLUMBUS_">13</SimpleData>
+<SimpleData name="COLUMBUS_I">37</SimpleData>
+<SimpleData name="POLYID">12</SimpleData>
+<SimpleData name="NEIG">37</SimpleData>
+<SimpleData name="HOVAL">19.9</SimpleData>
+<SimpleData name="INC">10.048</SimpleData>
+<SimpleData name="CRIME">56.705669</SimpleData>
+<SimpleData name="OPEN">3.157895</SimpleData>
+<SimpleData name="PLUMB">2.635046</SimpleData>
+<SimpleData name="DISCBD">1.91</SimpleData>
+<SimpleData name="X">37.130001</SimpleData>
+<SimpleData name="Y">36.119999</SimpleData>
+<SimpleData name="NSA">1</SimpleData>
+<SimpleData name="NSB">1</SimpleData>
+<SimpleData name="EW">0</SimpleData>
+<SimpleData name="CP">1</SimpleData>
+<SimpleData name="THOUS">1000</SimpleData>
+<SimpleData name="NEIGNO">1037</SimpleData>
+</SchemaData>
+</ExtendedData>
+<Polygon>
+<outerBoundaryIs>
+<LinearRing>
+<coordinates>8.45657253265381,13.1040697097778,0 8.51703262329102,13.1053895950317,0 8.58599758148193,13.1068897247314,0 8.57294654846191,12.9500303268433,0 8.6298885345459,12.9450302124023,0 8.6328296661377,12.8101501464844,0 8.58288955688477,12.8097696304321,0 8.50916576385498,12.8092002868652,0 8.48737335205078,12.9306602478027,0 8.45657253265381,13.1040697097778,0 </coordinates>
+</LinearRing>
+</outerBoundaryIs>
+</Polygon>
+</Placemark>
+<Placemark id="kml_13">
+<name>kml_13</name>
+<snippet> </snippet>
+<description><![CDATA[<center><table><tr><th colspan='2' align='center'><em>Attributes</em></th></tr><tr bgcolor="#E3E3F3">
+<th>AREA</th>
+<td>0.034377</td>
+</tr><tr bgcolor="">
+<th>PERIMETER</th>
+<td>0.93659</td>
+</tr><tr bgcolor="#E3E3F3">
+<th>COLUMBUS_</th>
+<td>14</td>
+</tr><tr bgcolor="">
+<th>COLUMBUS_I</th>
+<td>39</td>
+</tr><tr bgcolor="#E3E3F3">
+<th>POLYID</th>
+<td>13</td>
+</tr><tr bgcolor="">
+<th>NEIG</th>
+<td>39</td>
+</tr><tr bgcolor="#E3E3F3">
+<th>HOVAL</th>
+<td>41.700001</td>
+</tr><tr bgcolor="">
+<th>INC</th>
+<td>9.549</td>
+</tr><tr bgcolor="#E3E3F3">
+<th>CRIME</th>
+<td>46.716129</td>
+</tr><tr bgcolor="">
+<th>OPEN</th>
+<td>0</td>
+</tr><tr bgcolor="#E3E3F3">
+<th>PLUMB</th>
+<td>6.328423</td>
+</tr><tr bgcolor="">
+<th>DISCBD</th>
+<td>2.09</td>
+</tr><tr bgcolor="#E3E3F3">
+<th>X</th>
+<td>35.950001</td>
+</tr><tr bgcolor="">
+<th>Y</th>
+<td>36.400002</td>
+</tr><tr bgcolor="#E3E3F3">
+<th>NSA</th>
+<td>1</td>
+</tr><tr bgcolor="">
+<th>NSB</th>
+<td>1</td>
+</tr><tr bgcolor="#E3E3F3">
+<th>EW</th>
+<td>0</td>
+</tr><tr bgcolor="">
+<th>CP</th>
+<td>1</td>
+</tr><tr bgcolor="#E3E3F3">
+<th>THOUS</th>
+<td>1000</td>
+</tr><tr bgcolor="">
+<th>NEIGNO</th>
+<td>1039</td>
+</tr></table></center>]]></description>
+<ExtendedData>
+<SchemaData schemaUrl="#kml_schema_ft_columbus">
+<SimpleData name="AREA">0.034377</SimpleData>
+<SimpleData name="PERIMETER">0.93659</SimpleData>
+<SimpleData name="COLUMBUS_">14</SimpleData>
+<SimpleData name="COLUMBUS_I">39</SimpleData>
+<SimpleData name="POLYID">13</SimpleData>
+<SimpleData name="NEIG">39</SimpleData>
+<SimpleData name="HOVAL">41.700001</SimpleData>
+<SimpleData name="INC">9.549</SimpleData>
+<SimpleData name="CRIME">46.716129</SimpleData>
+<SimpleData name="OPEN">0</SimpleData>
+<SimpleData name="PLUMB">6.328423</SimpleData>
+<SimpleData name="DISCBD">2.09</SimpleData>
+<SimpleData name="X">35.950001</SimpleData>
+<SimpleData name="Y">36.400002</SimpleData>
+<SimpleData name="NSA">1</SimpleData>
+<SimpleData name="NSB">1</SimpleData>
+<SimpleData name="EW">0</SimpleData>
+<SimpleData name="CP">1</SimpleData>
+<SimpleData name="THOUS">1000</SimpleData>
+<SimpleData name="NEIGNO">1039</SimpleData>
+</SchemaData>
+</ExtendedData>
+<Polygon>
+<outerBoundaryIs>
+<LinearRing>
+<coordinates>8.14520359039307,12.9420204162598,0 8.15436744689941,12.9780597686768,0 8.22030258178711,12.9790496826172,0 8.23230743408203,13.0200099945068,0 8.28026294708252,13.0260000228882,0 8.2882719039917,13.0639696121216,0 8.35126972198486,13.066499710083,0 8.41215229034424,13.0689496994019,0 8.42514991760254,13.0939197540283,0 8.45657253265381,13.1040697097778,0 8.48737335205078,12.9306602478027,0 8.45604228973389,12.9317102432251,0 8.40205478668213,12.9335298538208,0 8.33712577819824,12.9357204437256,0 8.24531841278076,12.9388198852539,0 8.14520359039307,12.9420204162598,0 </coordinates>
+</LinearRing>
+</outerBoundaryIs>
+</Polygon>
+</Placemark>
+<Placemark id="kml_14">
+<name>kml_14</name>
+<snippet> </snippet>
+<description><![CDATA[<center><table><tr><th colspan='2' align='center'><em>Attributes</em></th></tr><tr bgcolor="#E3E3F3">
+<th>AREA</th>
+<td>0.060884</td>
+</tr><tr bgcolor="">
+<th>PERIMETER</th>
+<td>1.128424</td>
+</tr><tr bgcolor="#E3E3F3">
+<th>COLUMBUS_</th>
+<td>15</td>
+</tr><tr bgcolor="">
+<th>COLUMBUS_I</th>
+<td>40</td>
+</tr><tr bgcolor="#E3E3F3">
+<th>POLYID</th>
+<td>14</td>
+</tr><tr bgcolor="">
+<th>NEIG</th>
+<td>40</td>
+</tr><tr bgcolor="#E3E3F3">
+<th>HOVAL</th>
+<td>42.900002</td>
+</tr><tr bgcolor="">
+<th>INC</th>
+<td>9.963</td>
+</tr><tr bgcolor="#E3E3F3">
+<th>CRIME</th>
+<td>57.066132</td>
+</tr><tr bgcolor="">
+<th>OPEN</th>
+<td>0.477104</td>
+</tr><tr bgcolor="#E3E3F3">
+<th>PLUMB</th>
+<td>5.110962</td>
+</tr><tr bgcolor="">
+<th>DISCBD</th>
+<td>1.83</td>
+</tr><tr bgcolor="#E3E3F3">
+<th>X</th>
+<td>35.720001</td>
+</tr><tr bgcolor="">
+<th>Y</th>
+<td>35.599998</td>
+</tr><tr bgcolor="#E3E3F3">
+<th>NSA</th>
+<td>1</td>
+</tr><tr bgcolor="">
+<th>NSB</th>
+<td>1</td>
+</tr><tr bgcolor="#E3E3F3">
+<th>EW</th>
+<td>0</td>
+</tr><tr bgcolor="">
+<th>CP</th>
+<td>1</td>
+</tr><tr bgcolor="#E3E3F3">
+<th>THOUS</th>
+<td>1000</td>
+</tr><tr bgcolor="">
+<th>NEIGNO</th>
+<td>1040</td>
+</tr></table></center>]]></description>
+<ExtendedData>
+<SchemaData schemaUrl="#kml_schema_ft_columbus">
+<SimpleData name="AREA">0.060884</SimpleData>
+<SimpleData name="PERIMETER">1.128424</SimpleData>
+<SimpleData name="COLUMBUS_">15</SimpleData>
+<SimpleData name="COLUMBUS_I">40</SimpleData>
+<SimpleData name="POLYID">14</SimpleData>
+<SimpleData name="NEIG">40</SimpleData>
+<SimpleData name="HOVAL">42.900002</SimpleData>
+<SimpleData name="INC">9.963</SimpleData>
+<SimpleData name="CRIME">57.066132</SimpleData>
+<SimpleData name="OPEN">0.477104</SimpleData>
+<SimpleData name="PLUMB">5.110962</SimpleData>
+<SimpleData name="DISCBD">1.83</SimpleData>
+<SimpleData name="X">35.720001</SimpleData>
+<SimpleData name="Y">35.599998</SimpleData>
+<SimpleData name="NSA">1</SimpleData>
+<SimpleData name="NSB">1</SimpleData>
+<SimpleData name="EW">0</SimpleData>
+<SimpleData name="CP">1</SimpleData>
+<SimpleData name="THOUS">1000</SimpleData>
+<SimpleData name="NEIGNO">1040</SimpleData>
+</SchemaData>
+</ExtendedData>
+<Polygon>
+<outerBoundaryIs>
+<LinearRing>
+<coordinates>8.06244277954102,12.9441003799438,0 8.10440063476562,12.9430503845215,0 8.14520359039307,12.9420204162598,0 8.24531841278076,12.9388198852539,0 8.33712577819824,12.9357204437256,0 8.40205478668213,12.9335298538208,0 8.45604228973389,12.9317102432251,0 8.48737335205078,12.9306602478027,0 8.50916576385498,12.8092002868652,0 8.51293754577637,12.7881803512573,0 8.47897052764893,12.7881898880005,0 8.43101215362549,12.7880601882935,0 8.25918102264404,12.7875995635986,0 8.12231922149658,12.7872295379639,0 8.06244277954102,12.9441003799438,0 </coordinates>
+</LinearRing>
+</outerBoundaryIs>
+</Polygon>
+</Placemark>
+<Placemark id="kml_15">
+<name>kml_15</name>
+<snippet> </snippet>
+<description><![CDATA[<center><table><tr><th colspan='2' align='center'><em>Attributes</em></th></tr><tr bgcolor="#E3E3F3">
+<th>AREA</th>
+<td>0.106653</td>
+</tr><tr bgcolor="">
+<th>PERIMETER</th>
+<td>1.437606</td>
+</tr><tr bgcolor="#E3E3F3">
+<th>COLUMBUS_</th>
+<td>16</td>
+</tr><tr bgcolor="">
+<th>COLUMBUS_I</th>
+<td>9</td>
+</tr><tr bgcolor="#E3E3F3">
+<th>POLYID</th>
+<td>15</td>
+</tr><tr bgcolor="">
+<th>NEIG</th>
+<td>9</td>
+</tr><tr bgcolor="#E3E3F3">
+<th>HOVAL</th>
+<td>18</td>
+</tr><tr bgcolor="">
+<th>INC</th>
+<td>9.873</td>
+</tr><tr bgcolor="#E3E3F3">
+<th>CRIME</th>
+<td>48.585487</td>
+</tr><tr bgcolor="">
+<th>OPEN</th>
+<td>0.174325</td>
+</tr><tr bgcolor="#E3E3F3">
+<th>PLUMB</th>
+<td>1.311475</td>
+</tr><tr bgcolor="">
+<th>DISCBD</th>
+<td>1.7</td>
+</tr><tr bgcolor="#E3E3F3">
+<th>X</th>
+<td>39.610001</td>
+</tr><tr bgcolor="">
+<th>Y</th>
+<td>34.91</td>
+</tr><tr bgcolor="#E3E3F3">
+<th>NSA</th>
+<td>1</td>
+</tr><tr bgcolor="">
+<th>NSB</th>
+<td>1</td>
+</tr><tr bgcolor="#E3E3F3">
+<th>EW</th>
+<td>1</td>
+</tr><tr bgcolor="">
+<th>CP</th>
+<td>1</td>
+</tr><tr bgcolor="#E3E3F3">
+<th>THOUS</th>
+<td>1000</td>
+</tr><tr bgcolor="">
+<th>NEIGNO</th>
+<td>1009</td>
+</tr></table></center>]]></description>
+<ExtendedData>
+<SchemaData schemaUrl="#kml_schema_ft_columbus">
+<SimpleData name="AREA">0.106653</SimpleData>
+<SimpleData name="PERIMETER">1.437606</SimpleData>
+<SimpleData name="COLUMBUS_">16</SimpleData>
+<SimpleData name="COLUMBUS_I">9</SimpleData>
+<SimpleData name="POLYID">15</SimpleData>
+<SimpleData name="NEIG">9</SimpleData>
+<SimpleData name="HOVAL">18</SimpleData>
+<SimpleData name="INC">9.873</SimpleData>
+<SimpleData name="CRIME">48.585487</SimpleData>
+<SimpleData name="OPEN">0.174325</SimpleData>
+<SimpleData name="PLUMB">1.311475</SimpleData>
+<SimpleData name="DISCBD">1.7</SimpleData>
+<SimpleData name="X">39.610001</SimpleData>
+<SimpleData name="Y">34.91</SimpleData>
+<SimpleData name="NSA">1</SimpleData>
+<SimpleData name="NSB">1</SimpleData>
+<SimpleData name="EW">1</SimpleData>
+<SimpleData name="CP">1</SimpleData>
+<SimpleData name="THOUS">1000</SimpleData>
+<SimpleData name="NEIGNO">1009</SimpleData>
+</SchemaData>
+</ExtendedData>
+<Polygon>
+<outerBoundaryIs>
+<LinearRing>
+<coordinates>8.75772857666016,12.8610897064209,0 8.94357299804688,12.8622198104858,0 9.2333869934082,12.8640003204346,0 9.22088527679443,12.8057203292847,0 9.21353244781494,12.7780303955078,0 9.20620822906494,12.7588396072388,0 9.18724632263184,12.7091703414917,0 9.16631126403809,12.6799802780151,0 9.14678764343262,12.6587400436401,0 9.12427711486816,12.6342401504517,0 8.91329669952393,12.6098003387451,0 8.85552787780762,12.6063003540039,0 8.78556632995605,12.5323696136475,0 8.77786540985107,12.6280298233032,0 8.75772857666016,12.8610897064209,0 </coordinates>
+</LinearRing>
+</outerBoundaryIs>
+</Polygon>
+</Placemark>
+<Placemark id="kml_16">
+<name>kml_16</name>
+<snippet> </snippet>
+<description><![CDATA[<center><table><tr><th colspan='2' align='center'><em>Attributes</em></th></tr><tr bgcolor="#E3E3F3">
+<th>AREA</th>
+<td>0.093154</td>
+</tr><tr bgcolor="">
+<th>PERIMETER</th>
+<td>1.340061</td>
+</tr><tr bgcolor="#E3E3F3">
+<th>COLUMBUS_</th>
+<td>17</td>
+</tr><tr bgcolor="">
+<th>COLUMBUS_I</th>
+<td>36</td>
+</tr><tr bgcolor="#E3E3F3">
+<th>POLYID</th>
+<td>16</td>
+</tr><tr bgcolor="">
+<th>NEIG</th>
+<td>36</td>
+</tr><tr bgcolor="#E3E3F3">
+<th>HOVAL</th>
+<td>18.799999</td>
+</tr><tr bgcolor="">
+<th>INC</th>
+<td>7.625</td>
+</tr><tr bgcolor="#E3E3F3">
+<th>CRIME</th>
+<td>54.838711</td>
+</tr><tr bgcolor="">
+<th>OPEN</th>
+<td>0.533737</td>
+</tr><tr bgcolor="#E3E3F3">
+<th>PLUMB</th>
+<td>4.6875</td>
+</tr><tr bgcolor="">
+<th>DISCBD</th>
+<td>1.1</td>
+</tr><tr bgcolor="#E3E3F3">
+<th>X</th>
+<td>37.599998</td>
+</tr><tr bgcolor="">
+<th>Y</th>
+<td>34.080002</td>
+</tr><tr bgcolor="#E3E3F3">
+<th>NSA</th>
+<td>1</td>
+</tr><tr bgcolor="">
+<th>NSB</th>
+<td>1</td>
+</tr><tr bgcolor="#E3E3F3">
+<th>EW</th>
+<td>0</td>
+</tr><tr bgcolor="">
+<th>CP</th>
+<td>1</td>
+</tr><tr bgcolor="#E3E3F3">
+<th>THOUS</th>
+<td>1000</td>
+</tr><tr bgcolor="">
+<th>NEIGNO</th>
+<td>1036</td>
+</tr></table></center>]]></description>
+<ExtendedData>
+<SchemaData schemaUrl="#kml_schema_ft_columbus">
+<SimpleData name="AREA">0.093154</SimpleData>
+<SimpleData name="PERIMETER">1.340061</SimpleData>
+<SimpleData name="COLUMBUS_">17</SimpleData>
+<SimpleData name="COLUMBUS_I">36</SimpleData>
+<SimpleData name="POLYID">16</SimpleData>
+<SimpleData name="NEIG">36</SimpleData>
+<SimpleData name="HOVAL">18.799999</SimpleData>
+<SimpleData name="INC">7.625</SimpleData>
+<SimpleData name="CRIME">54.838711</SimpleData>
+<SimpleData name="OPEN">0.533737</SimpleData>
+<SimpleData name="PLUMB">4.6875</SimpleData>
+<SimpleData name="DISCBD">1.1</SimpleData>
+<SimpleData name="X">37.599998</SimpleData>
+<SimpleData name="Y">34.080002</SimpleData>
+<SimpleData name="NSA">1</SimpleData>
+<SimpleData name="NSB">1</SimpleData>
+<SimpleData name="EW">0</SimpleData>
+<SimpleData name="CP">1</SimpleData>
+<SimpleData name="THOUS">1000</SimpleData>
+<SimpleData name="NEIGNO">1036</SimpleData>
+</SchemaData>
+</ExtendedData>
+<Polygon>
+<outerBoundaryIs>
+<LinearRing>
+<coordinates>8.6328296661377,12.8101501464844,0 8.69377136230469,12.8111400604248,0 8.70078277587891,12.8570995330811,0 8.75772857666016,12.8610897064209,0 8.77786540985107,12.6280298233032,0 8.78556632995605,12.5323696136475,0 8.75838565826416,12.4968500137329,0 8.72652435302734,12.4552097320557,0 8.70947742462158,12.4273099899292,0 8.69460678100586,12.4174900054932,0 8.65763282775879,12.3915100097656,0 8.60576152801514,12.3679399490356,0 8.58968734741211,12.3615503311157,0 8.51293754577637,12.7881803512573,0 8.50916576385498,12.8092002868652,0 8.58288955688477,12.8097696304321,0 8.6328296661377,12.8101501464844,0 </coordinates>
+</LinearRing>
+</outerBoundaryIs>
+</Polygon>
+</Placemark>
+<Placemark id="kml_17">
+<name>kml_17</name>
+<snippet> </snippet>
+<description><![CDATA[<center><table><tr><th colspan='2' align='center'><em>Attributes</em></th></tr><tr bgcolor="#E3E3F3">
+<th>AREA</th>
+<td>0.102087</td>
+</tr><tr bgcolor="">
+<th>PERIMETER</th>
+<td>1.382359</td>
+</tr><tr bgcolor="#E3E3F3">
+<th>COLUMBUS_</th>
+<td>18</td>
+</tr><tr bgcolor="">
+<th>COLUMBUS_I</th>
+<td>11</td>
+</tr><tr bgcolor="#E3E3F3">
+<th>POLYID</th>
+<td>17</td>
+</tr><tr bgcolor="">
+<th>NEIG</th>
+<td>11</td>
+</tr><tr bgcolor="#E3E3F3">
+<th>HOVAL</th>
+<td>41.75</td>
+</tr><tr bgcolor="">
+<th>INC</th>
+<td>9.798</td>
+</tr><tr bgcolor="#E3E3F3">
+<th>CRIME</th>
+<td>36.868774</td>
+</tr><tr bgcolor="">
+<th>OPEN</th>
+<td>0.448232</td>
+</tr><tr bgcolor="#E3E3F3">
+<th>PLUMB</th>
+<td>1.619745</td>
+</tr><tr bgcolor="">
+<th>DISCBD</th>
+<td>4.47</td>
+</tr><tr bgcolor="#E3E3F3">
+<th>X</th>
+<td>48.580002</td>
+</tr><tr bgcolor="">
+<th>Y</th>
+<td>34.459999</td>
+</tr><tr bgcolor="#E3E3F3">
+<th>NSA</th>
+<td>1</td>
+</tr><tr bgcolor="">
+<th>NSB</th>
+<td>1</td>
+</tr><tr bgcolor="#E3E3F3">
+<th>EW</th>
+<td>1</td>
+</tr><tr bgcolor="">
+<th>CP</th>
+<td>0</td>
+</tr><tr bgcolor="#E3E3F3">
+<th>THOUS</th>
+<td>1000</td>
+</tr><tr bgcolor="">
+<th>NEIGNO</th>
+<td>1011</td>
+</tr></table></center>]]></description>
+<ExtendedData>
+<SchemaData schemaUrl="#kml_schema_ft_columbus">
+<SimpleData name="AREA">0.102087</SimpleData>
+<SimpleData name="PERIMETER">1.382359</SimpleData>
+<SimpleData name="COLUMBUS_">18</SimpleData>
+<SimpleData name="COLUMBUS_I">11</SimpleData>
+<SimpleData name="POLYID">17</SimpleData>
+<SimpleData name="NEIG">11</SimpleData>
+<SimpleData name="HOVAL">41.75</SimpleData>
+<SimpleData name="INC">9.798</SimpleData>
+<SimpleData name="CRIME">36.868774</SimpleData>
+<SimpleData name="OPEN">0.448232</SimpleData>
+<SimpleData name="PLUMB">1.619745</SimpleData>
+<SimpleData name="DISCBD">4.47</SimpleData>
+<SimpleData name="X">48.580002</SimpleData>
+<SimpleData name="Y">34.459999</SimpleData>
+<SimpleData name="NSA">1</SimpleData>
+<SimpleData name="NSB">1</SimpleData>
+<SimpleData name="EW">1</SimpleData>
+<SimpleData name="CP">0</SimpleData>
+<SimpleData name="THOUS">1000</SimpleData>
+<SimpleData name="NEIGNO">1011</SimpleData>
+</SchemaData>
+</ExtendedData>
+<Polygon>
+<outerBoundaryIs>
+<LinearRing>
+<coordinates>10.3565998077393,12.7811403274536,0 10.5010995864868,12.8053197860718,0 10.6496801376343,12.8301801681519,0 10.7028198242188,12.8388595581055,0 10.7097902297974,12.7749099731445,0 10.6648197174072,12.7629299163818,0 10.6697998046875,12.7039804458618,0 10.6677703857422,12.6480302810669,0 10.6669702529907,12.5950298309326,0 10.6673402786255,12.5801095962524,0 10.6696996688843,12.4831800460815,0 10.4217500686646,12.4402599334717,0 10.4209899902344,12.5781297683716,0 10.3560600280762,12.5981197357178,0 10.3563899993896,12.712010383606,0 10.3565998077393,12.7811403274536,0 </coordinates>
+</LinearRing>
+</outerBoundaryIs>
+</Polygon>
+</Placemark>
+<Placemark id="kml_18">
+<name>kml_18</name>
+<snippet> </snippet>
+<description><![CDATA[<center><table><tr><th colspan='2' align='center'><em>Attributes</em></th></tr><tr bgcolor="#E3E3F3">
+<th>AREA</th>
+<td>0.055494</td>
+</tr><tr bgcolor="">
+<th>PERIMETER</th>
+<td>1.183352</td>
+</tr><tr bgcolor="#E3E3F3">
+<th>COLUMBUS_</th>
+<td>19</td>
+</tr><tr bgcolor="">
+<th>COLUMBUS_I</th>
+<td>42</td>
+</tr><tr bgcolor="#E3E3F3">
+<th>POLYID</th>
+<td>18</td>
+</tr><tr bgcolor="">
+<th>NEIG</th>
+<td>42</td>
+</tr><tr bgcolor="#E3E3F3">
+<th>HOVAL</th>
+<td>60</td>
+</tr><tr bgcolor="">
+<th>INC</th>
+<td>13.185</td>
+</tr><tr bgcolor="#E3E3F3">
+<th>CRIME</th>
+<td>43.962486</td>
+</tr><tr bgcolor="">
+<th>OPEN</th>
+<td>24.998068</td>
+</tr><tr bgcolor="#E3E3F3">
+<th>PLUMB</th>
+<td>13.849287</td>
+</tr><tr bgcolor="">
+<th>DISCBD</th>
+<td>1.58</td>
+</tr><tr bgcolor="#E3E3F3">
+<th>X</th>
+<td>36.150002</td>
+</tr><tr bgcolor="">
+<th>Y</th>
+<td>33.919998</td>
+</tr><tr bgcolor="#E3E3F3">
+<th>NSA</th>
+<td>1</td>
+</tr><tr bgcolor="">
+<th>NSB</th>
+<td>1</td>
+</tr><tr bgcolor="#E3E3F3">
+<th>EW</th>
+<td>0</td>
+</tr><tr bgcolor="">
+<th>CP</th>
+<td>1</td>
+</tr><tr bgcolor="#E3E3F3">
+<th>THOUS</th>
+<td>1000</td>
+</tr><tr bgcolor="">
+<th>NEIGNO</th>
+<td>1042</td>
+</tr></table></center>]]></description>
+<ExtendedData>
+<SchemaData schemaUrl="#kml_schema_ft_columbus">
+<SimpleData name="AREA">0.055494</SimpleData>
+<SimpleData name="PERIMETER">1.183352</SimpleData>
+<SimpleData name="COLUMBUS_">19</SimpleData>
+<SimpleData name="COLUMBUS_I">42</SimpleData>
+<SimpleData name="POLYID">18</SimpleData>
+<SimpleData name="NEIG">42</SimpleData>
+<SimpleData name="HOVAL">60</SimpleData>
+<SimpleData name="INC">13.185</SimpleData>
+<SimpleData name="CRIME">43.962486</SimpleData>
+<SimpleData name="OPEN">24.998068</SimpleData>
+<SimpleData name="PLUMB">13.849287</SimpleData>
+<SimpleData name="DISCBD">1.58</SimpleData>
+<SimpleData name="X">36.150002</SimpleData>
+<SimpleData name="Y">33.919998</SimpleData>
+<SimpleData name="NSA">1</SimpleData>
+<SimpleData name="NSB">1</SimpleData>
+<SimpleData name="EW">0</SimpleData>
+<SimpleData name="CP">1</SimpleData>
+<SimpleData name="THOUS">1000</SimpleData>
+<SimpleData name="NEIGNO">1042</SimpleData>
+</SchemaData>
+</ExtendedData>
+<Polygon>
+<outerBoundaryIs>
+<LinearRing>
+<coordinates>8.43101215362549,12.7880601882935,0 8.47897052764893,12.7881898880005,0 8.51293754577637,12.7881803512573,0 8.58968734741211,12.3615503311157,0 8.56550788879395,12.3553304672241,0 8.55471515655518,12.3553304672241,0 8.52307319641113,12.3553104400635,0 8.5026388168335,12.3570804595947,0 8.4813814163208,12.3629102706909,0 8.43883895874023,12.3735599517822,0 8.4064474105835,12.3967304229736,0 8.39156913757324,12.4073801040649,0 8.36999702453613,12.4281797409058,0 8.358473777771,12.4456596374512,0 8.42388439178467,12.4484901428223,0 8.43101215362549,12.7880601882935,0 </coordinates>
+</LinearRing>
+</outerBoundaryIs>
+</Polygon>
+</Placemark>
+<Placemark id="kml_19">
+<name>kml_19</name>
+<snippet> </snippet>
+<description><![CDATA[<center><table><tr><th colspan='2' align='center'><em>Attributes</em></th></tr><tr bgcolor="#E3E3F3">
+<th>AREA</th>
+<td>0.061342</td>
+</tr><tr bgcolor="">
+<th>PERIMETER</th>
+<td>1.249247</td>
+</tr><tr bgcolor="#E3E3F3">
+<th>COLUMBUS_</th>
+<td>20</td>
+</tr><tr bgcolor="">
+<th>COLUMBUS_I</th>
+<td>41</td>
+</tr><tr bgcolor="#E3E3F3">
+<th>POLYID</th>
+<td>19</td>
+</tr><tr bgcolor="">
+<th>NEIG</th>
+<td>41</td>
+</tr><tr bgcolor="#E3E3F3">
+<th>HOVAL</th>
+<td>30.6</td>
+</tr><tr bgcolor="">
+<th>INC</th>
+<td>11.618</td>
+</tr><tr bgcolor="#E3E3F3">
+<th>CRIME</th>
+<td>54.521965</td>
+</tr><tr bgcolor="">
+<th>OPEN</th>
+<td>0.111111</td>
+</tr><tr bgcolor="#E3E3F3">
+<th>PLUMB</th>
+<td>2.622951</td>
+</tr><tr bgcolor="">
+<th>DISCBD</th>
+<td>1.53</td>
+</tr><tr bgcolor="#E3E3F3">
+<th>X</th>
+<td>35.759998</td>
+</tr><tr bgcolor="">
+<th>Y</th>
+<td>34.66</td>
+</tr><tr bgcolor="#E3E3F3">
+<th>NSA</th>
+<td>1</td>
+</tr><tr bgcolor="">
+<th>NSB</th>
+<td>1</td>
+</tr><tr bgcolor="#E3E3F3">
+<th>EW</th>
+<td>0</td>
+</tr><tr bgcolor="">
+<th>CP</th>
+<td>1</td>
+</tr><tr bgcolor="#E3E3F3">
+<th>THOUS</th>
+<td>1000</td>
+</tr><tr bgcolor="">
+<th>NEIGNO</th>
+<td>1041</td>
+</tr></table></center>]]></description>
+<ExtendedData>
+<SchemaData schemaUrl="#kml_schema_ft_columbus">
+<SimpleData name="AREA">0.061342</SimpleData>
+<SimpleData name="PERIMETER">1.249247</SimpleData>
+<SimpleData name="COLUMBUS_">20</SimpleData>
+<SimpleData name="COLUMBUS_I">41</SimpleData>
+<SimpleData name="POLYID">19</SimpleData>
+<SimpleData name="NEIG">41</SimpleData>
+<SimpleData name="HOVAL">30.6</SimpleData>
+<SimpleData name="INC">11.618</SimpleData>
+<SimpleData name="CRIME">54.521965</SimpleData>
+<SimpleData name="OPEN">0.111111</SimpleData>
+<SimpleData name="PLUMB">2.622951</SimpleData>
+<SimpleData name="DISCBD">1.53</SimpleData>
+<SimpleData name="X">35.759998</SimpleData>
+<SimpleData name="Y">34.66</SimpleData>
+<SimpleData name="NSA">1</SimpleData>
+<SimpleData name="NSB">1</SimpleData>
+<SimpleData name="EW">0</SimpleData>
+<SimpleData name="CP">1</SimpleData>
+<SimpleData name="THOUS">1000</SimpleData>
+<SimpleData name="NEIGNO">1041</SimpleData>
+</SchemaData>
+</ExtendedData>
+<Polygon>
+<outerBoundaryIs>
+<LinearRing>
+<coordinates>8.12231922149658,12.7872295379639,0 8.25918102264404,12.7875995635986,0 8.43101215362549,12.7880601882935,0 8.42388439178467,12.4484901428223,0 8.358473777771,12.4456596374512,0 8.35050868988037,12.4819297790527,0 8.34797668457031,12.4934597015381,0 8.3489990234375,12.5474195480347,0 8.33201789855957,12.5474195480347,0 8.30504322052002,12.5504198074341,0 8.30101776123047,12.593090057373,0 8.2994441986084,12.6097803115845,0 8.2960901260376,12.6453399658203,0 8.22316265106201,12.6453399658203,0 8.14823532104492,12.6453504562378,0 8.13826847076416,12.7033100128174,0 8.13828277587891,12.7372798919678,0 8.12231922149658,12.7872295379639,0 </coordinates>
+</LinearRing>
+</outerBoundaryIs>
+</Polygon>
+</Placemark>
+<Placemark id="kml_20">
+<name>kml_20</name>
+<snippet> </snippet>
+<description><![CDATA[<center><table><tr><th colspan='2' align='center'><em>Attributes</em></th></tr><tr bgcolor="#E3E3F3">
+<th>AREA</th>
+<td>0.444629</td>
+</tr><tr bgcolor="">
+<th>PERIMETER</th>
+<td>3.174601</td>
+</tr><tr bgcolor="#E3E3F3">
+<th>COLUMBUS_</th>
+<td>21</td>
+</tr><tr bgcolor="">
+<th>COLUMBUS_I</th>
+<td>17</td>
+</tr><tr bgcolor="#E3E3F3">
+<th>POLYID</th>
+<td>20</td>
+</tr><tr bgcolor="">
+<th>NEIG</th>
+<td>17</td>
+</tr><tr bgcolor="#E3E3F3">
+<th>HOVAL</th>
+<td>81.266998</td>
+</tr><tr bgcolor="">
+<th>INC</th>
+<td>31.07</td>
+</tr><tr bgcolor="#E3E3F3">
+<th>CRIME</th>
+<td>0.223797</td>
+</tr><tr bgcolor="">
+<th>OPEN</th>
+<td>5.318607</td>
+</tr><tr bgcolor="#E3E3F3">
+<th>PLUMB</th>
+<td>0.167224</td>
+</tr><tr bgcolor="">
+<th>DISCBD</th>
+<td>3.57</td>
+</tr><tr bgcolor="#E3E3F3">
+<th>X</th>
+<td>46.73</td>
+</tr><tr bgcolor="">
+<th>Y</th>
+<td>31.91</td>
+</tr><tr bgcolor="#E3E3F3">
+<th>NSA</th>
+<td>0</td>
+</tr><tr bgcolor="">
+<th>NSB</th>
+<td>1</td>
+</tr><tr bgcolor="#E3E3F3">
+<th>EW</th>
+<td>1</td>
+</tr><tr bgcolor="">
+<th>CP</th>
+<td>0</td>
+</tr><tr bgcolor="#E3E3F3">
+<th>THOUS</th>
+<td>1000</td>
+</tr><tr bgcolor="">
+<th>NEIGNO</th>
+<td>1017</td>
+</tr></table></center>]]></description>
+<ExtendedData>
+<SchemaData schemaUrl="#kml_schema_ft_columbus">
+<SimpleData name="AREA">0.444629</SimpleData>
+<SimpleData name="PERIMETER">3.174601</SimpleData>
+<SimpleData name="COLUMBUS_">21</SimpleData>
+<SimpleData name="COLUMBUS_I">17</SimpleData>
+<SimpleData name="POLYID">20</SimpleData>
+<SimpleData name="NEIG">17</SimpleData>
+<SimpleData name="HOVAL">81.266998</SimpleData>
+<SimpleData name="INC">31.07</SimpleData>
+<SimpleData name="CRIME">0.223797</SimpleData>
+<SimpleData name="OPEN">5.318607</SimpleData>
+<SimpleData name="PLUMB">0.167224</SimpleData>
+<SimpleData name="DISCBD">3.57</SimpleData>
+<SimpleData name="X">46.73</SimpleData>
+<SimpleData name="Y">31.91</SimpleData>
+<SimpleData name="NSA">0</SimpleData>
+<SimpleData name="NSB">1</SimpleData>
+<SimpleData name="EW">1</SimpleData>
+<SimpleData name="CP">0</SimpleData>
+<SimpleData name="THOUS">1000</SimpleData>
+<SimpleData name="NEIGNO">1017</SimpleData>
+</SchemaData>
+</ExtendedData>
+<Polygon>
+<outerBoundaryIs>
+<LinearRing>
+<coordinates>10.0154399871826,12.7240495681763,0 10.178409576416,12.7513198852539,0 10.3565998077393,12.7811403274536,0 10.3563899993896,12.712010383606,0 10.3560600280762,12.5981197357178,0 10.4209899902344,12.5781297683716,0 10.4217500686646,12.4402599334717,0 10.4242496490479,11.9906396865845,0 10.4256401062012,11.7418603897095,0 10.252799987793,11.7428197860718,0 10.0565900802612,11.7439098358154,0 10.0499095916748,11.7629499435425,0 10.049750328064,11.7789602279663,0 10.0492897033691,11.8228302001953,0 10.0489101409912,11.8587999343872,0 10.0420799255371,11.9127597808838,0 10.0242204666138,11.9623098373413,0 10.0071601867676,12.0096797943115,0 9.9919605255127,12.0315103530884,0 9.9562931060791,12.0827503204346,0 9.91477966308594,12.1423902511597,0 9.89995193481445,12.1636896133423,0 9.89287853240967,12.1738500595093,0 9.88435077667236,12.1915302276611,0 10.0012302398682,12.170539855957,0 9.96633243560791,12.3413896560669,0 9.84108352661133,12.3147401809692,0 9.93568801879883,12.5018701553345,0 9.94119358062744,12.5121297836304,0 9.93346881866455,12.5994100570679,0 10.0154399871826,12.7240495681763,0 </coordinates>
+</LinearRing>
+</outerBoundaryIs>
+</Polygon>
+</Placemark>
+<Placemark id="kml_21">
+<name>kml_21</name>
+<snippet> </snippet>
+<description><![CDATA[<center><table><tr><th colspan='2' align='center'><em>Attributes</em></th></tr><tr bgcolor="#E3E3F3">
+<th>AREA</th>
+<td>0.699258</td>
+</tr><tr bgcolor="">
+<th>PERIMETER</th>
+<td>5.07749</td>
+</tr><tr bgcolor="#E3E3F3">
+<th>COLUMBUS_</th>
+<td>22</td>
+</tr><tr bgcolor="">
+<th>COLUMBUS_I</th>
+<td>43</td>
+</tr><tr bgcolor="#E3E3F3">
+<th>POLYID</th>
+<td>21</td>
+</tr><tr bgcolor="">
+<th>NEIG</th>
+<td>43</td>
+</tr><tr bgcolor="#E3E3F3">
+<th>HOVAL</th>
+<td>19.975</td>
+</tr><tr bgcolor="">
+<th>INC</th>
+<td>10.655</td>
+</tr><tr bgcolor="#E3E3F3">
+<th>CRIME</th>
+<td>40.074074</td>
+</tr><tr bgcolor="">
+<th>OPEN</th>
+<td>1.643756</td>
+</tr><tr bgcolor="#E3E3F3">
+<th>PLUMB</th>
+<td>1.559576</td>
+</tr><tr bgcolor="">
+<th>DISCBD</th>
+<td>1.41</td>
+</tr><tr bgcolor="#E3E3F3">
+<th>X</th>
+<td>34.080002</td>
+</tr><tr bgcolor="">
+<th>Y</th>
+<td>30.42</td>
+</tr><tr bgcolor="#E3E3F3">
+<th>NSA</th>
+<td>0</td>
+</tr><tr bgcolor="">
+<th>NSB</th>
+<td>0</td>
+</tr><tr bgcolor="#E3E3F3">
+<th>EW</th>
+<td>0</td>
+</tr><tr bgcolor="">
+<th>CP</th>
+<td>1</td>
+</tr><tr bgcolor="#E3E3F3">
+<th>THOUS</th>
+<td>1000</td>
+</tr><tr bgcolor="">
+<th>NEIGNO</th>
+<td>1043</td>
+</tr></table></center>]]></description>
+<ExtendedData>
+<SchemaData schemaUrl="#kml_schema_ft_columbus">
+<SimpleData name="AREA">0.699258</SimpleData>
+<SimpleData name="PERIMETER">5.07749</SimpleData>
+<SimpleData name="COLUMBUS_">22</SimpleData>
+<SimpleData name="COLUMBUS_I">43</SimpleData>
+<SimpleData name="POLYID">21</SimpleData>
+<SimpleData name="NEIG">43</SimpleData>
+<SimpleData name="HOVAL">19.975</SimpleData>
+<SimpleData name="INC">10.655</SimpleData>
+<SimpleData name="CRIME">40.074074</SimpleData>
+<SimpleData name="OPEN">1.643756</SimpleData>
+<SimpleData name="PLUMB">1.559576</SimpleData>
+<SimpleData name="DISCBD">1.41</SimpleData>
+<SimpleData name="X">34.080002</SimpleData>
+<SimpleData name="Y">30.42</SimpleData>
+<SimpleData name="NSA">0</SimpleData>
+<SimpleData name="NSB">0</SimpleData>
+<SimpleData name="EW">0</SimpleData>
+<SimpleData name="CP">1</SimpleData>
+<SimpleData name="THOUS">1000</SimpleData>
+<SimpleData name="NEIGNO">1043</SimpleData>
+</SchemaData>
+</ExtendedData>
+<Polygon>
+<outerBoundaryIs>
+<LinearRing>
+<coordinates>7.84243488311768,12.4055995941162,0 8.13113975524902,12.3736000061035,0 8.13680744171143,12.3485498428345,0 8.14180088043213,12.326470375061,0 8.14834976196289,12.2987203598022,0 8.157790184021,12.2812204360962,0 8.17439746856689,12.2504301071167,0 8.19052028656006,12.2376403808594,0 8.22532653808594,12.206859588623,0 8.25028133392334,12.1944303512573,0 8.31022453308105,12.1569299697876,0 8.32612133026123,12.1532802581787,0 8.35886383056641,12.1459503173828,0 8.40876960754395,12.1347703933716,0 8.43419361114502,12.1392097473145,0 8.47171306610107,12.1457500457764,0 8.49503326416016,12.1377696990967,0 8.50551414489746,12.128210067749,0 8.51920509338379,12.1152296066284,0 8.53862380981445,12.0887899398804,0 8.54446220397949,12.0735998153687,0 8.56357288360596,12.023850440979,0 8.52597808837891,11.9246597290039,0 8.51766014099121,11.9147100448608,0 8.47167778015137,11.863730430603,0 8.45599842071533,11.8476104736328,0 8.41250801086426,11.8073501586914,0 8.40429878234863,11.8004703521729,0 8.38643264770508,11.7854900360107,0 8.37365436553955,11.7740898132324,0 8.2827320098877,11.7441301345825,0 8.25679206848145,11.8280601501465,0 8.10392379760742,11.785120010376,0 8.12085914611816,11.670220375061,0 7.73317909240723,11.5273895263672,0 7.6882791519165,11.6632795333862,0 7.71728277206421,11.7412099838257,0 7.58047485351562,11.8821001052856,0 7.6374340057373,11.9170598983765,0 7.61651182174683,12.0579395294189,0 7.40372896194458,12.0809497833252,0 7.40476322174072,12.164870262146,0 7.32386207580566,12.2118396759033,0 7.19602108001709,12.2957801818848,0 7.13510704040527,12.3597297668457,0 7.10815286636353,12.4067001342773,0 7.09221315383911,12.5126104354858,0 7.06132984161377,12.7254199981689,0 7.14324998855591,12.7244100570679,0 7.15521812438965,12.6744604110718,0 7.17316913604736,12.5985202789307,0 7.20611381530762,12.5445604324341,0 7.27003812789917,12.5105800628662,0 7.34195804595947,12.4865999221802,0 7.42986297607422,12.4666004180908,0 7.4598331451416,12.4636001586914,0 7.48178100585938,12.3896598815918,0 7.49877023696899,12.4036502838135,0 7.51675510406494,12.4096403121948,0 7.54872512817383,12.4126300811768,0 7.55971479415894,12.4146299362183,0 7.55869197845459,12.3566799163818,0 7.56967210769653,12.3346996307373,0 7.61661100387573,12.2987298965454,0 7.66957092285156,12.3276901245117,0 7.72151279449463,12.3077096939087,0 7.70854806900024,12.36266040802,0 7.63962697982788,12.3896398544312,0 7.64663600921631,12.430609703064,0 7.84243488311768,12.4055995941162,0 </coordinates>
+</LinearRing>
+</outerBoundaryIs>
+</Polygon>
+</Placemark>
+<Placemark id="kml_22">
+<name>kml_22</name>
+<snippet> </snippet>
+<description><![CDATA[<center><table><tr><th colspan='2' align='center'><em>Attributes</em></th></tr><tr bgcolor="#E3E3F3">
+<th>AREA</th>
+<td>0.192891</td>
+</tr><tr bgcolor="">
+<th>PERIMETER</th>
+<td>1.992717</td>
+</tr><tr bgcolor="#E3E3F3">
+<th>COLUMBUS_</th>
+<td>23</td>
+</tr><tr bgcolor="">
+<th>COLUMBUS_I</th>
+<td>19</td>
+</tr><tr bgcolor="#E3E3F3">
+<th>POLYID</th>
+<td>22</td>
+</tr><tr bgcolor="">
+<th>NEIG</th>
+<td>19</td>
+</tr><tr bgcolor="#E3E3F3">
+<th>HOVAL</th>
+<td>30.450001</td>
+</tr><tr bgcolor="">
+<th>INC</th>
+<td>11.709</td>
+</tr><tr bgcolor="#E3E3F3">
+<th>CRIME</th>
+<td>33.705048</td>
+</tr><tr bgcolor="">
+<th>OPEN</th>
+<td>4.539754</td>
+</tr><tr bgcolor="#E3E3F3">
+<th>PLUMB</th>
+<td>1.785714</td>
+</tr><tr bgcolor="">
+<th>DISCBD</th>
+<td>2.45</td>
+</tr><tr bgcolor="#E3E3F3">
+<th>X</th>
+<td>43.369999</td>
+</tr><tr bgcolor="">
+<th>Y</th>
+<td>33.459999</td>
+</tr><tr bgcolor="#E3E3F3">
+<th>NSA</th>
+<td>1</td>
+</tr><tr bgcolor="">
+<th>NSB</th>
+<td>1</td>
+</tr><tr bgcolor="#E3E3F3">
+<th>EW</th>
+<td>1</td>
+</tr><tr bgcolor="">
+<th>CP</th>
+<td>1</td>
+</tr><tr bgcolor="#E3E3F3">
+<th>THOUS</th>
+<td>1000</td>
+</tr><tr bgcolor="">
+<th>NEIGNO</th>
+<td>1019</td>
+</tr></table></center>]]></description>
+<ExtendedData>
+<SchemaData schemaUrl="#kml_schema_ft_columbus">
+<SimpleData name="AREA">0.192891</SimpleData>
+<SimpleData name="PERIMETER">1.992717</SimpleData>
+<SimpleData name="COLUMBUS_">23</SimpleData>
+<SimpleData name="COLUMBUS_I">19</SimpleData>
+<SimpleData name="POLYID">22</SimpleData>
+<SimpleData name="NEIG">19</SimpleData>
+<SimpleData name="HOVAL">30.450001</SimpleData>
+<SimpleData name="INC">11.709</SimpleData>
+<SimpleData name="CRIME">33.705048</SimpleData>
+<SimpleData name="OPEN">4.539754</SimpleData>
+<SimpleData name="PLUMB">1.785714</SimpleData>
+<SimpleData name="DISCBD">2.45</SimpleData>
+<SimpleData name="X">43.369999</SimpleData>
+<SimpleData name="Y">33.459999</SimpleData>
+<SimpleData name="NSA">1</SimpleData>
+<SimpleData name="NSB">1</SimpleData>
+<SimpleData name="EW">1</SimpleData>
+<SimpleData name="CP">1</SimpleData>
+<SimpleData name="THOUS">1000</SimpleData>
+<SimpleData name="NEIGNO">1019</SimpleData>
+</SchemaData>
+</ExtendedData>
+<Polygon>
+<outerBoundaryIs>
+<LinearRing>
+<coordinates>9.38600540161133,12.5962400436401,0 9.47149753570557,12.5957098007202,0 9.55582809448242,12.5951900482178,0 9.72367477416992,12.5951995849609,0 9.76366806030273,12.6731300354004,0 10.0154399871826,12.7240495681763,0 9.93346881866455,12.5994100570679,0 9.94119358062744,12.5121297836304,0 9.93568801879883,12.5018701553345,0 9.84108352661133,12.3147401809692,0 9.65693092346191,12.2740297317505,0 9.46877574920654,12.2345504760742,0 9.39484405517578,12.2265596389771,0 9.38647270202637,12.347279548645,0 9.38573932647705,12.3616399765015,0 9.38095188140869,12.4553699493408,0 9.35797786712646,12.4623603820801,0 9.35901927947998,12.5652704238892,0 9.38600540161133,12.5962400436401,0 </coordinates>
+</LinearRing>
+</outerBoundaryIs>
+</Polygon>
+</Placemark>
+<Placemark id="kml_23">
+<name>kml_23</name>
+<snippet> </snippet>
+<description><![CDATA[<center><table><tr><th colspan='2' align='center'><em>Attributes</em></th></tr><tr bgcolor="#E3E3F3">
+<th>AREA</th>
+<td>0.24712</td>
+</tr><tr bgcolor="">
+<th>PERIMETER</th>
+<td>2.147528</td>
+</tr><tr bgcolor="#E3E3F3">
+<th>COLUMBUS_</th>
+<td>24</td>
+</tr><tr bgcolor="">
+<th>COLUMBUS_I</th>
+<td>12</td>
+</tr><tr bgcolor="#E3E3F3">
+<th>POLYID</th>
+<td>23</td>
+</tr><tr bgcolor="">
+<th>NEIG</th>
+<td>12</td>
+</tr><tr bgcolor="#E3E3F3">
+<th>HOVAL</th>
+<td>47.733002</td>
+</tr><tr bgcolor="">
+<th>INC</th>
+<td>21.155001</td>
+</tr><tr bgcolor="#E3E3F3">
+<th>CRIME</th>
+<td>20.048504</td>
+</tr><tr bgcolor="">
+<th>OPEN</th>
+<td>0.532632</td>
+</tr><tr bgcolor="#E3E3F3">
+<th>PLUMB</th>
+<td>0.216763</td>
+</tr><tr bgcolor="">
+<th>DISCBD</th>
+<td>4.78</td>
+</tr><tr bgcolor="#E3E3F3">
+<th>X</th>
+<td>49.610001</td>
+</tr><tr bgcolor="">
+<th>Y</th>
+<td>32.650002</td>
+</tr><tr bgcolor="#E3E3F3">
+<th>NSA</th>
+<td>0</td>
+</tr><tr bgcolor="">
+<th>NSB</th>
+<td>0</td>
+</tr><tr bgcolor="#E3E3F3">
+<th>EW</th>
+<td>1</td>
+</tr><tr bgcolor="">
+<th>CP</th>
+<td>0</td>
+</tr><tr bgcolor="#E3E3F3">
+<th>THOUS</th>
+<td>1000</td>
+</tr><tr bgcolor="">
+<th>NEIGNO</th>
+<td>1012</td>
+</tr></table></center>]]></description>
+<ExtendedData>
+<SchemaData schemaUrl="#kml_schema_ft_columbus">
+<SimpleData name="AREA">0.24712</SimpleData>
+<SimpleData name="PERIMETER">2.147528</SimpleData>
+<SimpleData name="COLUMBUS_">24</SimpleData>
+<SimpleData name="COLUMBUS_I">12</SimpleData>
+<SimpleData name="POLYID">23</SimpleData>
+<SimpleData name="NEIG">12</SimpleData>
+<SimpleData name="HOVAL">47.733002</SimpleData>
+<SimpleData name="INC">21.155001</SimpleData>
+<SimpleData name="CRIME">20.048504</SimpleData>
+<SimpleData name="OPEN">0.532632</SimpleData>
+<SimpleData name="PLUMB">0.216763</SimpleData>
+<SimpleData name="DISCBD">4.78</SimpleData>
+<SimpleData name="X">49.610001</SimpleData>
+<SimpleData name="Y">32.650002</SimpleData>
+<SimpleData name="NSA">0</SimpleData>
+<SimpleData name="NSB">0</SimpleData>
+<SimpleData name="EW">1</SimpleData>
+<SimpleData name="CP">0</SimpleData>
+<SimpleData name="THOUS">1000</SimpleData>
+<SimpleData name="NEIGNO">1012</SimpleData>
+</SchemaData>
+</ExtendedData>
+<Polygon>
+<outerBoundaryIs>
+<LinearRing>
+<coordinates>10.6677703857422,12.6480302810669,0 10.7766704559326,12.6520099639893,0 10.8875598907471,12.6440095901489,0 10.8884897232056,12.4921398162842,0 10.8844404220581,12.3492698669434,0 10.8843803405762,12.1934099197388,0 10.8763198852539,12.037540435791,0 10.6408996582031,12.0131196975708,0 10.4242496490479,11.9906396865845,0 10.4217500686646,12.4402599334717,0 10.6696996688843,12.4831800460815,0 10.6673402786255,12.5801095962524,0 10.6669702529907,12.5950298309326,0 10.6677703857422,12.6480302810669,0 </coordinates>
+</LinearRing>
+</outerBoundaryIs>
+</Polygon>
+</Placemark>
+<Placemark id="kml_24">
+<name>kml_24</name>
+<snippet> </snippet>
+<description><![CDATA[<center><table><tr><th colspan='2' align='center'><em>Attributes</em></th></tr><tr bgcolor="#E3E3F3">
+<th>AREA</th>
+<td>0.192226</td>
+</tr><tr bgcolor="">
+<th>PERIMETER</th>
+<td>2.240392</td>
+</tr><tr bgcolor="#E3E3F3">
+<th>COLUMBUS_</th>
+<td>25</td>
+</tr><tr bgcolor="">
+<th>COLUMBUS_I</th>
+<td>35</td>
+</tr><tr bgcolor="#E3E3F3">
+<th>POLYID</th>
+<td>24</td>
+</tr><tr bgcolor="">
+<th>NEIG</th>
+<td>35</td>
+</tr><tr bgcolor="#E3E3F3">
+<th>HOVAL</th>
+<td>53.200001</td>
+</tr><tr bgcolor="">
+<th>INC</th>
+<td>14.236</td>
+</tr><tr bgcolor="#E3E3F3">
+<th>CRIME</th>
+<td>38.297871</td>
+</tr><tr bgcolor="">
+<th>OPEN</th>
+<td>0.62622</td>
+</tr><tr bgcolor="#E3E3F3">
+<th>PLUMB</th>
+<td>18.811075</td>
+</tr><tr bgcolor="">
+<th>DISCBD</th>
+<td>0.42</td>
+</tr><tr bgcolor="#E3E3F3">
+<th>X</th>
+<td>36.599998</td>
+</tr><tr bgcolor="">
+<th>Y</th>
+<td>32.09</td>
+</tr><tr bgcolor="#E3E3F3">
+<th>NSA</th>
+<td>1</td>
+</tr><tr bgcolor="">
+<th>NSB</th>
+<td>1</td>
+</tr><tr bgcolor="#E3E3F3">
+<th>EW</th>
+<td>0</td>
+</tr><tr bgcolor="">
+<th>CP</th>
+<td>1</td>
+</tr><tr bgcolor="#E3E3F3">
+<th>THOUS</th>
+<td>1000</td>
+</tr><tr bgcolor="">
+<th>NEIGNO</th>
+<td>1035</td>
+</tr></table></center>]]></description>
+<ExtendedData>
+<SchemaData schemaUrl="#kml_schema_ft_columbus">
+<SimpleData name="AREA">0.192226</SimpleData>
+<SimpleData name="PERIMETER">2.240392</SimpleData>
+<SimpleData name="COLUMBUS_">25</SimpleData>
+<SimpleData name="COLUMBUS_I">35</SimpleData>
+<SimpleData name="POLYID">24</SimpleData>
+<SimpleData name="NEIG">35</SimpleData>
+<SimpleData name="HOVAL">53.200001</SimpleData>
+<SimpleData name="INC">14.236</SimpleData>
+<SimpleData name="CRIME">38.297871</SimpleData>
+<SimpleData name="OPEN">0.62622</SimpleData>
+<SimpleData name="PLUMB">18.811075</SimpleData>
+<SimpleData name="DISCBD">0.42</SimpleData>
+<SimpleData name="X">36.599998</SimpleData>
+<SimpleData name="Y">32.09</SimpleData>
+<SimpleData name="NSA">1</SimpleData>
+<SimpleData name="NSB">1</SimpleData>
+<SimpleData name="EW">0</SimpleData>
+<SimpleData name="CP">1</SimpleData>
+<SimpleData name="THOUS">1000</SimpleData>
+<SimpleData name="NEIGNO">1035</SimpleData>
+</SchemaData>
+</ExtendedData>
+<Polygon>
+<outerBoundaryIs>
+<LinearRing>
+<coordinates>8.14823532104492,12.6453504562378,0 8.22316265106201,12.6453399658203,0 8.2960901260376,12.6453399658203,0 8.2994441986084,12.6097803115845,0 8.30101776123047,12.593090057373,0 8.30504322052002,12.5504198074341,0 8.33201789855957,12.5474195480347,0 8.3489990234375,12.5474195480347,0 8.34797668457031,12.4934597015381,0 8.35050868988037,12.4819297790527,0 8.358473777771,12.4456596374512,0 8.36999702453613,12.4281797409058,0 8.39156913757324,12.4073801040649,0 8.4064474105835,12.3967304229736,0 8.43883895874023,12.3735599517822,0 8.4813814163208,12.3629102706909,0 8.5026388168335,12.3570804595947,0 8.52307319641113,12.3553104400635,0 8.55471515655518,12.3553304672241,0 8.56550788879395,12.3553304672241,0 8.58968734741211,12.3615503311157,0 8.60576152801514,12.3679399490356,0 8.65763282775879,12.3915100097656,0 8.69460678100586,12.4174900054932,0 8.70947742462158,12.4273099899292,0 8.70891952514648,12.3904895782471,0 8.7083158493042,12.3505001068115,0 8.70754718780518,12.3025903701782,0 8.76748561859131,12.2955799102783,0 8.75846767425537,12.230640411377,0 8.78443241119385,12.2066602706909,0 8.79039287567139,12.1257295608521,0 8.64379978179932,12.102089881897,0 8.53862380981445,12.0887899398804,0 8.51920509338379,12.1152296066284,0 8.50551414489746,12.128210067749,0 8.49503326416016,12.1377696990967,0 8.47171306610107,12.1457500457764,0 8.43419361114502,12.1392097473145,0 8.40876960754395,12.1347703933716,0 8.35886383056641,12.1459503173828,0 8.32612133026123,12.1532802581787,0 8.31022453308105,12.1569299697876,0 8.25028133392334,12.1944303512573,0 8.22532653808594,12.206859588623,0 8.19052028656006,12.2376403808594,0 8.17439746856689,12.2504301071167,0 8.157790184021,12.2812204360962,0 8.14834976196289,12.2987203598022,0 8.14180088043213,12.326470375061,0 8.13680744171143,12.3485498428345,0 8.13113975524902,12.3736000061035,0 8.13715171813965,12.4165601730347,0 8.14915943145752,12.4625101089478,0 8.16017532348633,12.5284595489502,0 8.15520095825195,12.5794095993042,0 8.14722633361816,12.6193799972534,0 8.14823532104492,12.6453504562378,0 </coordinates>
+</LinearRing>
+</outerBoundaryIs>
+</Polygon>
+</Placemark>
+<Placemark id="kml_25">
+<name>kml_25</name>
+<snippet> </snippet>
+<description><![CDATA[<center><table><tr><th colspan='2' align='center'><em>Attributes</em></th></tr><tr bgcolor="#E3E3F3">
+<th>AREA</th>
+<td>0.17168</td>
+</tr><tr bgcolor="">
+<th>PERIMETER</th>
+<td>1.666489</td>
+</tr><tr bgcolor="#E3E3F3">
+<th>COLUMBUS_</th>
+<td>26</td>
+</tr><tr bgcolor="">
+<th>COLUMBUS_I</th>
+<td>32</td>
+</tr><tr bgcolor="#E3E3F3">
+<th>POLYID</th>
+<td>25</td>
+</tr><tr bgcolor="">
+<th>NEIG</th>
+<td>32</td>
+</tr><tr bgcolor="#E3E3F3">
+<th>HOVAL</th>
+<td>17.9</td>
+</tr><tr bgcolor="">
+<th>INC</th>
+<td>8.461</td>
+</tr><tr bgcolor="#E3E3F3">
+<th>CRIME</th>
+<td>61.299175</td>
+</tr><tr bgcolor="">
+<th>OPEN</th>
+<td>0</td>
+</tr><tr bgcolor="#E3E3F3">
+<th>PLUMB</th>
+<td>6.529851</td>
+</tr><tr bgcolor="">
+<th>DISCBD</th>
+<td>0.83</td>
+</tr><tr bgcolor="#E3E3F3">
+<th>X</th>
+<td>39.360001</td>
+</tr><tr bgcolor="">
+<th>Y</th>
+<td>32.880001</td>
+</tr><tr bgcolor="#E3E3F3">
+<th>NSA</th>
+<td>1</td>
+</tr><tr bgcolor="">
+<th>NSB</th>
+<td>1</td>
+</tr><tr bgcolor="#E3E3F3">
+<th>EW</th>
+<td>1</td>
+</tr><tr bgcolor="">
+<th>CP</th>
+<td>1</td>
+</tr><tr bgcolor="#E3E3F3">
+<th>THOUS</th>
+<td>1000</td>
+</tr><tr bgcolor="">
+<th>NEIGNO</th>
+<td>1032</td>
+</tr></table></center>]]></description>
+<ExtendedData>
+<SchemaData schemaUrl="#kml_schema_ft_columbus">
+<SimpleData name="AREA">0.17168</SimpleData>
+<SimpleData name="PERIMETER">1.666489</SimpleData>
+<SimpleData name="COLUMBUS_">26</SimpleData>
+<SimpleData name="COLUMBUS_I">32</SimpleData>
+<SimpleData name="POLYID">25</SimpleData>
+<SimpleData name="NEIG">32</SimpleData>
+<SimpleData name="HOVAL">17.9</SimpleData>
+<SimpleData name="INC">8.461</SimpleData>
+<SimpleData name="CRIME">61.299175</SimpleData>
+<SimpleData name="OPEN">0</SimpleData>
+<SimpleData name="PLUMB">6.529851</SimpleData>
+<SimpleData name="DISCBD">0.83</SimpleData>
+<SimpleData name="X">39.360001</SimpleData>
+<SimpleData name="Y">32.880001</SimpleData>
+<SimpleData name="NSA">1</SimpleData>
+<SimpleData name="NSB">1</SimpleData>
+<SimpleData name="EW">1</SimpleData>
+<SimpleData name="CP">1</SimpleData>
+<SimpleData name="THOUS">1000</SimpleData>
+<SimpleData name="NEIGNO">1032</SimpleData>
+</SchemaData>
+</ExtendedData>
+<Polygon>
+<outerBoundaryIs>
+<LinearRing>
+<coordinates>8.78556632995605,12.5323696136475,0 8.85552787780762,12.6063003540039,0 8.91329669952393,12.6098003387451,0 9.12427711486816,12.6342401504517,0 9.12498188018799,12.5872602462769,0 9.12716960906982,12.4414596557617,0 9.1295223236084,12.2846298217773,0 9.13105964660645,12.1821603775024,0 9.1160945892334,12.1796503067017,0 8.95518970489502,12.1530103683472,0 8.79039287567139,12.1257295608521,0 8.78443241119385,12.2066602706909,0 8.75846767425537,12.230640411377,0 8.76748561859131,12.2955799102783,0 8.70754718780518,12.3025903701782,0 8.7083158493042,12.3505001068115,0 8.70891952514648,12.3904895782471,0 8.70947742462158,12.4273099899292,0 8.72652435302734,12.4552097320557,0 8.75838565826416,12.4968500137329,0 8.78556632995605,12.5323696136475,0 </coordinates>
+</LinearRing>
+</outerBoundaryIs>
+</Polygon>
+</Placemark>
+<Placemark id="kml_26">
+<name>kml_26</name>
+<snippet> </snippet>
+<description><![CDATA[<center><table><tr><th colspan='2' align='center'><em>Attributes</em></th></tr><tr bgcolor="#E3E3F3">
+<th>AREA</th>
+<td>0.107298</td>
+</tr><tr bgcolor="">
+<th>PERIMETER</th>
+<td>1.406823</td>
+</tr><tr bgcolor="#E3E3F3">
+<th>COLUMBUS_</th>
+<td>27</td>
+</tr><tr bgcolor="">
+<th>COLUMBUS_I</th>
+<td>20</td>
+</tr><tr bgcolor="#E3E3F3">
+<th>POLYID</th>
+<td>26</td>
+</tr><tr bgcolor="">
+<th>NEIG</th>
+<td>20</td>
+</tr><tr bgcolor="#E3E3F3">
+<th>HOVAL</th>
+<td>20.299999</td>
+</tr><tr bgcolor="">
+<th>INC</th>
+<td>8.085</td>
+</tr><tr bgcolor="#E3E3F3">
+<th>CRIME</th>
+<td>40.969742</td>
+</tr><tr bgcolor="">
+<th>OPEN</th>
+<td>1.238288</td>
+</tr><tr bgcolor="#E3E3F3">
+<th>PLUMB</th>
+<td>2.534275</td>
+</tr><tr bgcolor="">
+<th>DISCBD</th>
+<td>1.5</td>
+</tr><tr bgcolor="#E3E3F3">
+<th>X</th>
+<td>41.130001</td>
+</tr><tr bgcolor="">
+<th>Y</th>
+<td>33.139999</td>
+</tr><tr bgcolor="#E3E3F3">
+<th>NSA</th>
+<td>1</td>
+</tr><tr bgcolor="">
+<th>NSB</th>
+<td>1</td>
+</tr><tr bgcolor="#E3E3F3">
+<th>EW</th>
+<td>1</td>
+</tr><tr bgcolor="">
+<th>CP</th>
+<td>1</td>
+</tr><tr bgcolor="#E3E3F3">
+<th>THOUS</th>
+<td>1000</td>
+</tr><tr bgcolor="">
+<th>NEIGNO</th>
+<td>1020</td>
+</tr></table></center>]]></description>
+<ExtendedData>
+<SchemaData schemaUrl="#kml_schema_ft_columbus">
+<SimpleData name="AREA">0.107298</SimpleData>
+<SimpleData name="PERIMETER">1.406823</SimpleData>
+<SimpleData name="COLUMBUS_">27</SimpleData>
+<SimpleData name="COLUMBUS_I">20</SimpleData>
+<SimpleData name="POLYID">26</SimpleData>
+<SimpleData name="NEIG">20</SimpleData>
+<SimpleData name="HOVAL">20.299999</SimpleData>
+<SimpleData name="INC">8.085</SimpleData>
+<SimpleData name="CRIME">40.969742</SimpleData>
+<SimpleData name="OPEN">1.238288</SimpleData>
+<SimpleData name="PLUMB">2.534275</SimpleData>
+<SimpleData name="DISCBD">1.5</SimpleData>
+<SimpleData name="X">41.130001</SimpleData>
+<SimpleData name="Y">33.139999</SimpleData>
+<SimpleData name="NSA">1</SimpleData>
+<SimpleData name="NSB">1</SimpleData>
+<SimpleData name="EW">1</SimpleData>
+<SimpleData name="CP">1</SimpleData>
+<SimpleData name="THOUS">1000</SimpleData>
+<SimpleData name="NEIGNO">1020</SimpleData>
+</SchemaData>
+</ExtendedData>
+<Polygon>
+<outerBoundaryIs>
+<LinearRing>
+<coordinates>9.12427711486816,12.6342401504517,0 9.25804805755615,12.6306104660034,0 9.38302135467529,12.6272096633911,0 9.38600540161133,12.5962400436401,0 9.35901927947998,12.5652704238892,0 9.35797786712646,12.4623603820801,0 9.38095188140869,12.4553699493408,0 9.38573932647705,12.3616399765015,0 9.38647270202637,12.347279548645,0 9.39484405517578,12.2265596389771,0 9.25829792022705,12.2035799026489,0 9.13105964660645,12.1821603775024,0 9.1295223236084,12.2846298217773,0 9.12716960906982,12.4414596557617,0 9.12498188018799,12.5872602462769,0 9.12427711486816,12.6342401504517,0 </coordinates>
+</LinearRing>
+</outerBoundaryIs>
+</Polygon>
+</Placemark>
+<Placemark id="kml_27">
+<name>kml_27</name>
+<snippet> </snippet>
+<description><![CDATA[<center><table><tr><th colspan='2' align='center'><em>Attributes</em></th></tr><tr bgcolor="#E3E3F3">
+<th>AREA</th>
+<td>0.137802</td>
+</tr><tr bgcolor="">
+<th>PERIMETER</th>
+<td>1.780751</td>
+</tr><tr bgcolor="#E3E3F3">
+<th>COLUMBUS_</th>
+<td>28</td>
+</tr><tr bgcolor="">
+<th>COLUMBUS_I</th>
+<td>21</td>
+</tr><tr bgcolor="#E3E3F3">
+<th>POLYID</th>
+<td>27</td>
+</tr><tr bgcolor="">
+<th>NEIG</th>
+<td>21</td>
+</tr><tr bgcolor="#E3E3F3">
+<th>HOVAL</th>
+<td>34.099998</td>
+</tr><tr bgcolor="">
+<th>INC</th>
+<td>10.822</td>
+</tr><tr bgcolor="#E3E3F3">
+<th>CRIME</th>
+<td>52.79443</td>
+</tr><tr bgcolor="">
+<th>OPEN</th>
+<td>19.368099</td>
+</tr><tr bgcolor="#E3E3F3">
+<th>PLUMB</th>
+<td>1.483516</td>
+</tr><tr bgcolor="">
+<th>DISCBD</th>
+<td>2.24</td>
+</tr><tr bgcolor="#E3E3F3">
+<th>X</th>
+<td>43.950001</td>
+</tr><tr bgcolor="">
+<th>Y</th>
+<td>31.610001</td>
+</tr><tr bgcolor="#E3E3F3">
+<th>NSA</th>
+<td>0</td>
+</tr><tr bgcolor="">
+<th>NSB</th>
+<td>0</td>
+</tr><tr bgcolor="#E3E3F3">
+<th>EW</th>
+<td>1</td>
+</tr><tr bgcolor="">
+<th>CP</th>
+<td>1</td>
+</tr><tr bgcolor="#E3E3F3">
+<th>THOUS</th>
+<td>1000</td>
+</tr><tr bgcolor="">
+<th>NEIGNO</th>
+<td>1021</td>
+</tr></table></center>]]></description>
+<ExtendedData>
+<SchemaData schemaUrl="#kml_schema_ft_columbus">
+<SimpleData name="AREA">0.137802</SimpleData>
+<SimpleData name="PERIMETER">1.780751</SimpleData>
+<SimpleData name="COLUMBUS_">28</SimpleData>
+<SimpleData name="COLUMBUS_I">21</SimpleData>
+<SimpleData name="POLYID">27</SimpleData>
+<SimpleData name="NEIG">21</SimpleData>
+<SimpleData name="HOVAL">34.099998</SimpleData>
+<SimpleData name="INC">10.822</SimpleData>
+<SimpleData name="CRIME">52.79443</SimpleData>
+<SimpleData name="OPEN">19.368099</SimpleData>
+<SimpleData name="PLUMB">1.483516</SimpleData>
+<SimpleData name="DISCBD">2.24</SimpleData>
+<SimpleData name="X">43.950001</SimpleData>
+<SimpleData name="Y">31.610001</SimpleData>
+<SimpleData name="NSA">0</SimpleData>
+<SimpleData name="NSB">0</SimpleData>
+<SimpleData name="EW">1</SimpleData>
+<SimpleData name="CP">1</SimpleData>
+<SimpleData name="THOUS">1000</SimpleData>
+<SimpleData name="NEIGNO">1021</SimpleData>
+</SchemaData>
+</ExtendedData>
+<Polygon>
+<outerBoundaryIs>
+<LinearRing>
+<coordinates>9.46877574920654,12.2345504760742,0 9.65693092346191,12.2740297317505,0 9.84108352661133,12.3147401809692,0 9.96633243560791,12.3413896560669,0 10.0012302398682,12.170539855957,0 9.88435077667236,12.1915302276611,0 9.89287853240967,12.1738500595093,0 9.89995193481445,12.1636896133423,0 9.91477966308594,12.1423902511597,0 9.9562931060791,12.0827503204346,0 9.9919605255127,12.0315103530884,0 10.0071601867676,12.0096797943115,0 9.75539684295654,12.0049295425415,0 9.48066711425781,12.0027503967285,0 9.48196220397949,12.0657796859741,0 9.47841644287109,12.1618204116821,0 9.46877574920654,12.2345504760742,0 </coordinates>
+</LinearRing>
+</outerBoundaryIs>
+</Polygon>
+</Placemark>
+<Placemark id="kml_28">
+<name>kml_28</name>
+<snippet> </snippet>
+<description><![CDATA[<center><table><tr><th colspan='2' align='center'><em>Attributes</em></th></tr><tr bgcolor="#E3E3F3">
+<th>AREA</th>
+<td>0.174773</td>
+</tr><tr bgcolor="">
+<th>PERIMETER</th>
+<td>1.637148</td>
+</tr><tr bgcolor="#E3E3F3">
+<th>COLUMBUS_</th>
+<td>29</td>
+</tr><tr bgcolor="">
+<th>COLUMBUS_I</th>
+<td>31</td>
+</tr><tr bgcolor="#E3E3F3">
+<th>POLYID</th>
+<td>28</td>
+</tr><tr bgcolor="">
+<th>NEIG</th>
+<td>31</td>
+</tr><tr bgcolor="#E3E3F3">
+<th>HOVAL</th>
+<td>22.85</td>
+</tr><tr bgcolor="">
+<th>INC</th>
+<td>7.856</td>
+</tr><tr bgcolor="#E3E3F3">
+<th>CRIME</th>
+<td>56.919785</td>
+</tr><tr bgcolor="">
+<th>OPEN</th>
+<td>0.509305</td>
+</tr><tr bgcolor="#E3E3F3">
+<th>PLUMB</th>
+<td>3.001072</td>
+</tr><tr bgcolor="">
+<th>DISCBD</th>
+<td>1.41</td>
+</tr><tr bgcolor="#E3E3F3">
+<th>X</th>
+<td>41.310001</td>
+</tr><tr bgcolor="">
+<th>Y</th>
+<td>30.9</td>
+</tr><tr bgcolor="#E3E3F3">
+<th>NSA</th>
+<td>0</td>
+</tr><tr bgcolor="">
+<th>NSB</th>
+<td>0</td>
+</tr><tr bgcolor="#E3E3F3">
+<th>EW</th>
+<td>1</td>
+</tr><tr bgcolor="">
+<th>CP</th>
+<td>1</td>
+</tr><tr bgcolor="#E3E3F3">
+<th>THOUS</th>
+<td>1000</td>
+</tr><tr bgcolor="">
+<th>NEIGNO</th>
+<td>1031</td>
+</tr></table></center>]]></description>
+<ExtendedData>
+<SchemaData schemaUrl="#kml_schema_ft_columbus">
+<SimpleData name="AREA">0.174773</SimpleData>
+<SimpleData name="PERIMETER">1.637148</SimpleData>
+<SimpleData name="COLUMBUS_">29</SimpleData>
+<SimpleData name="COLUMBUS_I">31</SimpleData>
+<SimpleData name="POLYID">28</SimpleData>
+<SimpleData name="NEIG">31</SimpleData>
+<SimpleData name="HOVAL">22.85</SimpleData>
+<SimpleData name="INC">7.856</SimpleData>
+<SimpleData name="CRIME">56.919785</SimpleData>
+<SimpleData name="OPEN">0.509305</SimpleData>
+<SimpleData name="PLUMB">3.001072</SimpleData>
+<SimpleData name="DISCBD">1.41</SimpleData>
+<SimpleData name="X">41.310001</SimpleData>
+<SimpleData name="Y">30.9</SimpleData>
+<SimpleData name="NSA">0</SimpleData>
+<SimpleData name="NSB">0</SimpleData>
+<SimpleData name="EW">1</SimpleData>
+<SimpleData name="CP">1</SimpleData>
+<SimpleData name="THOUS">1000</SimpleData>
+<SimpleData name="NEIGNO">1031</SimpleData>
+</SchemaData>
+</ExtendedData>
+<Polygon>
+<outerBoundaryIs>
+<LinearRing>
+<coordinates>9.39484405517578,12.2265596389771,0 9.46877574920654,12.2345504760742,0 9.47841644287109,12.1618204116821,0 9.48196220397949,12.0657796859741,0 9.48066711425781,12.0027503967285,0 9.482346534729,11.9756898880005,0 9.48819828033447,11.8814496994019,0 9.48953533172607,11.8599195480347,0 9.49255180358887,11.7519702911377,0 9.3436918258667,11.7349996566772,0 9.20042324066162,11.7671098709106,0 9.08496761322021,11.792989730835,0 9.09006977081299,11.8739700317383,0 9.09365272521973,11.9308300018311,0 9.09808540344238,12.0257797241211,0 9.10010433197021,12.0635795593262,0 9.10362815856934,12.1284399032593,0 9.11508941650391,12.1586599349976,0 9.13105964660645,12.1821603775024,0 9.25829792022705,12.2035799026489,0 9.39484405517578,12.2265596389771,0 </coordinates>
+</LinearRing>
+</outerBoundaryIs>
+</Polygon>
+</Placemark>
+<Placemark id="kml_29">
+<name>kml_29</name>
+<snippet> </snippet>
+<description><![CDATA[<center><table><tr><th colspan='2' align='center'><em>Attributes</em></th></tr><tr bgcolor="#E3E3F3">
+<th>AREA</th>
+<td>0.085972</td>
+</tr><tr bgcolor="">
+<th>PERIMETER</th>
+<td>1.312158</td>
+</tr><tr bgcolor="#E3E3F3">
+<th>COLUMBUS_</th>
+<td>30</td>
+</tr><tr bgcolor="">
+<th>COLUMBUS_I</th>
+<td>33</td>
+</tr><tr bgcolor="#E3E3F3">
+<th>POLYID</th>
+<td>29</td>
+</tr><tr bgcolor="">
+<th>NEIG</th>
+<td>33</td>
+</tr><tr bgcolor="#E3E3F3">
+<th>HOVAL</th>
+<td>32.5</td>
+</tr><tr bgcolor="">
+<th>INC</th>
+<td>8.681</td>
+</tr><tr bgcolor="#E3E3F3">
+<th>CRIME</th>
+<td>60.750446</td>
+</tr><tr bgcolor="">
+<th>OPEN</th>
+<td>0</td>
+</tr><tr bgcolor="#E3E3F3">
+<th>PLUMB</th>
+<td>2.645051</td>
+</tr><tr bgcolor="">
+<th>DISCBD</th>
+<td>0.81</td>
+</tr><tr bgcolor="#E3E3F3">
+<th>X</th>
+<td>39.720001</td>
+</tr><tr bgcolor="">
+<th>Y</th>
+<td>30.639999</td>
+</tr><tr bgcolor="#E3E3F3">
+<th>NSA</th>
+<td>0</td>
+</tr><tr bgcolor="">
+<th>NSB</th>
+<td>0</td>
+</tr><tr bgcolor="#E3E3F3">
+<th>EW</th>
+<td>1</td>
+</tr><tr bgcolor="">
+<th>CP</th>
+<td>1</td>
+</tr><tr bgcolor="#E3E3F3">
+<th>THOUS</th>
+<td>1000</td>
+</tr><tr bgcolor="">
+<th>NEIGNO</th>
+<td>1033</td>
+</tr></table></center>]]></description>
+<ExtendedData>
+<SchemaData schemaUrl="#kml_schema_ft_columbus">
+<SimpleData name="AREA">0.085972</SimpleData>
+<SimpleData name="PERIMETER">1.312158</SimpleData>
+<SimpleData name="COLUMBUS_">30</SimpleData>
+<SimpleData name="COLUMBUS_I">33</SimpleData>
+<SimpleData name="POLYID">29</SimpleData>
+<SimpleData name="NEIG">33</SimpleData>
+<SimpleData name="HOVAL">32.5</SimpleData>
+<SimpleData name="INC">8.681</SimpleData>
+<SimpleData name="CRIME">60.750446</SimpleData>
+<SimpleData name="OPEN">0</SimpleData>
+<SimpleData name="PLUMB">2.645051</SimpleData>
+<SimpleData name="DISCBD">0.81</SimpleData>
+<SimpleData name="X">39.720001</SimpleData>
+<SimpleData name="Y">30.639999</SimpleData>
+<SimpleData name="NSA">0</SimpleData>
+<SimpleData name="NSB">0</SimpleData>
+<SimpleData name="EW">1</SimpleData>
+<SimpleData name="CP">1</SimpleData>
+<SimpleData name="THOUS">1000</SimpleData>
+<SimpleData name="NEIGNO">1033</SimpleData>
+</SchemaData>
+</ExtendedData>
+<Polygon>
+<outerBoundaryIs>
+<LinearRing>
+<coordinates>9.1160945892334,12.1796503067017,0 9.13105964660645,12.1821603775024,0 9.11508941650391,12.1586599349976,0 9.10362815856934,12.1284399032593,0 9.10010433197021,12.0635795593262,0 9.09808540344238,12.0257797241211,0 9.09365272521973,11.9308300018311,0 9.09006977081299,11.8739700317383,0 9.08496761322021,11.792989730835,0 8.89813709259033,11.8024797439575,0 8.86826992034912,12.013819694519,0 8.81133365631104,12.0308103561401,0 8.81367206573486,12.0668201446533,0 8.81535530090332,12.0927600860596,0 8.79038429260254,12.1057500839233,0 8.79039287567139,12.1257295608521,0 8.95518970489502,12.1530103683472,0 9.1160945892334,12.1796503067017,0 </coordinates>
+</LinearRing>
+</outerBoundaryIs>
+</Polygon>
+</Placemark>
+<Placemark id="kml_30">
+<name>kml_30</name>
+<snippet> </snippet>
+<description><![CDATA[<center><table><tr><th colspan='2' align='center'><em>Attributes</em></th></tr><tr bgcolor="#E3E3F3">
+<th>AREA</th>
+<td>0.104355</td>
+</tr><tr bgcolor="">
+<th>PERIMETER</th>
+<td>1.524931</td>
+</tr><tr bgcolor="#E3E3F3">
+<th>COLUMBUS_</th>
+<td>31</td>
+</tr><tr bgcolor="">
+<th>COLUMBUS_I</th>
+<td>34</td>
+</tr><tr bgcolor="#E3E3F3">
+<th>POLYID</th>
+<td>30</td>
+</tr><tr bgcolor="">
+<th>NEIG</th>
+<td>34</td>
+</tr><tr bgcolor="#E3E3F3">
+<th>HOVAL</th>
+<td>22.5</td>
+</tr><tr bgcolor="">
+<th>INC</th>
+<td>13.906</td>
+</tr><tr bgcolor="#E3E3F3">
+<th>CRIME</th>
+<td>68.892044</td>
+</tr><tr bgcolor="">
+<th>OPEN</th>
+<td>1.63878</td>
+</tr><tr bgcolor="#E3E3F3">
+<th>PLUMB</th>
+<td>15.600624</td>
+</tr><tr bgcolor="">
+<th>DISCBD</th>
+<td>0.37</td>
+</tr><tr bgcolor="#E3E3F3">
+<th>X</th>
+<td>38.290001</td>
+</tr><tr bgcolor="">
+<th>Y</th>
+<td>30.35</td>
+</tr><tr bgcolor="#E3E3F3">
+<th>NSA</th>
+<td>0</td>
+</tr><tr bgcolor="">
+<th>NSB</th>
+<td>0</td>
+</tr><tr bgcolor="#E3E3F3">
+<th>EW</th>
+<td>0</td>
+</tr><tr bgcolor="">
+<th>CP</th>
+<td>1</td>
+</tr><tr bgcolor="#E3E3F3">
+<th>THOUS</th>
+<td>1000</td>
+</tr><tr bgcolor="">
+<th>NEIGNO</th>
+<td>1034</td>
+</tr></table></center>]]></description>
+<ExtendedData>
+<SchemaData schemaUrl="#kml_schema_ft_columbus">
+<SimpleData name="AREA">0.104355</SimpleData>
+<SimpleData name="PERIMETER">1.524931</SimpleData>
+<SimpleData name="COLUMBUS_">31</SimpleData>
+<SimpleData name="COLUMBUS_I">34</SimpleData>
+<SimpleData name="POLYID">30</SimpleData>
+<SimpleData name="NEIG">34</SimpleData>
+<SimpleData name="HOVAL">22.5</SimpleData>
+<SimpleData name="INC">13.906</SimpleData>
+<SimpleData name="CRIME">68.892044</SimpleData>
+<SimpleData name="OPEN">1.63878</SimpleData>
+<SimpleData name="PLUMB">15.600624</SimpleData>
+<SimpleData name="DISCBD">0.37</SimpleData>
+<SimpleData name="X">38.290001</SimpleData>
+<SimpleData name="Y">30.35</SimpleData>
+<SimpleData name="NSA">0</SimpleData>
+<SimpleData name="NSB">0</SimpleData>
+<SimpleData name="EW">0</SimpleData>
+<SimpleData name="CP">1</SimpleData>
+<SimpleData name="THOUS">1000</SimpleData>
+<SimpleData name="NEIGNO">1034</SimpleData>
+</SchemaData>
+</ExtendedData>
+<Polygon>
+<outerBoundaryIs>
+<LinearRing>
+<coordinates>8.64379978179932,12.102089881897,0 8.79039287567139,12.1257295608521,0 8.79038429260254,12.1057500839233,0 8.81535530090332,12.0927600860596,0 8.81367206573486,12.0668201446533,0 8.81133365631104,12.0308103561401,0 8.86826992034912,12.013819694519,0 8.89813709259033,11.8024797439575,0 8.8291654586792,11.8048601150513,0 8.71333789825439,11.8100204467773,0 8.61842823028564,11.8050403594971,0 8.50853729248047,11.8090400695801,0 8.38643264770508,11.7854900360107,0 8.40429878234863,11.8004703521729,0 8.41250801086426,11.8073501586914,0 8.45599842071533,11.8476104736328,0 8.47167778015137,11.863730430603,0 8.51766014099121,11.9147100448608,0 8.52597808837891,11.9246597290039,0 8.56357288360596,12.023850440979,0 8.54446220397949,12.0735998153687,0 8.53862380981445,12.0887899398804,0 8.64379978179932,12.102089881897,0 </coordinates>
+</LinearRing>
+</outerBoundaryIs>
+</Polygon>
+</Placemark>
+<Placemark id="kml_31">
+<name>kml_31</name>
+<snippet> </snippet>
+<description><![CDATA[<center><table><tr><th colspan='2' align='center'><em>Attributes</em></th></tr><tr bgcolor="#E3E3F3">
+<th>AREA</th>
+<td>0.117409</td>
+</tr><tr bgcolor="">
+<th>PERIMETER</th>
+<td>1.716047</td>
+</tr><tr bgcolor="#E3E3F3">
+<th>COLUMBUS_</th>
+<td>32</td>
+</tr><tr bgcolor="">
+<th>COLUMBUS_I</th>
+<td>45</td>
+</tr><tr bgcolor="#E3E3F3">
+<th>POLYID</th>
+<td>31</td>
+</tr><tr bgcolor="">
+<th>NEIG</th>
+<td>45</td>
+</tr><tr bgcolor="#E3E3F3">
+<th>HOVAL</th>
+<td>31.799999</td>
+</tr><tr bgcolor="">
+<th>INC</th>
+<td>16.940001</td>
+</tr><tr bgcolor="#E3E3F3">
+<th>CRIME</th>
+<td>17.677214</td>
+</tr><tr bgcolor="">
+<th>OPEN</th>
+<td>3.936443</td>
+</tr><tr bgcolor="#E3E3F3">
+<th>PLUMB</th>
+<td>0.85389</td>
+</tr><tr bgcolor="">
+<th>DISCBD</th>
+<td>3.78</td>
+</tr><tr bgcolor="#E3E3F3">
+<th>X</th>
+<td>27.940001</td>
+</tr><tr bgcolor="">
+<th>Y</th>
+<td>29.85</td>
+</tr><tr bgcolor="#E3E3F3">
+<th>NSA</th>
+<td>1</td>
+</tr><tr bgcolor="">
+<th>NSB</th>
+<td>1</td>
+</tr><tr bgcolor="#E3E3F3">
+<th>EW</th>
+<td>0</td>
+</tr><tr bgcolor="">
+<th>CP</th>
+<td>0</td>
+</tr><tr bgcolor="#E3E3F3">
+<th>THOUS</th>
+<td>1000</td>
+</tr><tr bgcolor="">
+<th>NEIGNO</th>
+<td>1045</td>
+</tr></table></center>]]></description>
+<ExtendedData>
+<SchemaData schemaUrl="#kml_schema_ft_columbus">
+<SimpleData name="AREA">0.117409</SimpleData>
+<SimpleData name="PERIMETER">1.716047</SimpleData>
+<SimpleData name="COLUMBUS_">32</SimpleData>
+<SimpleData name="COLUMBUS_I">45</SimpleData>
+<SimpleData name="POLYID">31</SimpleData>
+<SimpleData name="NEIG">45</SimpleData>
+<SimpleData name="HOVAL">31.799999</SimpleData>
+<SimpleData name="INC">16.940001</SimpleData>
+<SimpleData name="CRIME">17.677214</SimpleData>
+<SimpleData name="OPEN">3.936443</SimpleData>
+<SimpleData name="PLUMB">0.85389</SimpleData>
+<SimpleData name="DISCBD">3.78</SimpleData>
+<SimpleData name="X">27.940001</SimpleData>
+<SimpleData name="Y">29.85</SimpleData>
+<SimpleData name="NSA">1</SimpleData>
+<SimpleData name="NSB">1</SimpleData>
+<SimpleData name="EW">0</SimpleData>
+<SimpleData name="CP">0</SimpleData>
+<SimpleData name="THOUS">1000</SimpleData>
+<SimpleData name="NEIGNO">1045</SimpleData>
+</SchemaData>
+</ExtendedData>
+<Polygon>
+<outerBoundaryIs>
+<LinearRing>
+<coordinates>6.76331377029419,11.9811201095581,0 6.94217109680176,12.0560302734375,0 7.00411415100098,12.0670099258423,0 7.07804584503174,12.0769901275635,0 7.12500095367432,12.0789804458618,0 7.18583106994629,11.8482398986816,0 7.01300621032715,11.8262195587158,0 6.74126100540161,11.799280166626,0 6.45653200149536,11.7813301086426,0 6.67437982559204,11.931170463562,0 6.76331377029419,11.9811201095581,0 </coordinates>
+</LinearRing>
+</outerBoundaryIs>
+</Polygon>
+</Placemark>
+<Placemark id="kml_32">
+<name>kml_32</name>
+<snippet> </snippet>
+<description><![CDATA[<center><table><tr><th colspan='2' align='center'><em>Attributes</em></th></tr><tr bgcolor="#E3E3F3">
+<th>AREA</th>
+<td>0.18558</td>
+</tr><tr bgcolor="">
+<th>PERIMETER</th>
+<td>2.108951</td>
+</tr><tr bgcolor="#E3E3F3">
+<th>COLUMBUS_</th>
+<td>33</td>
+</tr><tr bgcolor="">
+<th>COLUMBUS_I</th>
+<td>13</td>
+</tr><tr bgcolor="#E3E3F3">
+<th>POLYID</th>
+<td>32</td>
+</tr><tr bgcolor="">
+<th>NEIG</th>
+<td>13</td>
+</tr><tr bgcolor="#E3E3F3">
+<th>HOVAL</th>
+<td>40.299999</td>
+</tr><tr bgcolor="">
+<th>INC</th>
+<td>18.941999</td>
+</tr><tr bgcolor="#E3E3F3">
+<th>CRIME</th>
+<td>19.145592</td>
+</tr><tr bgcolor="">
+<th>OPEN</th>
+<td>2.221022</td>
+</tr><tr bgcolor="#E3E3F3">
+<th>PLUMB</th>
+<td>0.255102</td>
+</tr><tr bgcolor="">
+<th>DISCBD</th>
+<td>4.76</td>
+</tr><tr bgcolor="#E3E3F3">
+<th>X</th>
+<td>50.110001</td>
+</tr><tr bgcolor="">
+<th>Y</th>
+<td>29.91</td>
+</tr><tr bgcolor="#E3E3F3">
+<th>NSA</th>
+<td>0</td>
+</tr><tr bgcolor="">
+<th>NSB</th>
+<td>0</td>
+</tr><tr bgcolor="#E3E3F3">
+<th>EW</th>
+<td>1</td>
+</tr><tr bgcolor="">
+<th>CP</th>
+<td>0</td>
+</tr><tr bgcolor="#E3E3F3">
+<th>THOUS</th>
+<td>1000</td>
+</tr><tr bgcolor="">
+<th>NEIGNO</th>
+<td>1013</td>
+</tr></table></center>]]></description>
+<ExtendedData>
+<SchemaData schemaUrl="#kml_schema_ft_columbus">
+<SimpleData name="AREA">0.18558</SimpleData>
+<SimpleData name="PERIMETER">2.108951</SimpleData>
+<SimpleData name="COLUMBUS_">33</SimpleData>
+<SimpleData name="COLUMBUS_I">13</SimpleData>
+<SimpleData name="POLYID">32</SimpleData>
+<SimpleData name="NEIG">13</SimpleData>
+<SimpleData name="HOVAL">40.299999</SimpleData>
+<SimpleData name="INC">18.941999</SimpleData>
+<SimpleData name="CRIME">19.145592</SimpleData>
+<SimpleData name="OPEN">2.221022</SimpleData>
+<SimpleData name="PLUMB">0.255102</SimpleData>
+<SimpleData name="DISCBD">4.76</SimpleData>
+<SimpleData name="X">50.110001</SimpleData>
+<SimpleData name="Y">29.91</SimpleData>
+<SimpleData name="NSA">0</SimpleData>
+<SimpleData name="NSB">0</SimpleData>
+<SimpleData name="EW">1</SimpleData>
+<SimpleData name="CP">0</SimpleData>
+<SimpleData name="THOUS">1000</SimpleData>
+<SimpleData name="NEIGNO">1013</SimpleData>
+</SchemaData>
+</ExtendedData>
+<Polygon>
+<outerBoundaryIs>
+<LinearRing>
+<coordinates>10.4242496490479,11.9906396865845,0 10.6408996582031,12.0131196975708,0 10.8763198852539,12.037540435791,0 10.886269569397,11.9466199874878,0 10.9152402877808,11.9416198730469,0 10.9322204589844,11.9386196136475,0 10.9631900787354,11.9406204223633,0 10.9831695556641,11.936619758606,0 10.9951601028442,11.9376201629639,0 11.0450801849365,11.8536796569824,0 11.1129703521729,11.7617597579956,0 11.2048301696777,11.6388502120972,0 11.1269102096558,11.6338701248169,0 11.0739698410034,11.6578502655029,0 10.9740695953369,11.6618604660034,0 10.9521198272705,11.7278099060059,0 10.8782196044922,11.7232599258423,0 10.8062601089478,11.7188301086426,0 10.7833595275879,11.7195501327515,0 10.766209602356,11.7200803756714,0 10.6773796081543,11.7228498458862,0 10.6563997268677,11.7228498458862,0 10.6134595870972,11.7232999801636,0 10.5605001449585,11.7238597869873,0 10.531530380249,11.7438497543335,0 10.4256401062012,11.7418603897095,0 10.4242496490479,11.9906396865845,0 </coordinates>
+</LinearRing>
+</outerBoundaryIs>
+</Polygon>
+</Placemark>
+<Placemark id="kml_33">
+<name>kml_33</name>
+<snippet> </snippet>
+<description><![CDATA[<center><table><tr><th colspan='2' align='center'><em>Attributes</em></th></tr><tr bgcolor="#E3E3F3">
+<th>AREA</th>
+<td>0.087472</td>
+</tr><tr bgcolor="">
+<th>PERIMETER</th>
+<td>1.507971</td>
+</tr><tr bgcolor="#E3E3F3">
+<th>COLUMBUS_</th>
+<td>34</td>
+</tr><tr bgcolor="">
+<th>COLUMBUS_I</th>
+<td>22</td>
+</tr><tr bgcolor="#E3E3F3">
+<th>POLYID</th>
+<td>33</td>
+</tr><tr bgcolor="">
+<th>NEIG</th>
+<td>22</td>
+</tr><tr bgcolor="#E3E3F3">
+<th>HOVAL</th>
+<td>23.6</td>
+</tr><tr bgcolor="">
+<th>INC</th>
+<td>9.918</td>
+</tr><tr bgcolor="#E3E3F3">
+<th>CRIME</th>
+<td>41.968163</td>
+</tr><tr bgcolor="">
+<th>OPEN</th>
+<td>0</td>
+</tr><tr bgcolor="#E3E3F3">
+<th>PLUMB</th>
+<td>1.023891</td>
+</tr><tr bgcolor="">
+<th>DISCBD</th>
+<td>2.28</td>
+</tr><tr bgcolor="#E3E3F3">
+<th>X</th>
+<td>44.099998</td>
+</tr><tr bgcolor="">
+<th>Y</th>
+<td>30.4</td>
+</tr><tr bgcolor="#E3E3F3">
+<th>NSA</th>
+<td>0</td>
+</tr><tr bgcolor="">
+<th>NSB</th>
+<td>0</td>
+</tr><tr bgcolor="#E3E3F3">
+<th>EW</th>
+<td>1</td>
+</tr><tr bgcolor="">
+<th>CP</th>
+<td>1</td>
+</tr><tr bgcolor="#E3E3F3">
+<th>THOUS</th>
+<td>1000</td>
+</tr><tr bgcolor="">
+<th>NEIGNO</th>
+<td>1022</td>
+</tr></table></center>]]></description>
+<ExtendedData>
+<SchemaData schemaUrl="#kml_schema_ft_columbus">
+<SimpleData name="AREA">0.087472</SimpleData>
+<SimpleData name="PERIMETER">1.507971</SimpleData>
+<SimpleData name="COLUMBUS_">34</SimpleData>
+<SimpleData name="COLUMBUS_I">22</SimpleData>
+<SimpleData name="POLYID">33</SimpleData>
+<SimpleData name="NEIG">22</SimpleData>
+<SimpleData name="HOVAL">23.6</SimpleData>
+<SimpleData name="INC">9.918</SimpleData>
+<SimpleData name="CRIME">41.968163</SimpleData>
+<SimpleData name="OPEN">0</SimpleData>
+<SimpleData name="PLUMB">1.023891</SimpleData>
+<SimpleData name="DISCBD">2.28</SimpleData>
+<SimpleData name="X">44.099998</SimpleData>
+<SimpleData name="Y">30.4</SimpleData>
+<SimpleData name="NSA">0</SimpleData>
+<SimpleData name="NSB">0</SimpleData>
+<SimpleData name="EW">1</SimpleData>
+<SimpleData name="CP">1</SimpleData>
+<SimpleData name="THOUS">1000</SimpleData>
+<SimpleData name="NEIGNO">1022</SimpleData>
+</SchemaData>
+</ExtendedData>
+<Polygon>
+<outerBoundaryIs>
+<LinearRing>
+<coordinates>9.48066711425781,12.0027503967285,0 9.75539684295654,12.0049295425415,0 10.0071601867676,12.0096797943115,0 10.0242204666138,11.9623098373413,0 10.0420799255371,11.9127597808838,0 10.0489101409912,11.8587999343872,0 10.0492897033691,11.8228302001953,0 10.049750328064,11.7789602279663,0 10.0499095916748,11.7629499435425,0 10.0264797210693,11.7876996994019,0 9.98611545562744,11.8028602600098,0 9.97339344024658,11.8090600967407,0 9.9251594543457,11.8238496780396,0 9.87709140777588,11.8441801071167,0 9.85921192169189,11.8517398834229,0 9.83177089691162,11.8588199615479,0 9.80029964447021,11.8668298721313,0 9.6394681930542,11.8632497787476,0 9.48953533172607,11.8599195480347,0 9.48819828033447,11.8814496994019,0 9.482346534729,11.9756898880005,0 9.48066711425781,12.0027503967285,0 </coordinates>
+</LinearRing>
+</outerBoundaryIs>
+</Polygon>
+</Placemark>
+<Placemark id="kml_34">
+<name>kml_34</name>
+<snippet> </snippet>
+<description><![CDATA[<center><table><tr><th colspan='2' align='center'><em>Attributes</em></th></tr><tr bgcolor="#E3E3F3">
+<th>AREA</th>
+<td>0.226594</td>
+</tr><tr bgcolor="">
+<th>PERIMETER</th>
+<td>2.519132</td>
+</tr><tr bgcolor="#E3E3F3">
+<th>COLUMBUS_</th>
+<td>35</td>
+</tr><tr bgcolor="">
+<th>COLUMBUS_I</th>
+<td>44</td>
+</tr><tr bgcolor="#E3E3F3">
+<th>POLYID</th>
+<td>34</td>
+</tr><tr bgcolor="">
+<th>NEIG</th>
+<td>44</td>
+</tr><tr bgcolor="#E3E3F3">
+<th>HOVAL</th>
+<td>28.450001</td>
+</tr><tr bgcolor="">
+<th>INC</th>
+<td>14.948</td>
+</tr><tr bgcolor="#E3E3F3">
+<th>CRIME</th>
+<td>23.974028</td>
+</tr><tr bgcolor="">
+<th>OPEN</th>
+<td>3.029087</td>
+</tr><tr bgcolor="#E3E3F3">
+<th>PLUMB</th>
+<td>0.386803</td>
+</tr><tr bgcolor="">
+<th>DISCBD</th>
+<td>3.06</td>
+</tr><tr bgcolor="#E3E3F3">
+<th>X</th>
+<td>30.32</td>
+</tr><tr bgcolor="">
+<th>Y</th>
+<td>28.26</td>
+</tr><tr bgcolor="#E3E3F3">
+<th>NSA</th>
+<td>0</td>
+</tr><tr bgcolor="">
+<th>NSB</th>
+<td>0</td>
+</tr><tr bgcolor="#E3E3F3">
+<th>EW</th>
+<td>0</td>
+</tr><tr bgcolor="">
+<th>CP</th>
+<td>0</td>
+</tr><tr bgcolor="#E3E3F3">
+<th>THOUS</th>
+<td>1000</td>
+</tr><tr bgcolor="">
+<th>NEIGNO</th>
+<td>1044</td>
+</tr></table></center>]]></description>
+<ExtendedData>
+<SchemaData schemaUrl="#kml_schema_ft_columbus">
+<SimpleData name="AREA">0.226594</SimpleData>
+<SimpleData name="PERIMETER">2.519132</SimpleData>
+<SimpleData name="COLUMBUS_">35</SimpleData>
+<SimpleData name="COLUMBUS_I">44</SimpleData>
+<SimpleData name="POLYID">34</SimpleData>
+<SimpleData name="NEIG">44</SimpleData>
+<SimpleData name="HOVAL">28.450001</SimpleData>
+<SimpleData name="INC">14.948</SimpleData>
+<SimpleData name="CRIME">23.974028</SimpleData>
+<SimpleData name="OPEN">3.029087</SimpleData>
+<SimpleData name="PLUMB">0.386803</SimpleData>
+<SimpleData name="DISCBD">3.06</SimpleData>
+<SimpleData name="X">30.32</SimpleData>
+<SimpleData name="Y">28.26</SimpleData>
+<SimpleData name="NSA">0</SimpleData>
+<SimpleData name="NSB">0</SimpleData>
+<SimpleData name="EW">0</SimpleData>
+<SimpleData name="CP">0</SimpleData>
+<SimpleData name="THOUS">1000</SimpleData>
+<SimpleData name="NEIGNO">1044</SimpleData>
+</SchemaData>
+</ExtendedData>
+<Polygon>
+<outerBoundaryIs>
+<LinearRing>
+<coordinates>7.18583106994629,11.8482398986816,0 7.31772089004517,11.8561496734619,0 7.50854110717773,11.8721199035645,0 7.48454999923706,11.8381500244141,0 7.4635591506958,11.8091802597046,0 7.46953201293945,11.7572202682495,0 7.49349594116211,11.7282495498657,0 7.4924521446228,11.6193399429321,0 7.6882791519165,11.6632795333862,0 7.73317909240723,11.5273895263672,0 7.71018314361572,11.482439994812,0 7.67420291900635,11.4464702606201,0 7.62424182891846,11.4215002059937,0 7.56228923797607,11.3885402679443,0 7.46836376190186,11.3495798110962,0 7.39837408065796,11.3299503326416,0 7.37550497055054,11.471489906311,0 7.31561183929443,11.586389541626,0 7.12381076812744,11.5307903289795,0 6.9848952293396,11.4905195236206,0 6.97188520431519,11.6335697174072,0 6.96699380874634,11.6873502731323,0 7.01994609832764,11.6953401565552,0 7.01300621032715,11.8262195587158,0 7.18583106994629,11.8482398986816,0 </coordinates>
+</LinearRing>
+</outerBoundaryIs>
+</Polygon>
+</Placemark>
+<Placemark id="kml_35">
+<name>kml_35</name>
+<snippet> </snippet>
+<description><![CDATA[<center><table><tr><th colspan='2' align='center'><em>Attributes</em></th></tr><tr bgcolor="#E3E3F3">
+<th>AREA</th>
+<td>0.175453</td>
+</tr><tr bgcolor="">
+<th>PERIMETER</th>
+<td>1.974937</td>
+</tr><tr bgcolor="#E3E3F3">
+<th>COLUMBUS_</th>
+<td>36</td>
+</tr><tr bgcolor="">
+<th>COLUMBUS_I</th>
+<td>23</td>
+</tr><tr bgcolor="#E3E3F3">
+<th>POLYID</th>
+<td>35</td>
+</tr><tr bgcolor="">
+<th>NEIG</th>
+<td>23</td>
+</tr><tr bgcolor="#E3E3F3">
+<th>HOVAL</th>
+<td>27</td>
+</tr><tr bgcolor="">
+<th>INC</th>
+<td>12.814</td>
+</tr><tr bgcolor="#E3E3F3">
+<th>CRIME</th>
+<td>39.175053</td>
+</tr><tr bgcolor="">
+<th>OPEN</th>
+<td>4.220401</td>
+</tr><tr bgcolor="#E3E3F3">
+<th>PLUMB</th>
+<td>0.633675</td>
+</tr><tr bgcolor="">
+<th>DISCBD</th>
+<td>2.37</td>
+</tr><tr bgcolor="#E3E3F3">
+<th>X</th>
+<td>43.700001</td>
+</tr><tr bgcolor="">
+<th>Y</th>
+<td>29.18</td>
+</tr><tr bgcolor="#E3E3F3">
+<th>NSA</th>
+<td>0</td>
+</tr><tr bgcolor="">
+<th>NSB</th>
+<td>0</td>
+</tr><tr bgcolor="#E3E3F3">
+<th>EW</th>
+<td>1</td>
+</tr><tr bgcolor="">
+<th>CP</th>
+<td>1</td>
+</tr><tr bgcolor="#E3E3F3">
+<th>THOUS</th>
+<td>1000</td>
+</tr><tr bgcolor="">
+<th>NEIGNO</th>
+<td>1023</td>
+</tr></table></center>]]></description>
+<ExtendedData>
+<SchemaData schemaUrl="#kml_schema_ft_columbus">
+<SimpleData name="AREA">0.175453</SimpleData>
+<SimpleData name="PERIMETER">1.974937</SimpleData>
+<SimpleData name="COLUMBUS_">36</SimpleData>
+<SimpleData name="COLUMBUS_I">23</SimpleData>
+<SimpleData name="POLYID">35</SimpleData>
+<SimpleData name="NEIG">23</SimpleData>
+<SimpleData name="HOVAL">27</SimpleData>
+<SimpleData name="INC">12.814</SimpleData>
+<SimpleData name="CRIME">39.175053</SimpleData>
+<SimpleData name="OPEN">4.220401</SimpleData>
+<SimpleData name="PLUMB">0.633675</SimpleData>
+<SimpleData name="DISCBD">2.37</SimpleData>
+<SimpleData name="X">43.700001</SimpleData>
+<SimpleData name="Y">29.18</SimpleData>
+<SimpleData name="NSA">0</SimpleData>
+<SimpleData name="NSB">0</SimpleData>
+<SimpleData name="EW">1</SimpleData>
+<SimpleData name="CP">1</SimpleData>
+<SimpleData name="THOUS">1000</SimpleData>
+<SimpleData name="NEIGNO">1023</SimpleData>
+</SchemaData>
+</ExtendedData>
+<Polygon>
+<outerBoundaryIs>
+<LinearRing>
+<coordinates>9.48953533172607,11.8599195480347,0 9.6394681930542,11.8632497787476,0 9.80029964447021,11.8668298721313,0 9.83177089691162,11.8588199615479,0 9.85921192169189,11.8517398834229,0 9.87709140777588,11.8441801071167,0 9.9251594543457,11.8238496780396,0 9.97339344024658,11.8090600967407,0 9.98611545562744,11.8028602600098,0 10.0264797210693,11.7876996994019,0 10.0499095916748,11.7629499435425,0 10.0565900802612,11.7439098358154,0 9.9171314239502,11.7379302978516,0 9.91804599761963,11.5311098098755,0 9.50050640106201,11.5420198440552,0 9.34161472320557,11.5461702346802,0 9.3436918258667,11.7349996566772,0 9.49255180358887,11.7519702911377,0 9.48953533172607,11.8599195480347,0 </coordinates>
+</LinearRing>
+</outerBoundaryIs>
+</Polygon>
+</Placemark>
+<Placemark id="kml_36">
+<name>kml_36</name>
+<snippet> </snippet>
+<description><![CDATA[<center><table><tr><th colspan='2' align='center'><em>Attributes</em></th></tr><tr bgcolor="#E3E3F3">
+<th>AREA</th>
+<td>0.17813</td>
+</tr><tr bgcolor="">
+<th>PERIMETER</th>
+<td>1.790058</td>
+</tr><tr bgcolor="#E3E3F3">
+<th>COLUMBUS_</th>
+<td>37</td>
+</tr><tr bgcolor="">
+<th>COLUMBUS_I</th>
+<td>46</td>
+</tr><tr bgcolor="#E3E3F3">
+<th>POLYID</th>
+<td>36</td>
+</tr><tr bgcolor="">
+<th>NEIG</th>
+<td>46</td>
+</tr><tr bgcolor="#E3E3F3">
+<th>HOVAL</th>
+<td>36.299999</td>
+</tr><tr bgcolor="">
+<th>INC</th>
+<td>18.739</td>
+</tr><tr bgcolor="#E3E3F3">
+<th>CRIME</th>
+<td>14.305556</td>
+</tr><tr bgcolor="">
+<th>OPEN</th>
+<td>6.773331</td>
+</tr><tr bgcolor="#E3E3F3">
+<th>PLUMB</th>
+<td>0.332349</td>
+</tr><tr bgcolor="">
+<th>DISCBD</th>
+<td>4.23</td>
+</tr><tr bgcolor="#E3E3F3">
+<th>X</th>
+<td>27.27</td>
+</tr><tr bgcolor="">
+<th>Y</th>
+<td>28.209999</td>
+</tr><tr bgcolor="#E3E3F3">
+<th>NSA</th>
+<td>0</td>
+</tr><tr bgcolor="">
+<th>NSB</th>
+<td>0</td>
+</tr><tr bgcolor="#E3E3F3">
+<th>EW</th>
+<td>0</td>
+</tr><tr bgcolor="">
+<th>CP</th>
+<td>0</td>
+</tr><tr bgcolor="#E3E3F3">
+<th>THOUS</th>
+<td>1000</td>
+</tr><tr bgcolor="">
+<th>NEIGNO</th>
+<td>1046</td>
+</tr></table></center>]]></description>
+<ExtendedData>
+<SchemaData schemaUrl="#kml_schema_ft_columbus">
+<SimpleData name="AREA">0.17813</SimpleData>
+<SimpleData name="PERIMETER">1.790058</SimpleData>
+<SimpleData name="COLUMBUS_">37</SimpleData>
+<SimpleData name="COLUMBUS_I">46</SimpleData>
+<SimpleData name="POLYID">36</SimpleData>
+<SimpleData name="NEIG">46</SimpleData>
+<SimpleData name="HOVAL">36.299999</SimpleData>
+<SimpleData name="INC">18.739</SimpleData>
+<SimpleData name="CRIME">14.305556</SimpleData>
+<SimpleData name="OPEN">6.773331</SimpleData>
+<SimpleData name="PLUMB">0.332349</SimpleData>
+<SimpleData name="DISCBD">4.23</SimpleData>
+<SimpleData name="X">27.27</SimpleData>
+<SimpleData name="Y">28.209999</SimpleData>
+<SimpleData name="NSA">0</SimpleData>
+<SimpleData name="NSB">0</SimpleData>
+<SimpleData name="EW">0</SimpleData>
+<SimpleData name="CP">0</SimpleData>
+<SimpleData name="THOUS">1000</SimpleData>
+<SimpleData name="NEIGNO">1046</SimpleData>
+</SchemaData>
+</ExtendedData>
+<Polygon>
+<outerBoundaryIs>
+<LinearRing>
+<coordinates>6.74126100540161,11.799280166626,0 7.01300621032715,11.8262195587158,0 7.01994609832764,11.6953401565552,0 6.96699380874634,11.6873502731323,0 6.97188520431519,11.6335697174072,0 6.9848952293396,11.4905195236206,0 6.8914008140564,11.4794101715088,0 6.77780818939209,11.4659099578857,0 6.75833415985107,11.462329864502,0 6.67817687988281,11.4476003646851,0 6.61027717590332,11.4447803497314,0 6.5583119392395,11.4421997070312,0 6.48136615753174,11.4396295547485,0 6.45653200149536,11.7813301086426,0 6.74126100540161,11.799280166626,0 </coordinates>
+</LinearRing>
+</outerBoundaryIs>
+</Polygon>
+</Placemark>
+<Placemark id="kml_37">
+<name>kml_37</name>
+<snippet> </snippet>
+<description><![CDATA[<center><table><tr><th colspan='2' align='center'><em>Attributes</em></th></tr><tr bgcolor="#E3E3F3">
+<th>AREA</th>
+<td>0.121154</td>
+</tr><tr bgcolor="">
+<th>PERIMETER</th>
+<td>1.402252</td>
+</tr><tr bgcolor="#E3E3F3">
+<th>COLUMBUS_</th>
+<td>38</td>
+</tr><tr bgcolor="">
+<th>COLUMBUS_I</th>
+<td>30</td>
+</tr><tr bgcolor="#E3E3F3">
+<th>POLYID</th>
+<td>37</td>
+</tr><tr bgcolor="">
+<th>NEIG</th>
+<td>30</td>
+</tr><tr bgcolor="#E3E3F3">
+<th>HOVAL</th>
+<td>43.299999</td>
+</tr><tr bgcolor="">
+<th>INC</th>
+<td>17.017</td>
+</tr><tr bgcolor="#E3E3F3">
+<th>CRIME</th>
+<td>42.445076</td>
+</tr><tr bgcolor="">
+<th>OPEN</th>
+<td>4.839273</td>
+</tr><tr bgcolor="#E3E3F3">
+<th>PLUMB</th>
+<td>1.230329</td>
+</tr><tr bgcolor="">
+<th>DISCBD</th>
+<td>1.08</td>
+</tr><tr bgcolor="#E3E3F3">
+<th>X</th>
+<td>38.32</td>
+</tr><tr bgcolor="">
+<th>Y</th>
+<td>28.82</td>
+</tr><tr bgcolor="#E3E3F3">
+<th>NSA</th>
+<td>0</td>
+</tr><tr bgcolor="">
+<th>NSB</th>
+<td>0</td>
+</tr><tr bgcolor="#E3E3F3">
+<th>EW</th>
+<td>1</td>
+</tr><tr bgcolor="">
+<th>CP</th>
+<td>1</td>
+</tr><tr bgcolor="#E3E3F3">
+<th>THOUS</th>
+<td>1000</td>
+</tr><tr bgcolor="">
+<th>NEIGNO</th>
+<td>1030</td>
+</tr></table></center>]]></description>
+<ExtendedData>
+<SchemaData schemaUrl="#kml_schema_ft_columbus">
+<SimpleData name="AREA">0.121154</SimpleData>
+<SimpleData name="PERIMETER">1.402252</SimpleData>
+<SimpleData name="COLUMBUS_">38</SimpleData>
+<SimpleData name="COLUMBUS_I">30</SimpleData>
+<SimpleData name="POLYID">37</SimpleData>
+<SimpleData name="NEIG">30</SimpleData>
+<SimpleData name="HOVAL">43.299999</SimpleData>
+<SimpleData name="INC">17.017</SimpleData>
+<SimpleData name="CRIME">42.445076</SimpleData>
+<SimpleData name="OPEN">4.839273</SimpleData>
+<SimpleData name="PLUMB">1.230329</SimpleData>
+<SimpleData name="DISCBD">1.08</SimpleData>
+<SimpleData name="X">38.32</SimpleData>
+<SimpleData name="Y">28.82</SimpleData>
+<SimpleData name="NSA">0</SimpleData>
+<SimpleData name="NSB">0</SimpleData>
+<SimpleData name="EW">1</SimpleData>
+<SimpleData name="CP">1</SimpleData>
+<SimpleData name="THOUS">1000</SimpleData>
+<SimpleData name="NEIGNO">1030</SimpleData>
+</SchemaData>
+</ExtendedData>
+<Polygon>
+<outerBoundaryIs>
+<LinearRing>
+<coordinates>8.71333789825439,11.8100204467773,0 8.8291654586792,11.8048601150513,0 8.89813709259033,11.8024797439575,0 9.08496761322021,11.792989730835,0 9.08584308624268,11.6390800476074,0 9.09585952758789,11.5591897964478,0 9.08283615112305,11.4563302993774,0 9.00083446502686,11.4580202102661,0 8.93597602844238,11.4603004455566,0 8.92297744750977,11.4343204498291,0 8.77213191986084,11.4503297805786,0 8.71333789825439,11.8100204467773,0 </coordinates>
+</LinearRing>
+</outerBoundaryIs>
+</Polygon>
+</Placemark>
+<Placemark id="kml_38">
+<name>kml_38</name>
+<snippet> </snippet>
+<description><![CDATA[<center><table><tr><th colspan='2' align='center'><em>Attributes</em></th></tr><tr bgcolor="#E3E3F3">
+<th>AREA</th>
+<td>0.053881</td>
+</tr><tr bgcolor="">
+<th>PERIMETER</th>
+<td>0.934509</td>
+</tr><tr bgcolor="#E3E3F3">
+<th>COLUMBUS_</th>
+<td>39</td>
+</tr><tr bgcolor="">
+<th>COLUMBUS_I</th>
+<td>24</td>
+</tr><tr bgcolor="#E3E3F3">
+<th>POLYID</th>
+<td>38</td>
+</tr><tr bgcolor="">
+<th>NEIG</th>
+<td>24</td>
+</tr><tr bgcolor="#E3E3F3">
+<th>HOVAL</th>
+<td>22.700001</td>
+</tr><tr bgcolor="">
+<th>INC</th>
+<td>11.107</td>
+</tr><tr bgcolor="#E3E3F3">
+<th>CRIME</th>
+<td>53.710938</td>
+</tr><tr bgcolor="">
+<th>OPEN</th>
+<td>0</td>
+</tr><tr bgcolor="#E3E3F3">
+<th>PLUMB</th>
+<td>0.8</td>
+</tr><tr bgcolor="">
+<th>DISCBD</th>
+<td>1.58</td>
+</tr><tr bgcolor="#E3E3F3">
+<th>X</th>
+<td>41.040001</td>
+</tr><tr bgcolor="">
+<th>Y</th>
+<td>28.780001</td>
+</tr><tr bgcolor="#E3E3F3">
+<th>NSA</th>
+<td>0</td>
+</tr><tr bgcolor="">
+<th>NSB</th>
+<td>0</td>
+</tr><tr bgcolor="#E3E3F3">
+<th>EW</th>
+<td>1</td>
+</tr><tr bgcolor="">
+<th>CP</th>
+<td>1</td>
+</tr><tr bgcolor="#E3E3F3">
+<th>THOUS</th>
+<td>1000</td>
+</tr><tr bgcolor="">
+<th>NEIGNO</th>
+<td>1024</td>
+</tr></table></center>]]></description>
+<ExtendedData>
+<SchemaData schemaUrl="#kml_schema_ft_columbus">
+<SimpleData name="AREA">0.053881</SimpleData>
+<SimpleData name="PERIMETER">0.934509</SimpleData>
+<SimpleData name="COLUMBUS_">39</SimpleData>
+<SimpleData name="COLUMBUS_I">24</SimpleData>
+<SimpleData name="POLYID">38</SimpleData>
+<SimpleData name="NEIG">24</SimpleData>
+<SimpleData name="HOVAL">22.700001</SimpleData>
+<SimpleData name="INC">11.107</SimpleData>
+<SimpleData name="CRIME">53.710938</SimpleData>
+<SimpleData name="OPEN">0</SimpleData>
+<SimpleData name="PLUMB">0.8</SimpleData>
+<SimpleData name="DISCBD">1.58</SimpleData>
+<SimpleData name="X">41.040001</SimpleData>
+<SimpleData name="Y">28.780001</SimpleData>
+<SimpleData name="NSA">0</SimpleData>
+<SimpleData name="NSB">0</SimpleData>
+<SimpleData name="EW">1</SimpleData>
+<SimpleData name="CP">1</SimpleData>
+<SimpleData name="THOUS">1000</SimpleData>
+<SimpleData name="NEIGNO">1024</SimpleData>
+</SchemaData>
+</ExtendedData>
+<Polygon>
+<outerBoundaryIs>
+<LinearRing>
+<coordinates>9.08496761322021,11.792989730835,0 9.20042324066162,11.7671098709106,0 9.3436918258667,11.7349996566772,0 9.34161472320557,11.5461702346802,0 9.20775318145752,11.5532598495483,0 9.09585952758789,11.5591897964478,0 9.08584308624268,11.6390800476074,0 9.08496761322021,11.792989730835,0 </coordinates>
+</LinearRing>
+</outerBoundaryIs>
+</Polygon>
+</Placemark>
+<Placemark id="kml_39">
+<name>kml_39</name>
+<snippet> </snippet>
+<description><![CDATA[<center><table><tr><th colspan='2' align='center'><em>Attributes</em></th></tr><tr bgcolor="#E3E3F3">
+<th>AREA</th>
+<td>0.174823</td>
+</tr><tr bgcolor="">
+<th>PERIMETER</th>
+<td>2.335402</td>
+</tr><tr bgcolor="#E3E3F3">
+<th>COLUMBUS_</th>
+<td>40</td>
+</tr><tr bgcolor="">
+<th>COLUMBUS_I</th>
+<td>47</td>
+</tr><tr bgcolor="#E3E3F3">
+<th>POLYID</th>
+<td>39</td>
+</tr><tr bgcolor="">
+<th>NEIG</th>
+<td>47</td>
+</tr><tr bgcolor="#E3E3F3">
+<th>HOVAL</th>
+<td>39.599998</td>
+</tr><tr bgcolor="">
+<th>INC</th>
+<td>18.476999</td>
+</tr><tr bgcolor="#E3E3F3">
+<th>CRIME</th>
+<td>19.100863</td>
+</tr><tr bgcolor="">
+<th>OPEN</th>
+<td>0</td>
+</tr><tr bgcolor="#E3E3F3">
+<th>PLUMB</th>
+<td>0.314663</td>
+</tr><tr bgcolor="">
+<th>DISCBD</th>
+<td>5.53</td>
+</tr><tr bgcolor="#E3E3F3">
+<th>X</th>
+<td>24.25</td>
+</tr><tr bgcolor="">
+<th>Y</th>
+<td>26.690001</td>
+</tr><tr bgcolor="#E3E3F3">
+<th>NSA</th>
+<td>0</td>
+</tr><tr bgcolor="">
+<th>NSB</th>
+<td>0</td>
+</tr><tr bgcolor="#E3E3F3">
+<th>EW</th>
+<td>0</td>
+</tr><tr bgcolor="">
+<th>CP</th>
+<td>0</td>
+</tr><tr bgcolor="#E3E3F3">
+<th>THOUS</th>
+<td>1000</td>
+</tr><tr bgcolor="">
+<th>NEIGNO</th>
+<td>1047</td>
+</tr></table></center>]]></description>
+<ExtendedData>
+<SchemaData schemaUrl="#kml_schema_ft_columbus">
+<SimpleData name="AREA">0.174823</SimpleData>
+<SimpleData name="PERIMETER">2.335402</SimpleData>
+<SimpleData name="COLUMBUS_">40</SimpleData>
+<SimpleData name="COLUMBUS_I">47</SimpleData>
+<SimpleData name="POLYID">39</SimpleData>
+<SimpleData name="NEIG">47</SimpleData>
+<SimpleData name="HOVAL">39.599998</SimpleData>
+<SimpleData name="INC">18.476999</SimpleData>
+<SimpleData name="CRIME">19.100863</SimpleData>
+<SimpleData name="OPEN">0</SimpleData>
+<SimpleData name="PLUMB">0.314663</SimpleData>
+<SimpleData name="DISCBD">5.53</SimpleData>
+<SimpleData name="X">24.25</SimpleData>
+<SimpleData name="Y">26.690001</SimpleData>
+<SimpleData name="NSA">0</SimpleData>
+<SimpleData name="NSB">0</SimpleData>
+<SimpleData name="EW">0</SimpleData>
+<SimpleData name="CP">0</SimpleData>
+<SimpleData name="THOUS">1000</SimpleData>
+<SimpleData name="NEIGNO">1047</SimpleData>
+</SchemaData>
+</ExtendedData>
+<Polygon>
+<outerBoundaryIs>
+<LinearRing>
+<coordinates>6.18170595169067,11.5535697937012,0 6.39456176757812,11.7103996276855,0 6.45653200149536,11.7813301086426,0 6.48136615753174,11.4396295547485,0 6.33650016784668,11.4206600189209,0 6.33586502075195,11.3956804275513,0 6.33548402786255,11.3807001113892,0 6.3564510345459,11.3497200012207,0 6.35941600799561,11.2737903594971,0 6.31644201278687,11.2328300476074,0 6.16758584976196,11.2308502197266,0 6.17929315567017,11.1815900802612,0 6.18061113357544,11.1677198410034,0 6.21247577667236,11.1221199035645,0 6.22047996520996,11.0999603271484,0 6.22046279907227,11.0570001602173,0 6.08860921859741,11.0979795455933,0 6.088623046875,11.1329498291016,0 6.08463287353516,11.1489400863647,0 6.08563804626465,11.1609201431274,0 6.03570413589478,11.2028903961182,0 5.98475408554077,11.2039003372192,0 5.94880390167236,11.2398700714111,0 5.96979284286499,11.2638502120972,0 5.97081518173218,11.3177995681763,0 5.87490701675415,11.3138198852539,0 6.18170595169067,11.5535697937012,0 </coordinates>
+</LinearRing>
+</outerBoundaryIs>
+</Polygon>
+</Placemark>
+<Placemark id="kml_40">
+<name>kml_40</name>
+<snippet> </snippet>
+<description><![CDATA[<center><table><tr><th colspan='2' align='center'><em>Attributes</em></th></tr><tr bgcolor="#E3E3F3">
+<th>AREA</th>
+<td>0.302908</td>
+</tr><tr bgcolor="">
+<th>PERIMETER</th>
+<td>2.285487</td>
+</tr><tr bgcolor="#E3E3F3">
+<th>COLUMBUS_</th>
+<td>41</td>
+</tr><tr bgcolor="">
+<th>COLUMBUS_I</th>
+<td>16</td>
+</tr><tr bgcolor="#E3E3F3">
+<th>POLYID</th>
+<td>40</td>
+</tr><tr bgcolor="">
+<th>NEIG</th>
+<td>16</td>
+</tr><tr bgcolor="#E3E3F3">
+<th>HOVAL</th>
+<td>61.950001</td>
+</tr><tr bgcolor="">
+<th>INC</th>
+<td>29.833</td>
+</tr><tr bgcolor="#E3E3F3">
+<th>CRIME</th>
+<td>16.241299</td>
+</tr><tr bgcolor="">
+<th>OPEN</th>
+<td>6.45131</td>
+</tr><tr bgcolor="#E3E3F3">
+<th>PLUMB</th>
+<td>0.132743</td>
+</tr><tr bgcolor="">
+<th>DISCBD</th>
+<td>4.4</td>
+</tr><tr bgcolor="#E3E3F3">
+<th>X</th>
+<td>48.439999</td>
+</tr><tr bgcolor="">
+<th>Y</th>
+<td>27.93</td>
+</tr><tr bgcolor="#E3E3F3">
+<th>NSA</th>
+<td>0</td>
+</tr><tr bgcolor="">
+<th>NSB</th>
+<td>0</td>
+</tr><tr bgcolor="#E3E3F3">
+<th>EW</th>
+<td>1</td>
+</tr><tr bgcolor="">
+<th>CP</th>
+<td>0</td>
+</tr><tr bgcolor="#E3E3F3">
+<th>THOUS</th>
+<td>1000</td>
+</tr><tr bgcolor="">
+<th>NEIGNO</th>
+<td>1016</td>
+</tr></table></center>]]></description>
+<ExtendedData>
+<SchemaData schemaUrl="#kml_schema_ft_columbus">
+<SimpleData name="AREA">0.302908</SimpleData>
+<SimpleData name="PERIMETER">2.285487</SimpleData>
+<SimpleData name="COLUMBUS_">41</SimpleData>
+<SimpleData name="COLUMBUS_I">16</SimpleData>
+<SimpleData name="POLYID">40</SimpleData>
+<SimpleData name="NEIG">16</SimpleData>
+<SimpleData name="HOVAL">61.950001</SimpleData>
+<SimpleData name="INC">29.833</SimpleData>
+<SimpleData name="CRIME">16.241299</SimpleData>
+<SimpleData name="OPEN">6.45131</SimpleData>
+<SimpleData name="PLUMB">0.132743</SimpleData>
+<SimpleData name="DISCBD">4.4</SimpleData>
+<SimpleData name="X">48.439999</SimpleData>
+<SimpleData name="Y">27.93</SimpleData>
+<SimpleData name="NSA">0</SimpleData>
+<SimpleData name="NSB">0</SimpleData>
+<SimpleData name="EW">1</SimpleData>
+<SimpleData name="CP">0</SimpleData>
+<SimpleData name="THOUS">1000</SimpleData>
+<SimpleData name="NEIGNO">1016</SimpleData>
+</SchemaData>
+</ExtendedData>
+<Polygon>
+<outerBoundaryIs>
+<LinearRing>
+<coordinates>10.0565900802612,11.7439098358154,0 10.252799987793,11.7428197860718,0 10.4256401062012,11.7418603897095,0 10.531530380249,11.7438497543335,0 10.5605001449585,11.7238597869873,0 10.6134595870972,11.7232999801636,0 10.6563997268677,11.7228498458862,0 10.6773796081543,11.7228498458862,0 10.766209602356,11.7200803756714,0 10.7833595275879,11.7195501327515,0 10.8062601089478,11.7188301086426,0 10.8022403717041,11.6748695373535,0 10.8032197952271,11.6615896224976,0 10.8060903549194,11.6209096908569,0 10.8081998825073,11.590950012207,0 10.808690071106,11.5746698379517,0 10.8049297332764,11.5589895248413,0 10.7991895675659,11.5349998474121,0 10.8021402359009,11.4340801239014,0 10.8020601272583,11.2322597503662,0 10.7341203689575,11.2282695770264,0 10.6871700286865,11.2222900390625,0 10.6132402420044,11.2163000106812,0 10.5952501296997,11.2133102416992,0 10.555290222168,11.2202997207642,0 10.4803695678711,11.2213096618652,0 10.4214296340942,11.232310295105,0 10.3644895553589,11.2543001174927,0 10.3435201644897,11.2722797393799,0 10.3295602798462,11.3282403945923,0 10.3205900192261,11.3691997528076,0 10.2796401977539,11.4031801223755,0 10.226710319519,11.4561395645142,0 10.1688003540039,11.5230903625488,0 10.1098804473877,11.5900297164917,0 10.0709495544434,11.6719703674316,0 10.0565900802612,11.7439098358154,0 </coordinates>
+</LinearRing>
+</outerBoundaryIs>
+</Polygon>
+</Placemark>
+<Placemark id="kml_41">
+<name>kml_41</name>
+<snippet> </snippet>
+<description><![CDATA[<center><table><tr><th colspan='2' align='center'><em>Attributes</em></th></tr><tr bgcolor="#E3E3F3">
+<th>AREA</th>
+<td>0.137024</td>
+</tr><tr bgcolor="">
+<th>PERIMETER</th>
+<td>1.525097</td>
+</tr><tr bgcolor="#E3E3F3">
+<th>COLUMBUS_</th>
+<td>42</td>
+</tr><tr bgcolor="">
+<th>COLUMBUS_I</th>
+<td>14</td>
+</tr><tr bgcolor="#E3E3F3">
+<th>POLYID</th>
+<td>41</td>
+</tr><tr bgcolor="">
+<th>NEIG</th>
+<td>14</td>
+</tr><tr bgcolor="#E3E3F3">
+<th>HOVAL</th>
+<td>42.099998</td>
+</tr><tr bgcolor="">
+<th>INC</th>
+<td>22.207001</td>
+</tr><tr bgcolor="#E3E3F3">
+<th>CRIME</th>
+<td>18.905146</td>
+</tr><tr bgcolor="">
+<th>OPEN</th>
+<td>0.293317</td>
+</tr><tr bgcolor="#E3E3F3">
+<th>PLUMB</th>
+<td>0.247036</td>
+</tr><tr bgcolor="">
+<th>DISCBD</th>
+<td>5.33</td>
+</tr><tr bgcolor="#E3E3F3">
+<th>X</th>
+<td>51.240002</td>
+</tr><tr bgcolor="">
+<th>Y</th>
+<td>27.799999</td>
+</tr><tr bgcolor="#E3E3F3">
+<th>NSA</th>
+<td>0</td>
+</tr><tr bgcolor="">
+<th>NSB</th>
+<td>0</td>
+</tr><tr bgcolor="#E3E3F3">
+<th>EW</th>
+<td>1</td>
+</tr><tr bgcolor="">
+<th>CP</th>
+<td>0</td>
+</tr><tr bgcolor="#E3E3F3">
+<th>THOUS</th>
+<td>1000</td>
+</tr><tr bgcolor="">
+<th>NEIGNO</th>
+<td>1014</td>
+</tr></table></center>]]></description>
+<ExtendedData>
+<SchemaData schemaUrl="#kml_schema_ft_columbus">
+<SimpleData name="AREA">0.137024</SimpleData>
+<SimpleData name="PERIMETER">1.525097</SimpleData>
+<SimpleData name="COLUMBUS_">42</SimpleData>
+<SimpleData name="COLUMBUS_I">14</SimpleData>
+<SimpleData name="POLYID">41</SimpleData>
+<SimpleData name="NEIG">14</SimpleData>
+<SimpleData name="HOVAL">42.099998</SimpleData>
+<SimpleData name="INC">22.207001</SimpleData>
+<SimpleData name="CRIME">18.905146</SimpleData>
+<SimpleData name="OPEN">0.293317</SimpleData>
+<SimpleData name="PLUMB">0.247036</SimpleData>
+<SimpleData name="DISCBD">5.33</SimpleData>
+<SimpleData name="X">51.240002</SimpleData>
+<SimpleData name="Y">27.799999</SimpleData>
+<SimpleData name="NSA">0</SimpleData>
+<SimpleData name="NSB">0</SimpleData>
+<SimpleData name="EW">1</SimpleData>
+<SimpleData name="CP">0</SimpleData>
+<SimpleData name="THOUS">1000</SimpleData>
+<SimpleData name="NEIGNO">1014</SimpleData>
+</SchemaData>
+</ExtendedData>
+<Polygon>
+<outerBoundaryIs>
+<LinearRing>
+<coordinates>10.8062601089478,11.7188301086426,0 10.8782196044922,11.7232599258423,0 10.9521198272705,11.7278099060059,0 10.9740695953369,11.6618604660034,0 11.0739698410034,11.6578502655029,0 11.1269102096558,11.6338701248169,0 11.1268901824951,11.5958995819092,0 11.1388702392578,11.5699195861816,0 11.1398496627808,11.5309600830078,0 11.1418399810791,11.5059795379639,0 11.1228504180908,11.4929895401001,0 11.1227903366089,11.3361301422119,0 11.1222095489502,11.3158798217773,0 11.0984697341919,11.3031702041626,0 11.0789604187012,11.295280456543,0 11.0685901641846,11.2918701171875,0 11.0148696899414,11.2742004394531,0 10.9639101028442,11.2652101516724,0 10.9199495315552,11.2542295455933,0 10.9018602371216,11.2521295547485,0 10.8774995803833,11.2468700408936,0 10.8407402038574,11.2389402389526,0 10.8188800811768,11.2351703643799,0 10.8020601272583,11.2322597503662,0 10.8021402359009,11.4340801239014,0 10.7991895675659,11.5349998474121,0 10.8049297332764,11.5589895248413,0 10.808690071106,11.5746698379517,0 10.8081998825073,11.590950012207,0 10.8060903549194,11.6209096908569,0 10.8032197952271,11.6615896224976,0 10.8022403717041,11.6748695373535,0 10.8062601089478,11.7188301086426,0 </coordinates>
+</LinearRing>
+</outerBoundaryIs>
+</Polygon>
+</Placemark>
+<Placemark id="kml_42">
+<name>kml_42</name>
+<snippet> </snippet>
+<description><![CDATA[<center><table><tr><th colspan='2' align='center'><em>Attributes</em></th></tr><tr bgcolor="#E3E3F3">
+<th>AREA</th>
+<td>0.266541</td>
+</tr><tr bgcolor="">
+<th>PERIMETER</th>
+<td>2.176543</td>
+</tr><tr bgcolor="#E3E3F3">
+<th>COLUMBUS_</th>
+<td>43</td>
+</tr><tr bgcolor="">
+<th>COLUMBUS_I</th>
+<td>49</td>
+</tr><tr bgcolor="#E3E3F3">
+<th>POLYID</th>
+<td>42</td>
+</tr><tr bgcolor="">
+<th>NEIG</th>
+<td>49</td>
+</tr><tr bgcolor="#E3E3F3">
+<th>HOVAL</th>
+<td>44.333</td>
+</tr><tr bgcolor="">
+<th>INC</th>
+<td>25.872999</td>
+</tr><tr bgcolor="#E3E3F3">
+<th>CRIME</th>
+<td>16.49189</td>
+</tr><tr bgcolor="">
+<th>OPEN</th>
+<td>1.792993</td>
+</tr><tr bgcolor="#E3E3F3">
+<th>PLUMB</th>
+<td>0.134439</td>
+</tr><tr bgcolor="">
+<th>DISCBD</th>
+<td>3.87</td>
+</tr><tr bgcolor="#E3E3F3">
+<th>X</th>
+<td>29.02</td>
+</tr><tr bgcolor="">
+<th>Y</th>
+<td>26.58</td>
+</tr><tr bgcolor="#E3E3F3">
+<th>NSA</th>
+<td>0</td>
+</tr><tr bgcolor="">
+<th>NSB</th>
+<td>0</td>
+</tr><tr bgcolor="#E3E3F3">
+<th>EW</th>
+<td>0</td>
+</tr><tr bgcolor="">
+<th>CP</th>
+<td>0</td>
+</tr><tr bgcolor="#E3E3F3">
+<th>THOUS</th>
+<td>1000</td>
+</tr><tr bgcolor="">
+<th>NEIGNO</th>
+<td>1049</td>
+</tr></table></center>]]></description>
+<ExtendedData>
+<SchemaData schemaUrl="#kml_schema_ft_columbus">
+<SimpleData name="AREA">0.266541</SimpleData>
+<SimpleData name="PERIMETER">2.176543</SimpleData>
+<SimpleData name="COLUMBUS_">43</SimpleData>
+<SimpleData name="COLUMBUS_I">49</SimpleData>
+<SimpleData name="POLYID">42</SimpleData>
+<SimpleData name="NEIG">49</SimpleData>
+<SimpleData name="HOVAL">44.333</SimpleData>
+<SimpleData name="INC">25.872999</SimpleData>
+<SimpleData name="CRIME">16.49189</SimpleData>
+<SimpleData name="OPEN">1.792993</SimpleData>
+<SimpleData name="PLUMB">0.134439</SimpleData>
+<SimpleData name="DISCBD">3.87</SimpleData>
+<SimpleData name="X">29.02</SimpleData>
+<SimpleData name="Y">26.58</SimpleData>
+<SimpleData name="NSA">0</SimpleData>
+<SimpleData name="NSB">0</SimpleData>
+<SimpleData name="EW">0</SimpleData>
+<SimpleData name="CP">0</SimpleData>
+<SimpleData name="THOUS">1000</SimpleData>
+<SimpleData name="NEIGNO">1049</SimpleData>
+</SchemaData>
+</ExtendedData>
+<Polygon>
+<outerBoundaryIs>
+<LinearRing>
+<coordinates>6.75833415985107,11.462329864502,0 6.77780818939209,11.4659099578857,0 6.8914008140564,11.4794101715088,0 6.9848952293396,11.4905195236206,0 7.12381076812744,11.5307903289795,0 7.31561183929443,11.586389541626,0 7.37550497055054,11.471489906311,0 7.39837408065796,11.3299503326416,0 7.40440320968628,11.2926397323608,0 7.38238000869751,11.1847400665283,0 7.35937786102295,11.1247901916504,0 7.3273868560791,11.071849822998,0 7.27540683746338,10.9979200363159,0 6.82789421081543,11.1168699264526,0 6.87988185882568,11.2117795944214,0 6.81195592880249,11.2287702560425,0 6.83095121383667,11.2627401351929,0 6.7710108757019,11.2657499313354,0 6.75403881072998,11.2927198410034,0 6.78602123260498,11.3256902694702,0 6.77805185317993,11.3806400299072,0 6.75807619094849,11.3926296234131,0 6.75833415985107,11.462329864502,0 </coordinates>
+</LinearRing>
+</outerBoundaryIs>
+</Polygon>
+</Placemark>
+<Placemark id="kml_43">
+<name>kml_43</name>
+<snippet> </snippet>
+<description><![CDATA[<center><table><tr><th colspan='2' align='center'><em>Attributes</em></th></tr><tr bgcolor="#E3E3F3">
+<th>AREA</th>
+<td>0.060241</td>
+</tr><tr bgcolor="">
+<th>PERIMETER</th>
+<td>0.967793</td>
+</tr><tr bgcolor="#E3E3F3">
+<th>COLUMBUS_</th>
+<td>44</td>
+</tr><tr bgcolor="">
+<th>COLUMBUS_I</th>
+<td>29</td>
+</tr><tr bgcolor="#E3E3F3">
+<th>POLYID</th>
+<td>43</td>
+</tr><tr bgcolor="">
+<th>NEIG</th>
+<td>29</td>
+</tr><tr bgcolor="#E3E3F3">
+<th>HOVAL</th>
+<td>25.700001</td>
+</tr><tr bgcolor="">
+<th>INC</th>
+<td>13.38</td>
+</tr><tr bgcolor="#E3E3F3">
+<th>CRIME</th>
+<td>36.663612</td>
+</tr><tr bgcolor="">
+<th>OPEN</th>
+<td>0</td>
+</tr><tr bgcolor="#E3E3F3">
+<th>PLUMB</th>
+<td>0.589226</td>
+</tr><tr bgcolor="">
+<th>DISCBD</th>
+<td>1.95</td>
+</tr><tr bgcolor="#E3E3F3">
+<th>X</th>
+<td>41.09</td>
+</tr><tr bgcolor="">
+<th>Y</th>
+<td>27.49</td>
+</tr><tr bgcolor="#E3E3F3">
+<th>NSA</th>
+<td>0</td>
+</tr><tr bgcolor="">
+<th>NSB</th>
+<td>0</td>
+</tr><tr bgcolor="#E3E3F3">
+<th>EW</th>
+<td>1</td>
+</tr><tr bgcolor="">
+<th>CP</th>
+<td>1</td>
+</tr><tr bgcolor="#E3E3F3">
+<th>THOUS</th>
+<td>1000</td>
+</tr><tr bgcolor="">
+<th>NEIGNO</th>
+<td>1029</td>
+</tr></table></center>]]></description>
+<ExtendedData>
+<SchemaData schemaUrl="#kml_schema_ft_columbus">
+<SimpleData name="AREA">0.060241</SimpleData>
+<SimpleData name="PERIMETER">0.967793</SimpleData>
+<SimpleData name="COLUMBUS_">44</SimpleData>
+<SimpleData name="COLUMBUS_I">29</SimpleData>
+<SimpleData name="POLYID">43</SimpleData>
+<SimpleData name="NEIG">29</SimpleData>
+<SimpleData name="HOVAL">25.700001</SimpleData>
+<SimpleData name="INC">13.38</SimpleData>
+<SimpleData name="CRIME">36.663612</SimpleData>
+<SimpleData name="OPEN">0</SimpleData>
+<SimpleData name="PLUMB">0.589226</SimpleData>
+<SimpleData name="DISCBD">1.95</SimpleData>
+<SimpleData name="X">41.09</SimpleData>
+<SimpleData name="Y">27.49</SimpleData>
+<SimpleData name="NSA">0</SimpleData>
+<SimpleData name="NSB">0</SimpleData>
+<SimpleData name="EW">1</SimpleData>
+<SimpleData name="CP">1</SimpleData>
+<SimpleData name="THOUS">1000</SimpleData>
+<SimpleData name="NEIGNO">1029</SimpleData>
+</SchemaData>
+</ExtendedData>
+<Polygon>
+<outerBoundaryIs>
+<LinearRing>
+<coordinates>9.09585952758789,11.5591897964478,0 9.20775318145752,11.5532598495483,0 9.34161472320557,11.5461702346802,0 9.33852195739746,11.3123798370361,0 9.20767021179199,11.310170173645,0 9.10374927520752,11.3084096908569,0 9.08283615112305,11.4563302993774,0 9.09585952758789,11.5591897964478,0 </coordinates>
+</LinearRing>
+</outerBoundaryIs>
+</Polygon>
+</Placemark>
+<Placemark id="kml_44">
+<name>kml_44</name>
+<snippet> </snippet>
+<description><![CDATA[<center><table><tr><th colspan='2' align='center'><em>Attributes</em></th></tr><tr bgcolor="#E3E3F3">
+<th>AREA</th>
+<td>0.173337</td>
+</tr><tr bgcolor="">
+<th>PERIMETER</th>
+<td>1.868044</td>
+</tr><tr bgcolor="#E3E3F3">
+<th>COLUMBUS_</th>
+<td>45</td>
+</tr><tr bgcolor="">
+<th>COLUMBUS_I</th>
+<td>25</td>
+</tr><tr bgcolor="#E3E3F3">
+<th>POLYID</th>
+<td>44</td>
+</tr><tr bgcolor="">
+<th>NEIG</th>
+<td>25</td>
+</tr><tr bgcolor="#E3E3F3">
+<th>HOVAL</th>
+<td>33.5</td>
+</tr><tr bgcolor="">
+<th>INC</th>
+<td>16.961</td>
+</tr><tr bgcolor="#E3E3F3">
+<th>CRIME</th>
+<td>25.962263</td>
+</tr><tr bgcolor="">
+<th>OPEN</th>
+<td>1.463993</td>
+</tr><tr bgcolor="#E3E3F3">
+<th>PLUMB</th>
+<td>0.329761</td>
+</tr><tr bgcolor="">
+<th>DISCBD</th>
+<td>2.67</td>
+</tr><tr bgcolor="#E3E3F3">
+<th>X</th>
+<td>43.23</td>
+</tr><tr bgcolor="">
+<th>Y</th>
+<td>27.309999</td>
+</tr><tr bgcolor="#E3E3F3">
+<th>NSA</th>
+<td>0</td>
+</tr><tr bgcolor="">
+<th>NSB</th>
+<td>0</td>
+</tr><tr bgcolor="#E3E3F3">
+<th>EW</th>
+<td>1</td>
+</tr><tr bgcolor="">
+<th>CP</th>
+<td>0</td>
+</tr><tr bgcolor="#E3E3F3">
+<th>THOUS</th>
+<td>1000</td>
+</tr><tr bgcolor="">
+<th>NEIGNO</th>
+<td>1025</td>
+</tr></table></center>]]></description>
+<ExtendedData>
+<SchemaData schemaUrl="#kml_schema_ft_columbus">
+<SimpleData name="AREA">0.173337</SimpleData>
+<SimpleData name="PERIMETER">1.868044</SimpleData>
+<SimpleData name="COLUMBUS_">45</SimpleData>
+<SimpleData name="COLUMBUS_I">25</SimpleData>
+<SimpleData name="POLYID">44</SimpleData>
+<SimpleData name="NEIG">25</SimpleData>
+<SimpleData name="HOVAL">33.5</SimpleData>
+<SimpleData name="INC">16.961</SimpleData>
+<SimpleData name="CRIME">25.962263</SimpleData>
+<SimpleData name="OPEN">1.463993</SimpleData>
+<SimpleData name="PLUMB">0.329761</SimpleData>
+<SimpleData name="DISCBD">2.67</SimpleData>
+<SimpleData name="X">43.23</SimpleData>
+<SimpleData name="Y">27.309999</SimpleData>
+<SimpleData name="NSA">0</SimpleData>
+<SimpleData name="NSB">0</SimpleData>
+<SimpleData name="EW">1</SimpleData>
+<SimpleData name="CP">0</SimpleData>
+<SimpleData name="THOUS">1000</SimpleData>
+<SimpleData name="NEIGNO">1025</SimpleData>
+</SchemaData>
+</ExtendedData>
+<Polygon>
+<outerBoundaryIs>
+<LinearRing>
+<coordinates>9.34161472320557,11.5461702346802,0 9.50050640106201,11.5420198440552,0 9.91804599761963,11.5311098098755,0 9.96389198303223,11.2683401107788,0 9.77807235717773,11.26535987854,0 9.77605247497559,11.2114095687866,0 9.65615367889404,11.2124795913696,0 9.5482759475708,11.2134399414062,0 9.54630661010742,11.2853698730469,0 9.39145469665527,11.2754001617432,0 9.33550834655762,11.2724103927612,0 9.33852195739746,11.3123798370361,0 9.34161472320557,11.5461702346802,0 </coordinates>
+</LinearRing>
+</outerBoundaryIs>
+</Polygon>
+</Placemark>
+<Placemark id="kml_45">
+<name>kml_45</name>
+<snippet> </snippet>
+<description><![CDATA[<center><table><tr><th colspan='2' align='center'><em>Attributes</em></th></tr><tr bgcolor="#E3E3F3">
+<th>AREA</th>
+<td>0.256431</td>
+</tr><tr bgcolor="">
+<th>PERIMETER</th>
+<td>2.193039</td>
+</tr><tr bgcolor="#E3E3F3">
+<th>COLUMBUS_</th>
+<td>46</td>
+</tr><tr bgcolor="">
+<th>COLUMBUS_I</th>
+<td>28</td>
+</tr><tr bgcolor="#E3E3F3">
+<th>POLYID</th>
+<td>45</td>
+</tr><tr bgcolor="">
+<th>NEIG</th>
+<td>28</td>
+</tr><tr bgcolor="#E3E3F3">
+<th>HOVAL</th>
+<td>27.733</td>
+</tr><tr bgcolor="">
+<th>INC</th>
+<td>14.135</td>
+</tr><tr bgcolor="#E3E3F3">
+<th>CRIME</th>
+<td>29.028488</td>
+</tr><tr bgcolor="">
+<th>OPEN</th>
+<td>1.006118</td>
+</tr><tr bgcolor="#E3E3F3">
+<th>PLUMB</th>
+<td>2.3912</td>
+</tr><tr bgcolor="">
+<th>DISCBD</th>
+<td>2.13</td>
+</tr><tr bgcolor="#E3E3F3">
+<th>X</th>
+<td>39.32</td>
+</tr><tr bgcolor="">
+<th>Y</th>
+<td>25.85</td>
+</tr><tr bgcolor="#E3E3F3">
+<th>NSA</th>
+<td>0</td>
+</tr><tr bgcolor="">
+<th>NSB</th>
+<td>0</td>
+</tr><tr bgcolor="#E3E3F3">
+<th>EW</th>
+<td>1</td>
+</tr><tr bgcolor="">
+<th>CP</th>
+<td>1</td>
+</tr><tr bgcolor="#E3E3F3">
+<th>THOUS</th>
+<td>1000</td>
+</tr><tr bgcolor="">
+<th>NEIGNO</th>
+<td>1028</td>
+</tr></table></center>]]></description>
+<ExtendedData>
+<SchemaData schemaUrl="#kml_schema_ft_columbus">
+<SimpleData name="AREA">0.256431</SimpleData>
+<SimpleData name="PERIMETER">2.193039</SimpleData>
+<SimpleData name="COLUMBUS_">46</SimpleData>
+<SimpleData name="COLUMBUS_I">28</SimpleData>
+<SimpleData name="POLYID">45</SimpleData>
+<SimpleData name="NEIG">28</SimpleData>
+<SimpleData name="HOVAL">27.733</SimpleData>
+<SimpleData name="INC">14.135</SimpleData>
+<SimpleData name="CRIME">29.028488</SimpleData>
+<SimpleData name="OPEN">1.006118</SimpleData>
+<SimpleData name="PLUMB">2.3912</SimpleData>
+<SimpleData name="DISCBD">2.13</SimpleData>
+<SimpleData name="X">39.32</SimpleData>
+<SimpleData name="Y">25.85</SimpleData>
+<SimpleData name="NSA">0</SimpleData>
+<SimpleData name="NSB">0</SimpleData>
+<SimpleData name="EW">1</SimpleData>
+<SimpleData name="CP">1</SimpleData>
+<SimpleData name="THOUS">1000</SimpleData>
+<SimpleData name="NEIGNO">1028</SimpleData>
+</SchemaData>
+</ExtendedData>
+<Polygon>
+<outerBoundaryIs>
+<LinearRing>
+<coordinates>9.00083446502686,11.4580202102661,0 9.08283615112305,11.4563302993774,0 9.10374927520752,11.3084096908569,0 9.11167907714844,11.1575403213501,0 9.10767459869385,11.1355600357056,0 9.09883880615234,11.1153898239136,0 9.093674659729,11.1035900115967,0 9.17159271240234,11.0915899276733,0 9.17418670654297,11.0603103637695,0 9.17557239532471,11.0486297607422,0 9.17854881286621,10.9996700286865,0 9.14657020568848,10.9766998291016,0 9.13555717468262,10.9177503585815,0 9.10042953491211,10.8990898132324,0 9.09555912017822,10.8288297653198,0 8.85079574584961,10.8218698501587,0 8.8158483505249,10.8678398132324,0 8.78988647460938,10.8998098373413,0 8.7659273147583,10.9387798309326,0 8.75295543670654,10.9787502288818,0 8.74797344207764,11.0107202529907,0 8.75397872924805,11.0356998443604,0 8.75099182128906,11.0606698989868,0 8.6221170425415,11.0596904754639,0 8.6311206817627,11.0896596908569,0 8.63413333892822,11.1266298294067,0 8.63216495513916,11.1995697021484,0 8.66515159606934,11.2465200424194,0 8.68313980102539,11.2575101852417,0 8.69713020324707,11.2674999237061,0 8.67520809173584,11.4053802490234,0 8.77213191986084,11.4503297805786,0 8.92297744750977,11.4343204498291,0 8.93597602844238,11.4603004455566,0 9.00083446502686,11.4580202102661,0 </coordinates>
+</LinearRing>
+</outerBoundaryIs>
+</Polygon>
+</Placemark>
+<Placemark id="kml_46">
+<name>kml_46</name>
+<snippet> </snippet>
+<description><![CDATA[<center><table><tr><th colspan='2' align='center'><em>Attributes</em></th></tr><tr bgcolor="#E3E3F3">
+<th>AREA</th>
+<td>0.124728</td>
+</tr><tr bgcolor="">
+<th>PERIMETER</th>
+<td>1.841029</td>
+</tr><tr bgcolor="#E3E3F3">
+<th>COLUMBUS_</th>
+<td>47</td>
+</tr><tr bgcolor="">
+<th>COLUMBUS_I</th>
+<td>48</td>
+</tr><tr bgcolor="#E3E3F3">
+<th>POLYID</th>
+<td>46</td>
+</tr><tr bgcolor="">
+<th>NEIG</th>
+<td>48</td>
+</tr><tr bgcolor="#E3E3F3">
+<th>HOVAL</th>
+<td>76.099998</td>
+</tr><tr bgcolor="">
+<th>INC</th>
+<td>18.323999</td>
+</tr><tr bgcolor="#E3E3F3">
+<th>CRIME</th>
+<td>16.530533</td>
+</tr><tr bgcolor="">
+<th>OPEN</th>
+<td>9.683953</td>
+</tr><tr bgcolor="#E3E3F3">
+<th>PLUMB</th>
+<td>0.424628</td>
+</tr><tr bgcolor="">
+<th>DISCBD</th>
+<td>5.27</td>
+</tr><tr bgcolor="#E3E3F3">
+<th>X</th>
+<td>25.469999</td>
+</tr><tr bgcolor="">
+<th>Y</th>
+<td>25.709999</td>
+</tr><tr bgcolor="#E3E3F3">
+<th>NSA</th>
+<td>0</td>
+</tr><tr bgcolor="">
+<th>NSB</th>
+<td>0</td>
+</tr><tr bgcolor="#E3E3F3">
+<th>EW</th>
+<td>0</td>
+</tr><tr bgcolor="">
+<th>CP</th>
+<td>0</td>
+</tr><tr bgcolor="#E3E3F3">
+<th>THOUS</th>
+<td>1000</td>
+</tr><tr bgcolor="">
+<th>NEIGNO</th>
+<td>1048</td>
+</tr></table></center>]]></description>
+<ExtendedData>
+<SchemaData schemaUrl="#kml_schema_ft_columbus">
+<SimpleData name="AREA">0.124728</SimpleData>
+<SimpleData name="PERIMETER">1.841029</SimpleData>
+<SimpleData name="COLUMBUS_">47</SimpleData>
+<SimpleData name="COLUMBUS_I">48</SimpleData>
+<SimpleData name="POLYID">46</SimpleData>
+<SimpleData name="NEIG">48</SimpleData>
+<SimpleData name="HOVAL">76.099998</SimpleData>
+<SimpleData name="INC">18.323999</SimpleData>
+<SimpleData name="CRIME">16.530533</SimpleData>
+<SimpleData name="OPEN">9.683953</SimpleData>
+<SimpleData name="PLUMB">0.424628</SimpleData>
+<SimpleData name="DISCBD">5.27</SimpleData>
+<SimpleData name="X">25.469999</SimpleData>
+<SimpleData name="Y">25.709999</SimpleData>
+<SimpleData name="NSA">0</SimpleData>
+<SimpleData name="NSB">0</SimpleData>
+<SimpleData name="EW">0</SimpleData>
+<SimpleData name="CP">0</SimpleData>
+<SimpleData name="THOUS">1000</SimpleData>
+<SimpleData name="NEIGNO">1048</SimpleData>
+</SchemaData>
+</ExtendedData>
+<Polygon>
+<outerBoundaryIs>
+<LinearRing>
+<coordinates>6.48136615753174,11.4396295547485,0 6.5583119392395,11.4421997070312,0 6.61027717590332,11.4447803497314,0 6.67817687988281,11.4476003646851,0 6.64918518066406,11.399640083313,0 6.64716482162476,11.344690322876,0 6.63916110992432,11.3157196044922,0 6.52227592468262,11.3187303543091,0 6.5202579498291,11.2697696685791,0 6.51624822616577,11.2368001937866,0 6.54221200942993,11.2098197937012,0 6.54919290542603,11.1808500289917,0 6.55515718460083,11.10791015625,0 6.53417301177979,11.0969200134277,0 6.5371208190918,10.9780302047729,0 6.22046279907227,11.0570001602173,0 6.22047996520996,11.0999603271484,0 6.21247577667236,11.1221199035645,0 6.18061113357544,11.1677198410034,0 6.17929315567017,11.1815900802612,0 6.16758584976196,11.2308502197266,0 6.31644201278687,11.2328300476074,0 6.35941600799561,11.2737903594971,0 6.3564510345459,11.3497200012207,0 6.33548402786255,11.3807001113892,0 6.33586502075195,11.3956804275513,0 6.33650016784668,11.4206600189209,0 6.48136615753174,11.4396295547485,0 </coordinates>
+</LinearRing>
+</outerBoundaryIs>
+</Polygon>
+</Placemark>
+<Placemark id="kml_47">
+<name>kml_47</name>
+<snippet> </snippet>
+<description><![CDATA[<center><table><tr><th colspan='2' align='center'><em>Attributes</em></th></tr><tr bgcolor="#E3E3F3">
+<th>AREA</th>
+<td>0.245249</td>
+</tr><tr bgcolor="">
+<th>PERIMETER</th>
+<td>2.079986</td>
+</tr><tr bgcolor="#E3E3F3">
+<th>COLUMBUS_</th>
+<td>48</td>
+</tr><tr bgcolor="">
+<th>COLUMBUS_I</th>
+<td>15</td>
+</tr><tr bgcolor="#E3E3F3">
+<th>POLYID</th>
+<td>47</td>
+</tr><tr bgcolor="">
+<th>NEIG</th>
+<td>15</td>
+</tr><tr bgcolor="#E3E3F3">
+<th>HOVAL</th>
+<td>42.5</td>
+</tr><tr bgcolor="">
+<th>INC</th>
+<td>18.950001</td>
+</tr><tr bgcolor="#E3E3F3">
+<th>CRIME</th>
+<td>27.822861</td>
+</tr><tr bgcolor="">
+<th>OPEN</th>
+<td>0</td>
+</tr><tr bgcolor="#E3E3F3">
+<th>PLUMB</th>
+<td>0.268817</td>
+</tr><tr bgcolor="">
+<th>DISCBD</th>
+<td>5.57</td>
+</tr><tr bgcolor="#E3E3F3">
+<th>X</th>
+<td>50.889999</td>
+</tr><tr bgcolor="">
+<th>Y</th>
+<td>25.24</td>
+</tr><tr bgcolor="#E3E3F3">
+<th>NSA</th>
+<td>0</td>
+</tr><tr bgcolor="">
+<th>NSB</th>
+<td>0</td>
+</tr><tr bgcolor="#E3E3F3">
+<th>EW</th>
+<td>1</td>
+</tr><tr bgcolor="">
+<th>CP</th>
+<td>0</td>
+</tr><tr bgcolor="#E3E3F3">
+<th>THOUS</th>
+<td>1000</td>
+</tr><tr bgcolor="">
+<th>NEIGNO</th>
+<td>1015</td>
+</tr></table></center>]]></description>
+<ExtendedData>
+<SchemaData schemaUrl="#kml_schema_ft_columbus">
+<SimpleData name="AREA">0.245249</SimpleData>
+<SimpleData name="PERIMETER">2.079986</SimpleData>
+<SimpleData name="COLUMBUS_">48</SimpleData>
+<SimpleData name="COLUMBUS_I">15</SimpleData>
+<SimpleData name="POLYID">47</SimpleData>
+<SimpleData name="NEIG">15</SimpleData>
+<SimpleData name="HOVAL">42.5</SimpleData>
+<SimpleData name="INC">18.950001</SimpleData>
+<SimpleData name="CRIME">27.822861</SimpleData>
+<SimpleData name="OPEN">0</SimpleData>
+<SimpleData name="PLUMB">0.268817</SimpleData>
+<SimpleData name="DISCBD">5.57</SimpleData>
+<SimpleData name="X">50.889999</SimpleData>
+<SimpleData name="Y">25.24</SimpleData>
+<SimpleData name="NSA">0</SimpleData>
+<SimpleData name="NSB">0</SimpleData>
+<SimpleData name="EW">1</SimpleData>
+<SimpleData name="CP">0</SimpleData>
+<SimpleData name="THOUS">1000</SimpleData>
+<SimpleData name="NEIGNO">1015</SimpleData>
+</SchemaData>
+</ExtendedData>
+<Polygon>
+<outerBoundaryIs>
+<LinearRing>
+<coordinates>11.0984697341919,11.3031702041626,0 11.1222095489502,11.3158798217773,0 11.1207599639893,11.2651901245117,0 11.1197299957275,11.1992502212524,0 11.1237001419067,11.1273097991943,0 11.1446504592896,11.0563697814941,0 11.1815996170044,11.0254001617432,0 11.2215404510498,10.9784297943115,0 11.2564897537231,10.9224796295166,0 11.2754497528076,10.888500213623,0 11.2874202728271,10.8425397872925,0 11.2863998413086,10.7905902862549,0 11.0136699676514,10.7886295318604,0 10.9637203216553,10.7996196746826,0 10.8837995529175,10.8076200485229,0 10.7819004058838,10.812629699707,0 10.7089796066284,10.8196401596069,0 10.6940002441406,10.8336296081543,0 10.6490697860718,10.8905801773071,0 10.6161098480225,10.9255599975586,0 10.5881595611572,10.9785099029541,0 10.5921697616577,10.9945001602173,0 10.6911296844482,11.14035987854,0 10.6871700286865,11.2222900390625,0 10.7341203689575,11.2282695770264,0 10.8020601272583,11.2322597503662,0 10.8188800811768,11.2351703643799,0 10.8407402038574,11.2389402389526,0 10.8774995803833,11.2468700408936,0 10.9018602371216,11.2521295547485,0 10.9199495315552,11.2542295455933,0 10.9639101028442,11.2652101516724,0 11.0148696899414,11.2742004394531,0 11.0685901641846,11.2918701171875,0 11.0789604187012,11.295280456543,0 11.0984697341919,11.3031702041626,0 </coordinates>
+</LinearRing>
+</outerBoundaryIs>
+</Polygon>
+</Placemark>
+<Placemark id="kml_48">
+<name>kml_48</name>
+<snippet> </snippet>
+<description><![CDATA[<center><table><tr><th colspan='2' align='center'><em>Attributes</em></th></tr><tr bgcolor="#E3E3F3">
+<th>AREA</th>
+<td>0.069762</td>
+</tr><tr bgcolor="">
+<th>PERIMETER</th>
+<td>1.102032</td>
+</tr><tr bgcolor="#E3E3F3">
+<th>COLUMBUS_</th>
+<td>49</td>
+</tr><tr bgcolor="">
+<th>COLUMBUS_I</th>
+<td>27</td>
+</tr><tr bgcolor="#E3E3F3">
+<th>POLYID</th>
+<td>48</td>
+</tr><tr bgcolor="">
+<th>NEIG</th>
+<td>27</td>
+</tr><tr bgcolor="#E3E3F3">
+<th>HOVAL</th>
+<td>26.799999</td>
+</tr><tr bgcolor="">
+<th>INC</th>
+<td>11.813</td>
+</tr><tr bgcolor="#E3E3F3">
+<th>CRIME</th>
+<td>26.645266</td>
+</tr><tr bgcolor="">
+<th>OPEN</th>
+<td>4.884389</td>
+</tr><tr bgcolor="#E3E3F3">
+<th>PLUMB</th>
+<td>1.034807</td>
+</tr><tr bgcolor="">
+<th>DISCBD</th>
+<td>2.33</td>
+</tr><tr bgcolor="#E3E3F3">
+<th>X</th>
+<td>41.209999</td>
+</tr><tr bgcolor="">
+<th>Y</th>
+<td>25.9</td>
+</tr><tr bgcolor="#E3E3F3">
+<th>NSA</th>
+<td>0</td>
+</tr><tr bgcolor="">
+<th>NSB</th>
+<td>0</td>
+</tr><tr bgcolor="#E3E3F3">
+<th>EW</th>
+<td>1</td>
+</tr><tr bgcolor="">
+<th>CP</th>
+<td>1</td>
+</tr><tr bgcolor="#E3E3F3">
+<th>THOUS</th>
+<td>1000</td>
+</tr><tr bgcolor="">
+<th>NEIGNO</th>
+<td>1027</td>
+</tr></table></center>]]></description>
+<ExtendedData>
+<SchemaData schemaUrl="#kml_schema_ft_columbus">
+<SimpleData name="AREA">0.069762</SimpleData>
+<SimpleData name="PERIMETER">1.102032</SimpleData>
+<SimpleData name="COLUMBUS_">49</SimpleData>
+<SimpleData name="COLUMBUS_I">27</SimpleData>
+<SimpleData name="POLYID">48</SimpleData>
+<SimpleData name="NEIG">27</SimpleData>
+<SimpleData name="HOVAL">26.799999</SimpleData>
+<SimpleData name="INC">11.813</SimpleData>
+<SimpleData name="CRIME">26.645266</SimpleData>
+<SimpleData name="OPEN">4.884389</SimpleData>
+<SimpleData name="PLUMB">1.034807</SimpleData>
+<SimpleData name="DISCBD">2.33</SimpleData>
+<SimpleData name="X">41.209999</SimpleData>
+<SimpleData name="Y">25.9</SimpleData>
+<SimpleData name="NSA">0</SimpleData>
+<SimpleData name="NSB">0</SimpleData>
+<SimpleData name="EW">1</SimpleData>
+<SimpleData name="CP">1</SimpleData>
+<SimpleData name="THOUS">1000</SimpleData>
+<SimpleData name="NEIGNO">1027</SimpleData>
+</SchemaData>
+</ExtendedData>
+<Polygon>
+<outerBoundaryIs>
+<LinearRing>
+<coordinates>9.20767021179199,11.310170173645,0 9.33852195739746,11.3123798370361,0 9.33550834655762,11.2724103927612,0 9.39145469665527,11.2754001617432,0 9.39303207397461,11.2627401351929,0 9.39325046539307,11.2513999938965,0 9.3948974609375,11.165470123291,0 9.39454460144043,11.1395301818848,0 9.39336013793945,11.0525999069214,0 9.28228378295898,11.0480298995972,0 9.17557239532471,11.0486297607422,0 9.17418670654297,11.0603103637695,0 9.17159271240234,11.0915899276733,0 9.093674659729,11.1035900115967,0 9.09883880615234,11.1153898239136,0 9.10767459869385,11.1355600357056,0 9.11167907714844,11.1575403213501,0 9.10374927520752,11.3084096908569,0 9.20767021179199,11.310170173645,0 </coordinates>
+</LinearRing>
+</outerBoundaryIs>
+</Polygon>
+</Placemark>
+<Placemark id="kml_49">
+<name>kml_49</name>
+<snippet> </snippet>
+<description><![CDATA[<center><table><tr><th colspan='2' align='center'><em>Attributes</em></th></tr><tr bgcolor="#E3E3F3">
+<th>AREA</th>
+<td>0.205964</td>
+</tr><tr bgcolor="">
+<th>PERIMETER</th>
+<td>2.199169</td>
+</tr><tr bgcolor="#E3E3F3">
+<th>COLUMBUS_</th>
+<td>50</td>
+</tr><tr bgcolor="">
+<th>COLUMBUS_I</th>
+<td>26</td>
+</tr><tr bgcolor="#E3E3F3">
+<th>POLYID</th>
+<td>49</td>
+</tr><tr bgcolor="">
+<th>NEIG</th>
+<td>26</td>
+</tr><tr bgcolor="#E3E3F3">
+<th>HOVAL</th>
+<td>35.799999</td>
+</tr><tr bgcolor="">
+<th>INC</th>
+<td>18.796</td>
+</tr><tr bgcolor="#E3E3F3">
+<th>CRIME</th>
+<td>22.541491</td>
+</tr><tr bgcolor="">
+<th>OPEN</th>
+<td>0.259826</td>
+</tr><tr bgcolor="#E3E3F3">
+<th>PLUMB</th>
+<td>0.901442</td>
+</tr><tr bgcolor="">
+<th>DISCBD</th>
+<td>3.03</td>
+</tr><tr bgcolor="#E3E3F3">
+<th>X</th>
+<td>42.669998</td>
+</tr><tr bgcolor="">
+<th>Y</th>
+<td>24.959999</td>
+</tr><tr bgcolor="#E3E3F3">
+<th>NSA</th>
+<td>0</td>
+</tr><tr bgcolor="">
+<th>NSB</th>
+<td>0</td>
+</tr><tr bgcolor="#E3E3F3">
+<th>EW</th>
+<td>1</td>
+</tr><tr bgcolor="">
+<th>CP</th>
+<td>0</td>
+</tr><tr bgcolor="#E3E3F3">
+<th>THOUS</th>
+<td>1000</td>
+</tr><tr bgcolor="">
+<th>NEIGNO</th>
+<td>1026</td>
+</tr></table></center>]]></description>
+<ExtendedData>
+<SchemaData schemaUrl="#kml_schema_ft_columbus">
+<SimpleData name="AREA">0.205964</SimpleData>
+<SimpleData name="PERIMETER">2.199169</SimpleData>
+<SimpleData name="COLUMBUS_">50</SimpleData>
+<SimpleData name="COLUMBUS_I">26</SimpleData>
+<SimpleData name="POLYID">49</SimpleData>
+<SimpleData name="NEIG">26</SimpleData>
+<SimpleData name="HOVAL">35.799999</SimpleData>
+<SimpleData name="INC">18.796</SimpleData>
+<SimpleData name="CRIME">22.541491</SimpleData>
+<SimpleData name="OPEN">0.259826</SimpleData>
+<SimpleData name="PLUMB">0.901442</SimpleData>
+<SimpleData name="DISCBD">3.03</SimpleData>
+<SimpleData name="X">42.669998</SimpleData>
+<SimpleData name="Y">24.959999</SimpleData>
+<SimpleData name="NSA">0</SimpleData>
+<SimpleData name="NSB">0</SimpleData>
+<SimpleData name="EW">1</SimpleData>
+<SimpleData name="CP">0</SimpleData>
+<SimpleData name="THOUS">1000</SimpleData>
+<SimpleData name="NEIGNO">1026</SimpleData>
+</SchemaData>
+</ExtendedData>
+<Polygon>
+<outerBoundaryIs>
+<LinearRing>
+<coordinates>9.39145469665527,11.2754001617432,0 9.54630661010742,11.2853698730469,0 9.5482759475708,11.2134399414062,0 9.65615367889404,11.2124795913696,0 9.77605247497559,11.2114095687866,0 9.77901172637939,11.1184902191162,0 9.77496910095215,11.0075902938843,0 9.77593517303467,10.9286603927612,0 9.78189754486084,10.8537302017212,0 9.09555912017822,10.8288297653198,0 9.10042953491211,10.8990898132324,0 9.13555717468262,10.9177503585815,0 9.14657020568848,10.9766998291016,0 9.17854881286621,10.9996700286865,0 9.17557239532471,11.0486297607422,0 9.28228378295898,11.0480298995972,0 9.39336013793945,11.0525999069214,0 9.39454460144043,11.1395301818848,0 9.3948974609375,11.165470123291,0 9.39325046539307,11.2513999938965,0 9.39303207397461,11.2627401351929,0 9.39145469665527,11.2754001617432,0 </coordinates>
+</LinearRing>
+</outerBoundaryIs>
+</Polygon>
+</Placemark>
+</Folder>
+</Document></kml>
