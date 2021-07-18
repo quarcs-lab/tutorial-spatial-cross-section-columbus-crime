@@ -100,6 +100,7 @@ spmatrix summarize WqueenS_fromStata15
 
 
 * Global Moran's I of the dependent variable
+use "columbusDbase.dta", clear
 spatgsa CRIME, w(WqueenS_fromStata_spatwmat) moran
 
 
