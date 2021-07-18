@@ -22,12 +22,11 @@ version 15
 * ssc install spregcs
 
 * Learn more about the following commands
-*help spatreg
 *help spatwmat
 *help spreg
 *help spmat
 *help spregcs
-*help spweightcs
+*help spatreg
 
 
 * Use the shp2dta package to convert a shape file into 2 stata datasets (dBase and coordinates)
@@ -38,10 +37,10 @@ use "columbusDbase.dta", clear
 describe
 
 * Plot a map
-spmap CRIME using "columbusCoor.dta", id(id) legend(size(small) position(11)) clmethod(custom) clbreaks(0 15 30 45 60 75) fcolor(Blues) title("Property crimes per thousand households") note("Columbus, Ohio 1980 neighorhood data" "Source: Anselin (1988)")
+*spmap CRIME using "columbusCoor.dta", id(id) legend(size(small) position(11)) clmethod(custom) clbreaks(0 15 30 45 60 75) fcolor(Blues) title("Property crimes per thousand households") note("Columbus, Ohio 1980 neighorhood data" "Source: Anselin (1988)")
 *graph save   "mapCrime.gph", replace
 *graph export "mapCrime.png", replace
-v
+
 
 * Generate spatial weights matrices with spmat package
 spmat contiguity Wqueen  using "columbusCoor.dta", id(id)
@@ -78,7 +77,7 @@ import delimited "WqueenS_fromStata_spmat.txt", delimiter(space) rowrange(2) cle
 save             "WqueenS_fromStata_spmat.dta", replace
 
 
-* [IMPORTANT] Import .dta weight matrix with spatwmat package: creat  spatwmat object
+* [IMPORTANT] Import .dta weight matrix with spatwmat package
 spatwmat using "Wqueen_fromStata_spmat.dta", name(Wqueen_fromStata_spatwmat)
 matrix list Wqueen_fromStata_spatwmat
 
@@ -86,68 +85,116 @@ matrix list Wqueen_fromStata_spatwmat
 spatwmat using "Wqueen_fromStata_spmat.dta", name(WqueenS_fromStata_spatwmat) eigenval(eWqueenS_fromStata_spatwmat) standardize
 matrix list WqueenS_fromStata_spatwmat
 
+* Import .dta weights matrix with spmatrix (official function from Stata15)
+use "Wqueen_fromStata_spmat.dta", clear
+gen id = _n
+order id, first
+spset id
+spmatrix fromdata WqueenS_fromStata15 = v*, normalize(row) replace
+spmatrix summarize WqueenS_fromStata15
 
-* Spatial analyses
 
-use "columbusDbase.dta", clear
-
-* (0) Non-spatial regression
-reg CRIME INC HOVAL
-
-* Spatial dependence in the Y variable
-
-* Global Moran's I
+* Global Moran's I of the dependent variable
 spatgsa CRIME, w(WqueenS_fromStata_spatwmat) moran
 
 
-* Spatial diagnostics of regression residuals
+
+* (0) Fit OLS model:  No spatial lags
+use "columbusDbase.dta", clear
+spset id
+regress CRIME INC HOVAL
+estat moran, errorlag(WqueenS_fromStata15)
+
+
+* LM Spatial diagnostics of regression residuals
 reg CRIME INC HOVAL
 spatdiag, weights(WqueenS_fromStata_spatwmat)
 
-* (1) SEM: Spatial error model (using 2 alternative packages)
+
+* (1) SAR/SLM: Spatial lag model (using 3 alternative packages)
+
+* using spregress (official function from Stata 15)
+use "Wqueen_fromStata_spmat.dta", clear
+gen id = _n
+order id, first
+spset id
+spmatrix fromdata WqueenS_fromStata15 = v*, normalize(row) replace
+spmatrix summarize WqueenS_fromStata15
+
+use "columbusDbase.dta", clear
+spset id
+
+spregress CRIME INC HOVAL, ml dvarlag(WqueenS_fromStata15) vce(robust)
+estat ic
+estat impact
+
+* using the spregcs package (BE CAREFUL!! it requires a W created with spmat)
+spregcs CRIME INC HOVAL, wmfile("Wqueen_fromStata_spmat.dta") model(sar) mfx(lin)
+
+* using the spatreg package (BE CAREFUL!! it requires a W created with spatwmat)
+spatreg CRIME INC HOVAL, weights(WqueenS_fromStata_spatwmat) eigenval(eWqueenS_fromStata_spatwmat) model(lag)
+
+
+
+* (2) SEM: Spatial error model (using 3 alternative packages)
+
+* using spregress (official function from Stata 15)
+use "Wqueen_fromStata_spmat.dta", clear
+gen id = _n
+order id, first
+spset id
+spmatrix fromdata WqueenS_fromStata15 = v*, normalize(row) replace
+spmatrix summarize WqueenS_fromStata15
+
+use "columbusDbase.dta", clear
+spset id
+
+spregress CRIME INC HOVAL, ml errorlag(WqueenS_fromStata15) vce(robust)
+estat ic
+estat impact
+
+* using the spregcs package (BE CAREFUL!! it requires a W created with spmat)
+spregcs CRIME INC HOVAL, wmfile("Wqueen_fromStata_spmat.dta") model(sem) mfx(lin)
 
 * using the spatreg package (BE CAREFUL!! it requires a W created with spatwmat)
 spatreg CRIME INC HOVAL, weights(WqueenS_fromStata_spatwmat) eigenval(eWqueenS_fromStata_spatwmat) model(error)
 
 
-* using the spreg package (BE CAREFUL!! it requires a W created with spmat)
-spreg ml CRIME INC HOVAL, id(id) elmat(WqueenS)
+* (3) Fit SLX model: spatial lag of the independent variables
+use "Wqueen_fromStata_spmat.dta", clear
+gen id = _n
+order id, first
+spset id
+spmatrix fromdata WqueenS_fromStata15 = v*, normalize(row) replace
+spmatrix summarize WqueenS_fromStata15
+
+use "columbusDbase.dta", clear
+spset id
+
+spregress CRIME INC HOVAL, ml ivarlag(WqueenS_fromStata15: INC HOVAL) vce(robust)
+estat ic
+estat impact
 
 
-* (2) SAR/SLM: Spatial lag model (using 2 alternative packages)
-
-* using the spatreg package (BE CAREFUL!! it requires a W created with spatwmat)
-spatreg CRIME INC HOVAL, weights(WqueenS_fromStata_spatwmat) eigenval(eWqueenS_fromStata_spatwmat) model(lag)
-
-* using the spreg package (BE CAREFUL!! it requires a W created with spmat)
-spreg ml CRIME INC HOVAL, id(id) dlmat(WqueenS)
+* (4) Fit SAC model: spatial lag of the dependent and error term
+spregress CRIME INC HOVAL, ml dvarlag(WqueenS_fromStata15) ivarlag(WqueenS_fromStata15: INC HOVAL) vce(robust)
+estat ic
+estat impact
 
 
-* Compute direct, indirect, and total effects for SAR model (it depends on the previous regression and requires mata W)
-mata
-b = st_matrix("e(b)")
-b
-rho = b[1,4]
-rho
-S = luinv(I(rows(mataWqueenS))-rho*mataWqueenS)
-end
-
-* Total effects
-mata: (b[1,2]/rows(mataWqueenS))*sum(S)
-
-* Direct effects
-mata: (b[1,2]/rows(mataWqueenS))*trace(S)
-
-* Indirect effects (spatial spillovers)
-mata: (b[1,2]/rows(mataWqueenS))*sum(S) - (b[1,2]/rows(mataWqueenS))*trace(S)
+* (5) Fit SDM model: spatial lag of the dependent and independent variables
+spregress CRIME INC HOVAL, ml dvarlag(WqueenS_fromStata15) errorlag(WqueenS_fromStata15) vce(robust)
+estat ic
+estat impact
 
 
+* (6) Fit SDEM model: spatial lag of the independent variables and error term
+spregress CRIME INC HOVAL, ml ivarlag(WqueenS_fromStata15: INC HOVAL) errorlag(WqueenS_fromStata15) vce(robust)
+estat ic
+estat impact
 
-* Use the  spregcs package  (this package does many many things)
-*help spregcs
-spregcs CRIME INC HOVAL, wmfile("Wqueen_fromStata_spmat.dta") model(sar) mfx(lin)
 
-* adding a lag of the explanatory variable
-spmat contiguity WqueenS using "columbusCoor.dta", id(id) normalize(row)
-spmat lag W_INC WqueenS INC
-spatreg CRIME INC W_INC HOVAL, weights(WqueenS_fromStata_spatwmat) eigenval(eWqueenS_fromStata_spatwmat) model(error)
+* (7) Fit GNS model: spatial lag of the dependent, independent, and error terms
+spregress CRIME INC HOVAL, ml dvarlag(WqueenS_fromStata15) ivarlag(WqueenS_fromStata15: INC HOVAL) errorlag(WqueenS_fromStata15) vce(robust)
+estat ic
+estat impact
