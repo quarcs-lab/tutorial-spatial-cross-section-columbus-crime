@@ -28,6 +28,11 @@ version 15
 *help spregcs
 *help spatreg
 
+* Import and unzip data
+copy "https://github.com/quarcs-lab/data-open/raw/master/Columbus/columbus/columbus.zip" columbus.zip, replace
+unzipfile columbus.zip
+
+
 
 * Use the shp2dta package to convert a shape file into 2 stata datasets (dBase and coordinates)
 shp2dta using "columbus.shp", database("columbusDbase.dta") coordinates("columbusCoor.dta") genid(id) replace
