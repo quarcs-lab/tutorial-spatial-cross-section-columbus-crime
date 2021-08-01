@@ -5,4 +5,4 @@
 Suggested citation:
 
 
-> Mendez C. (2021). Spatial econometrics for cross-sectional data: Columbus crime example. Available at https://deepnote.com/@carlos-mendez/STATA-Spatial-panel-data-NkfLwLfHR3SY15RKWXbeIQ. DOI: 10.5281/zenodo.5151076
+> Mendez C. (2021). Spatial econometrics for cross-sectional data: Columbus crime example. DOI: [10.5281/zenodo.5151076](https://doi.org/10.5281/zenodo.5151076). Notebook available at https://deepnote.com/@carlos-mendez/STATA-Spatial-panel-data-NkfLwLfHR3SY15RKWXbeIQ.
