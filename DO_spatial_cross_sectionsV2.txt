@@ -1,0 +1,390 @@
+-------------------------------------------------------------------------------------------------------------------------------------------------------------
+      name:  <unnamed>
+       log:  /Users/carlos/Github/QuaRCS-lab/tutorial-spatial-cross-section-columbus-crime/DO_spatial_cross_sectionsV2.txt
+  log type:  text
+ opened on:  20 Feb 2022, 14:54:36
+
+. 
+. ** 3. Install modules
+. *ssc install estout, replace all
+. *ssc install outreg2, replace all
+. *ssc install reghdfe, replace all * INFO: http://scorreia.com/software/reghdfe/
+. *net install gr0009_1, from (http://www.stata-journal.com/software/sj10-1) replace all
+. *net install tsg_schemes, from("https://raw.githubusercontent.com/asjadnaqvi/Stata-schemes/main/schemes/") replace all
+. *set scheme white_tableau, permanently
+. *set scheme gg_tableau, permanently
+. 
+. *ssc install spmap
+. *ssc install shp2dta
+. *net install sg162, from(http://www.stata.com/stb/stb60)
+. *net install st0292, from(http://www.stata-journal.com/software/sj13-2)
+. *net install spwmatrix, from(http://fmwww.bc.edu/RePEc/bocode/s)
+. *net install splagvar, from(http://fmwww.bc.edu/RePEc/bocode/s)
+. *ssc install xsmle.pkg
+. *ssc install xtcsd
+. *ssc install geo2xy    
+. *ssc install palettes      
+. *ssc install colrspace
+. 
+. 
+. ** 4. Import W matrix from .csv file
+. import delimited "https://github.com/quarcs-lab/data-open/raw/master/Columbus/columbus/WqueenBin.csv", case(preserve) clear
+(encoding automatically selected: ISO-8859-2)
+(49 vars, 49 obs)
+
+. save WqueenBin, replace
+file WqueenBin.dta saved
+
+. gen id = _n
+
+. order id, first
+
+. 
+. spset id
+
+      Sp dataset: WqueenBin.dta
+Linked shapefile: <none>
+            Data: Cross sectional
+ Spatial-unit ID: _ID (equal to id)
+     Coordinates: <none>
+
+. spmatrix fromdata WqueenSt = v*, normalize(row) replace
+
+. spmatrix summarize WqueenSt
+
+Weighting matrix WqueenSt
+---------------------------------------
+           Type |           contiguity
+  Normalization |                  row
+      Dimension |              49 x 49
+Elements        |
+   minimum      |                    0
+   minimum > 0  |                   .1
+   mean         |             .0204082
+   max          |                   .5
+Neighbors       |
+   minimum      |                    2
+   mean         |             4.816327
+   maximum      |                   10
+---------------------------------------
+
+. 
+. ** Import dataset with variables (Source: https://geodacenter.github.io/data-and-lab/columbus/)
+. use "https://github.com/quarcs-lab/data-open/raw/master/Columbus/columbus/columbusDbase.dta", clear
+
+. spset id
+
+      Sp dataset: columbusDbase.dta
+Linked shapefile: <none>
+            Data: Cross sectional
+ Spatial-unit ID: _ID (equal to id)
+     Coordinates: <none>
+
+. 
+. * Add labels
+. label var CRIME "Crime"
+
+. label var INC   "Income"
+
+. label var HOVAL "House value"
+
+. 
+. ** OLS model
+. reg CRIME INC HOVAL
+
+      Source |       SS           df       MS      Number of obs   =        49
+-------------+----------------------------------   F(2, 46)        =     28.39
+       Model |  7423.32674         2  3711.66337   Prob > F        =    0.0000
+    Residual |  6014.89274        46  130.758538   R-squared       =    0.5524
+-------------+----------------------------------   Adj R-squared   =    0.5329
+       Total |  13438.2195        48  279.962906   Root MSE        =    11.435
+
+------------------------------------------------------------------------------
+       CRIME | Coefficient  Std. err.      t    P>|t|     [95% conf. interval]
+-------------+----------------------------------------------------------------
+         INC |  -1.597311   .3341308    -4.78   0.000    -2.269881   -.9247405
+       HOVAL |  -.2739315   .1031987    -2.65   0.011    -.4816597   -.0662033
+       _cons |   68.61896   4.735486    14.49   0.000     59.08692      78.151
+------------------------------------------------------------------------------
+
+. eststo OLS
+
+. 
+. 
+. ** Test for spatial dependence in the residuals
+. qui reg CRIME INC HOVAL
+
+. estat moran, errorlag(WqueenSt)
+
+Moran test for spatial dependence
+         H0: Error terms are i.i.d.
+         Errorlags:  WqueenSt
+
+         chi2(1)      =     5.21
+         Prob > chi2  =   0.0225
+
+. 
+. ** Taxanomy of spatial models
+. collect clear
+
+. 
+. * SAR/SLM model
+. qui spregress CRIME INC HOVAL, ml dvarlag(WqueenSt)
+
+. eststo SAR
+
+. collect: qui estat impact
+
+. 
+. * SEM model
+. qui spregress CRIME INC HOVAL, ml errorlag(WqueenSt)
+
+. eststo SEM
+
+. collect: qui estat impact
+
+. 
+. * SLX model
+. qui spregress CRIME INC HOVAL, ml ivarlag(WqueenSt: INC HOVAL)
+
+. eststo SLX
+
+. collect: qui estat impact
+
+. 
+. * SDM model 
+. qui spregress CRIME INC HOVAL, ml dvarlag(WqueenSt) ivarlag(WqueenSt: INC HOVAL)
+
+. eststo SDM
+
+. collect: qui estat impact
+
+. 
+. * SDEM model
+. qui spregress CRIME INC HOVAL, ml ivarlag(WqueenSt: INC HOVAL) errorlag(WqueenSt)
+
+. eststo SDEM
+
+. collect: qui estat impact
+
+. 
+. * SARAR/SAC model
+. qui spregress CRIME INC HOVAL, ml dvarlag(WqueenSt) errorlag(WqueenSt)
+
+. eststo SARAR
+
+. collect: qui estat impact
+
+. 
+. * GNS model
+. qui spregress CRIME INC HOVAL, ml dvarlag(WqueenSt) ivarlag(WqueenSt: INC HOVAL) errorlag(WqueenSt)
+
+. eststo GNS
+
+. collect: qui estat impact
+
+. 
+. * Comparative results
+. esttab OLS SAR SEM SLX SDM SDEM SARAR GNS, label b(%7.2f)  star(* 0.10 ** 0.05 *** 0.01) stats(ll aic)  mtitle("OLS" "SAR" "SEM" "SLX" "SDM" "SDEM" "SARAR"
+>  "GNS")
+
+----------------------------------------------------------------------------------------------------------------------------------------------------
+                              (1)             (2)             (3)             (4)             (5)             (6)             (7)             (8)   
+                              OLS             SAR             SEM             SLX             SDM            SDEM           SARAR             GNS   
+----------------------------------------------------------------------------------------------------------------------------------------------------
+main                                                                                                                                                
+Income                      -1.60***        -1.05***        -0.96**         -1.10***        -0.92***        -1.05***        -1.04***        -0.96***
+                          (-4.78)         (-3.17)         (-2.54)         (-3.10)         (-2.71)         (-3.25)         (-3.11)         (-2.69)   
+
+House value                 -0.27**         -0.27***        -0.30***        -0.29***        -0.30***        -0.28***        -0.28***        -0.29***
+                          (-2.65)         (-3.00)         (-3.30)         (-3.06)         (-3.30)         (-3.05)         (-2.98)         (-3.13)   
+
+Constant                    68.62***        45.60***        60.28***        74.55***        44.32***        73.65***        47.92***        53.05*  
+                          (14.49)          (5.73)         (10.21)         (11.72)          (3.12)          (8.41)          (5.15)          (1.69)   
+----------------------------------------------------------------------------------------------------------------------------------------------------
+WqueenSt                                                                                                                                            
+Crime                                        0.42***                                         0.40**                          0.37**          0.28   
+                                           (3.37)                                          (2.35)                          (2.06)          (0.68)   
+
+e.Crime                                                      0.55***                                         0.40**          0.15            0.16   
+                                                           (3.47)                                          (2.28)          (0.49)          (0.35)   
+
+Income                                                                      -1.40***        -0.58           -1.20**                         -0.77   
+                                                                          (-2.64)         (-0.96)         (-2.06)                         (-0.90)   
+
+House value                                                                  0.21            0.26            0.13                            0.22   
+                                                                           (1.09)          (1.39)          (0.62)                          (0.95)   
+----------------------------------------------------------------------------------------------------------------------------------------------------
+/                                                                                                                                                   
+var(e.CRIME)                                96.86***        97.67***       106.82***        93.27***        93.80***        97.04***        94.49***
+                                           (4.90)          (4.78)          (4.95)          (4.87)          (4.86)          (4.91)          (4.89)   
+----------------------------------------------------------------------------------------------------------------------------------------------------
+ll                        -187.38         -182.67         -183.75         -183.97         -181.64         -181.78         -182.56         -181.58   
+aic                        380.75          375.35          377.50          379.94          377.28          377.56          377.11          379.16   
+----------------------------------------------------------------------------------------------------------------------------------------------------
+t statistics in parentheses
+* p<0.10, ** p<0.05, *** p<0.01
+
+. *eststo clear
+. 
+. ** Direct and indirect effects
+. 
+. collect label list cmdset, all
+
+  Collection: default
+   Dimension: cmdset
+       Label: Command results index
+Level labels:
+           1  
+           2  
+           3  
+           4  
+           5  
+           6  
+           7  
+
+. collect style autolevels result b_direct b_indirect  
+
+. collect label levels cmdset  1 "SAR" 2 "SEM" 3 "SLX" 4 "SDM" 5 "SDEM" 6 "SARAR" 7 "GNS"
+
+. collect style cell, nformat(%7.2f)
+
+. collect layout (colname#result) (cmdset) 
+
+Collection: default
+      Rows: colname#result
+   Columns: cmdset
+   Table 1: 6 x 7
+
+--------------------------------------------------------
+             |   SAR   SEM   SLX   SDM  SDEM SARAR   GNS
+-------------+------------------------------------------
+Income       |                                          
+  b_direct   | -1.10 -0.96 -1.10 -1.02 -1.05 -1.08 -1.03
+  b_indirect | -0.72  0.00 -1.40 -1.50 -1.20 -0.57 -1.39
+House value  |                                          
+  b_direct   | -0.28 -0.30 -0.29 -0.28 -0.28 -0.29 -0.28
+  b_indirect | -0.18  0.00  0.21  0.22  0.13 -0.15  0.18
+--------------------------------------------------------
+
+. 
+. 
+. ** Model selection
+. 
+. * LR test:  SDM becomes SAR? (If p < 10%, No)
+. lrtest SDM SAR
+
+Likelihood-ratio test
+Assumption: SAR nested within SDM
+
+ LR chi2(2) =   2.07
+Prob > chi2 = 0.3553
+
+. 
+. * LR test: SDM becomes SEM? (If p < 10%, No)
+. lrtest SDM SEM
+
+Likelihood-ratio test
+Assumption: SEM nested within SDM
+
+ LR chi2(2) =   4.22
+Prob > chi2 = 0.1212
+
+. 
+. * LR test: SDM becomes SLX? (If p < 10%, No)
+. lrtest SDM SLX
+
+Likelihood-ratio test
+Assumption: SLX nested within SDM
+
+ LR chi2(1) =   4.66
+Prob > chi2 = 0.0308
+
+. 
+. * Wald test: SDM becomes SAR?  (If p < 10%, No)
+. test ([WqueenSt]INC = 0) ([WqueenSt]HOVAL = 0)
+
+ ( 1)  [WqueenSt]INC = 0
+ ( 2)  [WqueenSt]HOVAL = 0
+
+           chi2(  2) =    1.93
+         Prob > chi2 =    0.3809
+
+. 
+. * Wald test: SDM becomes SEM?  (If p < 10%, No)
+. testnl ([WqueenSt]INC = -[WqueenSt]CRIME*[CRIME]INC) ([WqueenSt]HOVAL = -[WqueenSt]CRIME*[CRIME]HOVAL)
+
+  (1)  [WqueenSt]INC = -[WqueenSt]CRIME*[CRIME]INC
+  (2)  [WqueenSt]HOVAL = -[WqueenSt]CRIME*[CRIME]HOVAL
+
+               chi2(2) =        3.21
+           Prob > chi2 =        0.2014
+
+. 
+. * Wald test: SDM becomes SLX?  (If p < 10%, No)
+. test ([WqueenSt]CRIME = 0)
+
+ ( 1)  [WqueenSt]CRIME = 0
+
+           chi2(  1) =    0.46
+         Prob > chi2 =    0.4967
+
+. 
+. * LM tests (W created using spatwmat)
+. spatwmat using "WqueenBin.dta", name(WqueenSt_from_spatwmat) eigenval(eWqueenSt_from_spatwmat) standardize
+
+
+The following matrices have been created:
+
+1. Imported binary weights matrix WqueenSt_from_spatwmat (row-standardized)
+   Dimension: 49x49
+
+2. Eigenvalues matrix eWqueenSt_from_spatwmat
+   Dimension: 49x1
+
+
+
+. qui reg CRIME INC HOVAL
+
+. spatdiag, weights(WqueenSt_from_spatwmat)
+
+
+Diagnostic tests for spatial dependence in OLS regression
+
+
+Fitted model
+------------------------------------------------------------
+CRIME = INC + HOVAL
+------------------------------------------------------------
+
+Weights matrix
+------------------------------------------------------------
+Name: WqueenSt_from_spatwmat
+Type: Imported (binary)
+Row-standardized: Yes
+------------------------------------------------------------
+
+Diagnostics
+------------------------------------------------------------
+Test                           |  Statistic    df   p-value
+-------------------------------+----------------------------
+Spatial error:                 |
+  Moran's I                    |     2.840      1    0.005
+  Lagrange multiplier          |     5.206      1    0.023
+  Robust Lagrange multiplier   |     0.044      1    0.834
+                               |
+Spatial lag:                   |
+  Lagrange multiplier          |     8.898      1    0.003
+  Robust Lagrange multiplier   |     3.736      1    0.053
+------------------------------------------------------------
+
+
+
+. 
+. ** 99. Close log file
+. log close
+      name:  <unnamed>
+       log:  /Users/carlos/Github/QuaRCS-lab/tutorial-spatial-cross-section-columbus-crime/DO_spatial_cross_sectionsV2.txt
+  log type:  text
+ closed on:  20 Feb 2022, 14:54:38
+-------------------------------------------------------------------------------------------------------------------------------------------------------------

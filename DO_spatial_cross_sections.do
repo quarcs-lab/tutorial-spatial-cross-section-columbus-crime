@@ -8,7 +8,7 @@ cls
 version 15
 
 * Change working directory
-  * to the location of this .do file
+* cd "/Users/carlos/Github/QuaRCS-lab/tutorial-spatial-cross-section-columbus-crime"
 
 
 * Manually download the data (A shapefile that includes the variables) and store it in a data folder
