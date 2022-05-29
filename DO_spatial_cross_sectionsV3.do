@@ -47,11 +47,11 @@ log using "DO_spatial_cross_sectionsV3.txt", text replace
 *ssc install palettes      
 *ssc install colrspace
 
-** 4a. Import W matrix from .dta file (create_W_using_PySAL)
-import delimited "https://gist.github.com/cmg777/1021c13f244a2ad2cb0f0a59f19bcd5d/raw/c28927b2c8d68a91f35afc530d829ad11f3fab82/df_ids_AND_WqueenMatrix.csv", case(preserve) clear
-*import delimited "df_ids_AND_WqueenMatrix", case(preserve) clear
+**  Import W matrix from .csv file (See create_W_using_PySAL.ipynb AND https://github.com/quarcs-lab/tutorial-spatial-cross-section-columbus-crime/blob/main/df_ids_AND_WqueenMatrix.csv  )
+import delimited "https://github.com/quarcs-lab/tutorial-spatial-cross-section-columbus-crime/raw/main/df_ids_AND_WqueenMatrix.csv", case(preserve) clear
 drop v1
 
+** Create weights matrix from tabular data file
 spset polyID
 spmatrix fromdata WqueenSt = v*, normalize(row) replace
 spmatrix summarize WqueenSt

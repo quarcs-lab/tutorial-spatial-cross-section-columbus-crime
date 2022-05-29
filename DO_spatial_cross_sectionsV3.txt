@@ -2,7 +2,7 @@
       name:  <unnamed>
        log:  /Users/carlos/Github/QuaRCS-lab/tutorial-spatial-cross-section-columbus-crime/DO_spatial_cross_sectionsV3.txt
   log type:  text
- opened on:  29 May 2022, 11:53:15
+ opened on:  29 May 2022, 11:59:17
 
 . 
 . ** 3. Install modules
@@ -26,16 +26,17 @@
 . *ssc install palettes      
 . *ssc install colrspace
 . 
-. ** 4a. Import W matrix from .dta file (create_W_using_PySAL)
-. import delimited "https://gist.github.com/cmg777/1021c13f244a2ad2cb0f0a59f19bcd5d/raw/c28927b2c8d68a91f35afc530d829ad11f3
-> fab82/df_ids_AND_WqueenMatrix.csv", case(preserve) clear
+. **  Import W matrix from .csv file (See create_W_using_PySAL.ipynb AND https://github.com/quarcs-lab/tutorial-spatial-cro
+> ss-section-columbus-crime/blob/main/df_ids_AND_WqueenMatrix.csv  )
+. import delimited "https://github.com/quarcs-lab/tutorial-spatial-cross-section-columbus-crime/raw/main/df_ids_AND_WqueenM
+> atrix.csv", case(preserve) clear
 (encoding automatically selected: ISO-8859-2)
 (51 vars, 49 obs)
 
-. *import delimited "df_ids_AND_WqueenMatrix", case(preserve) clear
 . drop v1
 
 . 
+. ** Create weights matrix from tabular data file
 . spset polyID
 
       Sp dataset: <current>
@@ -411,5 +412,5 @@ Spatial lag:                   |
       name:  <unnamed>
        log:  /Users/carlos/Github/QuaRCS-lab/tutorial-spatial-cross-section-columbus-crime/DO_spatial_cross_sectionsV3.txt
   log type:  text
- closed on:  29 May 2022, 11:53:17
+ closed on:  29 May 2022, 11:59:20
 ---------------------------------------------------------------------------------------------------------------------------
