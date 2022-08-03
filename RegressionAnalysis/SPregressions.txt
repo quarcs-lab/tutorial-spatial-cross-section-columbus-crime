@@ -1,0 +1,1008 @@
+----------------------------------------------------------------------------------------------------------------------------------------------------------------------
+      name:  <unnamed>
+       log:  /Users/carlos/Github/QuaRCS-lab/tutorial-spatial-cross-section-columbus-crime/RegressionAnalysis/SPregressions.txt
+  log type:  text
+ opened on:   3 Aug 2022, 14:20:34
+
+. **=====================================================
+. ** Program Name: Spatial cross-sectional regressions using the Columbus data 
+. ** Author: Carlos Mendez
+. ** Date: 03-Aug-2022
+. ** --------------------------------------------------------------------------------------------
+. ** Inputs/Ouputs:
+. * Data files used: W_bin.dta , data.dta
+. 
+. * Data files created as final product:
+. 
+. **=====================================================
+. 
+. ** Install additional modules
+. *ssc install spmap
+. *ssc install shp2dta
+. *net install sg162, from(http://www.stata.com/stb/stb60)
+. *net install st0292, from(http://www.stata-journal.com/software/sj13-2)
+. *net install spwmatrix, from(http://fmwww.bc.edu/RePEc/bocode/s)
+. *net install splagvar, from(http://fmwww.bc.edu/RePEc/bocode/s)
+. *ssc install xsmle.pkg
+. *ssc install xtcsd
+. *ssc install geo2xy    
+. 
+. 
+. **=====================================================
+. ******** Construct W matrix in different formats 
+. **=====================================================
+. 
+. ** Import W from .gal file and row-stadandardize it (not recomendable?)
+. *spwmatrix import using "Wqueen_fromGeoda.gal", wname(W_st) rowstand  xport(W_st, txt) replace
+. 
+. ** Load binary queen contiguity weights matrix
+. use W_bin.dta, clear
+
+. 
+. ** Create row-standardized W using spmatrix to be used for regressions
+. spset POLY_ID
+
+      Sp dataset: W_bin.dta
+Linked shapefile: <none>
+            Data: Cross sectional
+ Spatial-unit ID: _ID (equal to POLY_ID)
+     Coordinates: <none>
+
+. spmatrix fromdata W_st = _0-_48, normalize(row) replace
+
+. spmatrix summarize W_st
+
+Weighting matrix W_st
+---------------------------------------
+           Type |           contiguity
+  Normalization |                  row
+      Dimension |              49 x 49
+Elements        |
+   minimum      |                    0
+   minimum > 0  |                   .1
+   mean         |             .0204082
+   max          |                   .5
+Neighbors       |
+   minimum      |                    2
+   mean         |             4.816327
+   maximum      |                   10
+---------------------------------------
+
+. 
+. * Create row-standardized W using spmat to be used for regressions
+. drop POLY_ID  _ID
+
+. spmat dta W_st _0-_48, norm(row)
+
+. spmat summarize W_st, links detail
+
+Summary of spatial-weighting object W_st
+-----------------------------------------
+        Matrix |             Description
+---------------+-------------------------
+    Dimensions |                 49 x 49
+     Stored as |                 49 x 49
+ Links         |
+         total |                     236
+           min |                       2
+          mean |                4.816327
+           max |                      10
+-----------------------------------------
+
+Tabulation of links
+-------------------------
+ # of links |        Obs
+------------+------------
+          2 |          5
+          3 |          9
+          4 |         12
+          5 |          5
+          6 |          9
+          7 |          3
+          8 |          4
+          9 |          1
+         10 |          1
+------------+------------
+        Sum |         49
+-------------------------
+
+Ids of observations with 2 links:
+ 1 6 42 46 47
+
+Ids of observations with 10 links:
+ 20
+
+. save  W_st.dta, replace
+file W_st.dta saved
+
+. 
+. * Create row-standardized W using spwmatrix to be used for LM test
+. spwmatrix import using "W_st.dta", wname(Wxt_st) dta conn
+
+DTA file W_st.dta imported successfully as a (49 x 49) SPW matrix and the following action(s) taken:
+
+ - Spatial weights matrix  created as Stata object(s): Wxt_st.
+
+Connectivity Information for the Spatial Weights Matrix
+  - Sparseness: 9.829%
+  - Neighbors: 
+      Min   : 2
+      Mean  : 5
+      Median: 4
+      Max   : 10
+
+. 
+. 
+. **=====================================================
+. ******** Load the dataset and prepare for regressions
+. **=====================================================
+. use data.dta, clear
+
+. spset POLY_ID
+
+      Sp dataset: data.dta
+Linked shapefile: <none>
+            Data: Cross sectional
+ Spatial-unit ID: _ID (equal to POLY_ID)
+     Coordinates: <none>
+
+. 
+. label var CRIME "Crime"
+
+. label var INC   "Income"
+
+. label var HOVAL "House value"
+
+. 
+. **=====================================================
+. ******** Construct spatial lags 
+. **=====================================================
+. spgenerate W_CRIME = W_st*CRIME
+
+. spgenerate W_INC   = W_st*INC
+
+. spgenerate W_HOVAL = W_st*HOVAL
+
+. 
+. label var W_CRIME "SP lag of Crime"
+
+. label var W_INC   "SP lag of Income"
+
+. label var W_HOVAL "SP lag of House value"
+
+. 
+. summarize CRIME W_CRIME INC W_INC HOVAL W_HOVAL
+
+    Variable |        Obs        Mean    Std. dev.       Min        Max
+-------------+---------------------------------------------------------
+       CRIME |         49    35.12882    16.73209    .178269   68.89204
+     W_CRIME |         49    35.05077    12.23959   13.85469   54.90556
+         INC |         49    14.37494    5.703378      4.477      31.07
+       W_INC |         49    14.72473    4.232469     8.5385   26.06625
+       HOVAL |         49    38.43622    18.46607       17.9       96.4
+-------------+---------------------------------------------------------
+     W_HOVAL |         49    38.45495    10.13725      23.41   75.13333
+
+. 
+. eststo clear
+
+. eststo: qui reg W_CRIME CRIME
+(est1 stored)
+
+. eststo: qui reg W_INC   INC
+(est2 stored)
+
+. eststo: qui reg W_HOVAL HOVAL
+(est3 stored)
+
+. esttab, se b(%7.2f) star(* 0.10 ** 0.05 *** 0.01)  stats(r2 aic) mtitles("W_CRIME" "W_INC" "W_HOVAL")
+
+------------------------------------------------------------
+                      (1)             (2)             (3)   
+                  W_CRIME           W_INC         W_HOVAL   
+------------------------------------------------------------
+CRIME                0.50***                                
+                   (0.08)                                   
+
+INC                                  0.42***                
+                                   (0.09)                   
+
+HOVAL                                                0.18** 
+                                                   (0.08)   
+
+_cons               17.48***         8.75***        31.53***
+                   (3.02)          (1.38)          (3.22)   
+------------------------------------------------------------
+r2                   0.47            0.31            0.11   
+aic                356.62          264.99          363.46   
+------------------------------------------------------------
+Standard errors in parentheses
+* p<0.10, ** p<0.05, *** p<0.01
+
+. eststo clear
+
+. 
+. **=====================================================
+. ******** OLS with spatial diagnostics
+. **=====================================================
+. 
+. reg CRIME INC HOVAL
+
+      Source |       SS           df       MS      Number of obs   =        49
+-------------+----------------------------------   F(2, 46)        =     28.39
+       Model |  7423.32674         2  3711.66337   Prob > F        =    0.0000
+    Residual |  6014.89281        46  130.758539   R-squared       =    0.5524
+-------------+----------------------------------   Adj R-squared   =    0.5329
+       Total |  13438.2195        48  279.962907   Root MSE        =    11.435
+
+------------------------------------------------------------------------------
+       CRIME | Coefficient  Std. err.      t    P>|t|     [95% conf. interval]
+-------------+----------------------------------------------------------------
+         INC |  -1.597311   .3341308    -4.78   0.000    -2.269881   -.9247405
+       HOVAL |  -.2739315   .1031987    -2.65   0.011    -.4816597   -.0662033
+       _cons |   68.61896   4.735486    14.49   0.000     59.08692      78.151
+------------------------------------------------------------------------------
+
+. estat moran, errorlag(W_st)
+
+Moran test for spatial dependence
+         H0: Error terms are i.i.d.
+         Errorlags:  W_st
+
+         chi2(1)      =     5.21
+         Prob > chi2  =   0.0225
+
+. 
+. 
+. spatwmat using "W_st.dta", name(W_st4LM) eigenval(W_st4LMeigen) 
+
+
+The following matrices have been created:
+
+1. Imported binary weights matrix W_st4LM 
+   Dimension: 49x49
+
+2. Eigenvalues matrix W_st4LMeigen
+   Dimension: 49x1
+
+
+
+. qui reg CRIME INC HOVAL
+
+. spatdiag, weights(W_st4LM)
+
+
+Diagnostic tests for spatial dependence in OLS regression
+
+
+Fitted model
+------------------------------------------------------------
+CRIME = INC + HOVAL
+------------------------------------------------------------
+
+Weights matrix
+------------------------------------------------------------
+Name: W_st4LM
+Type: Imported (binary)
+Row-standardized: No
+------------------------------------------------------------
+
+Diagnostics
+------------------------------------------------------------
+Test                           |  Statistic    df   p-value
+-------------------------------+----------------------------
+Spatial error:                 |
+  Moran's I                    |     0.985      1    0.324
+  Lagrange multiplier          |     6.412      1    0.011
+  Robust Lagrange multiplier   |     1.733      1    0.188
+                               |
+Spatial lag:                   |
+  Lagrange multiplier          |    12.534      1    0.000
+  Robust Lagrange multiplier   |     7.855      1    0.005
+------------------------------------------------------------
+
+
+
+. 
+. 
+. **=====================================================
+. ******** SPATIAL models with marginal effects
+. **=====================================================
+. 
+. **=====================================================**===============**===============
+. **>>>>>>> SAR
+. **=====================================================**===============**===============
+. spregress CRIME INC HOVAL, ml dvarlag(W_st)
+  (49 observations)
+  (49 observations (places) used)
+  (weighting matrix defines 49 places)
+
+Performing grid search ... finished 
+
+Optimizing concentrated log likelihood:
+
+Iteration 0:   log likelihood = -182.69106  
+Iteration 1:   log likelihood = -182.67397  
+Iteration 2:   log likelihood = -182.67397  
+
+Optimizing unconcentrated log likelihood:
+
+Iteration 0:   log likelihood = -182.67397  
+Iteration 1:   log likelihood = -182.67397  (backed up)
+
+Spatial autoregressive model                            Number of obs =     49
+Maximum likelihood estimates                            Wald chi2(3)  =  88.00
+                                                        Prob > chi2   = 0.0000
+Log likelihood = -182.67397                             Pseudo R2     = 0.5806
+
+------------------------------------------------------------------------------
+       CRIME | Coefficient  Std. err.      z    P>|z|     [95% conf. interval]
+-------------+----------------------------------------------------------------
+CRIME        |
+         INC |  -1.048728   .3304298    -3.17   0.002    -1.696359   -.4010978
+       HOVAL |  -.2663348   .0888474    -3.00   0.003    -.4404726   -.0921971
+       _cons |   45.60325   7.951827     5.73   0.000     30.01796    61.18854
+-------------+----------------------------------------------------------------
+W_st         |
+       CRIME |   .4233254   .1255855     3.37   0.001     .1771824    .6694684
+-------------+----------------------------------------------------------------
+ var(e.CRIME)|   96.85718   19.77581                      64.91392    144.5193
+------------------------------------------------------------------------------
+Wald test of spatial terms:          chi2(1) = 11.36      Prob > chi2 = 0.0007
+
+. estat impact
+
+progress   : 50% 100% 
+
+Average impacts                                 Number of obs     =         49
+
+------------------------------------------------------------------------------
+             |            Delta-Method
+             |      dy/dx   std. err.      z    P>|z|     [95% conf. interval]
+-------------+----------------------------------------------------------------
+direct       |
+         INC |  -1.100895   .3302446    -3.33   0.001    -1.748163   -.4536279
+       HOVAL |  -.2795832   .0935004    -2.99   0.003    -.4628406   -.0963258
+-------------+----------------------------------------------------------------
+indirect     |
+         INC |  -.7176833   .3163904    -2.27   0.023    -1.337797   -.0975694
+       HOVAL |  -.1822627   .1083184    -1.68   0.092    -.3945629    .0300375
+-------------+----------------------------------------------------------------
+total        |
+         INC |  -1.818579   .5115003    -3.56   0.000    -2.821101   -.8160566
+       HOVAL |  -.4618459   .1818435    -2.54   0.011    -.8182526   -.1054392
+------------------------------------------------------------------------------
+
+. 
+. **=====================================================**===============**===============
+. **>>>>>>> SEM
+. **=====================================================**===============**===============
+. spregress CRIME INC HOVAL, ml errorlag(W_st)
+  (49 observations)
+  (49 observations (places) used)
+  (weighting matrix defines 49 places)
+
+Performing grid search ... finished 
+
+Optimizing concentrated log likelihood:
+
+Iteration 0:   log likelihood = -183.79112  
+Iteration 1:   log likelihood =  -183.7495  
+Iteration 2:   log likelihood = -183.74943  
+Iteration 3:   log likelihood = -183.74943  
+
+Optimizing unconcentrated log likelihood:
+
+Iteration 0:   log likelihood = -183.74943  
+Iteration 1:   log likelihood = -183.74943  (backed up)
+
+Spatial autoregressive model                            Number of obs =     49
+Maximum likelihood estimates                            Wald chi2(2)  =  30.15
+                                                        Prob > chi2   = 0.0000
+Log likelihood = -183.74943                             Pseudo R2     = 0.5362
+
+------------------------------------------------------------------------------
+       CRIME | Coefficient  Std. err.      z    P>|z|     [95% conf. interval]
+-------------+----------------------------------------------------------------
+CRIME        |
+         INC |  -.9573054   .3771545    -2.54   0.011    -1.696515   -.2180961
+       HOVAL |  -.3045593   .0921607    -3.30   0.001    -.4851909   -.1239277
+       _cons |   60.27947   5.904297    10.21   0.000     48.70726    71.85168
+-------------+----------------------------------------------------------------
+W_st         |
+     e.CRIME |    .546753   .1575357     3.47   0.001     .2379886    .8555173
+-------------+----------------------------------------------------------------
+ var(e.CRIME)|   97.67424   20.43916                      64.81252    147.1977
+------------------------------------------------------------------------------
+Wald test of spatial terms:          chi2(1) = 12.05      Prob > chi2 = 0.0005
+
+. estat impact
+
+progress   : 50% 100% 
+
+Average impacts                                 Number of obs     =         49
+
+------------------------------------------------------------------------------
+             |            Delta-Method
+             |      dy/dx   std. err.      z    P>|z|     [95% conf. interval]
+-------------+----------------------------------------------------------------
+direct       |
+         INC |  -.9573054   .3771545    -2.54   0.011    -1.696515   -.2180961
+       HOVAL |  -.3045593   .0921607    -3.30   0.001    -.4851909   -.1239277
+-------------+----------------------------------------------------------------
+indirect     |
+         INC |          0  (omitted)
+       HOVAL |          0  (omitted)
+-------------+----------------------------------------------------------------
+total        |
+         INC |  -.9573054   .3771545    -2.54   0.011    -1.696515   -.2180961
+       HOVAL |  -.3045593   .0921607    -3.30   0.001    -.4851909   -.1239277
+------------------------------------------------------------------------------
+
+. 
+. **=====================================================**===============**===============
+. **>>>>>>> SLX
+. **=====================================================**===============**===============
+. spregress CRIME INC HOVAL, ml ivarlag(W_st: INC HOVAL)
+  (49 observations)
+  (49 observations (places) used)
+  (weighting matrix defines 49 places)
+
+Optimizing unconcentrated log likelihood:
+
+Iteration 0:   log likelihood =  -183.9706  
+Iteration 1:   log likelihood =  -183.9706  
+
+Spatial autoregressive model                            Number of obs =     49
+Maximum likelihood estimates                            Wald chi2(4)  =  76.80
+                                                        Prob > chi2   = 0.0000
+Log likelihood = -183.9706                              Pseudo R2     = 0.6105
+
+------------------------------------------------------------------------------
+       CRIME | Coefficient  Std. err.      z    P>|z|     [95% conf. interval]
+-------------+----------------------------------------------------------------
+CRIME        |
+         INC |   -1.09739   .3542452    -3.10   0.002    -1.791698    -.403082
+       HOVAL |  -.2943898   .0963324    -3.06   0.002    -.4831978   -.1055817
+       _cons |   74.55343   6.363789    11.72   0.000     62.08063    87.02622
+-------------+----------------------------------------------------------------
+W_st         |
+         INC |  -1.398746   .5307781    -2.64   0.008    -2.439052   -.3584398
+       HOVAL |    .214841   .1970276     1.09   0.276     -.171326    .6010079
+-------------+----------------------------------------------------------------
+ var(e.CRIME)|   106.8181    21.5805                      71.89125    158.7133
+------------------------------------------------------------------------------
+Wald test of spatial terms:          chi2(2) = 7.31       Prob > chi2 = 0.0259
+
+. estat impact
+
+progress   : 50% 100% 
+
+Average impacts                                 Number of obs     =         49
+
+------------------------------------------------------------------------------
+             |            Delta-Method
+             |      dy/dx   std. err.      z    P>|z|     [95% conf. interval]
+-------------+----------------------------------------------------------------
+direct       |
+         INC |   -1.09739   .3542452    -3.10   0.002    -1.791698    -.403082
+       HOVAL |  -.2943898   .0963324    -3.06   0.002    -.4831978   -.1055817
+-------------+----------------------------------------------------------------
+indirect     |
+         INC |  -1.398746   .5307781    -2.64   0.008    -2.439052   -.3584398
+       HOVAL |    .214841   .1970276     1.09   0.276     -.171326    .6010079
+-------------+----------------------------------------------------------------
+total        |
+         INC |  -2.496136   .4671431    -5.34   0.000    -3.411719   -1.580552
+       HOVAL |  -.0795488   .1966064    -0.40   0.686    -.4648903    .3057927
+------------------------------------------------------------------------------
+
+. 
+. **=====================================================**===============**===============
+. **>>>>>>> SDEM
+. **=====================================================**===============**===============
+. spregress CRIME INC HOVAL, ml ivarlag(W_st: INC HOVAL) errorlag(W_st)
+  (49 observations)
+  (49 observations (places) used)
+  (weighting matrix defines 49 places)
+
+Performing grid search ... finished 
+
+Optimizing concentrated log likelihood:
+
+Iteration 0:   log likelihood =  -181.7792  
+Iteration 1:   log likelihood =   -181.779  
+Iteration 2:   log likelihood =   -181.779  
+
+Optimizing unconcentrated log likelihood:
+
+Iteration 0:   log likelihood =   -181.779  
+Iteration 1:   log likelihood =   -181.779  (backed up)
+
+Spatial autoregressive model                            Number of obs =     49
+Maximum likelihood estimates                            Wald chi2(4)  =  46.68
+                                                        Prob > chi2   = 0.0000
+Log likelihood = -181.779                               Pseudo R2     = 0.6092
+
+------------------------------------------------------------------------------
+       CRIME | Coefficient  Std. err.      z    P>|z|     [95% conf. interval]
+-------------+----------------------------------------------------------------
+CRIME        |
+         INC |  -1.052258   .3233005    -3.25   0.001    -1.685916   -.4186011
+       HOVAL |  -.2781741    .091165    -3.05   0.002    -.4568542    -.099494
+       _cons |   73.64508   8.761175     8.41   0.000     56.47349    90.81667
+-------------+----------------------------------------------------------------
+W_st         |
+         INC |  -1.204876   .5860084    -2.06   0.040    -2.353432   -.0563208
+       HOVAL |   .1312451   .2111476     0.62   0.534    -.2825967    .5450869
+     e.CRIME |   .4035821   .1773581     2.28   0.023     .0559665    .7511976
+-------------+----------------------------------------------------------------
+ var(e.CRIME)|    93.8033   19.30177                      62.67113    140.4005
+------------------------------------------------------------------------------
+Wald test of spatial terms:          chi2(3) = 12.03      Prob > chi2 = 0.0073
+
+. estat impact
+
+progress   : 50% 100% 
+
+Average impacts                                 Number of obs     =         49
+
+------------------------------------------------------------------------------
+             |            Delta-Method
+             |      dy/dx   std. err.      z    P>|z|     [95% conf. interval]
+-------------+----------------------------------------------------------------
+direct       |
+         INC |  -1.052258   .3233005    -3.25   0.001    -1.685916   -.4186011
+       HOVAL |  -.2781741    .091165    -3.05   0.002    -.4568542    -.099494
+-------------+----------------------------------------------------------------
+indirect     |
+         INC |  -1.204876   .5860084    -2.06   0.040    -2.353432   -.0563208
+       HOVAL |   .1312451   .2111476     0.62   0.534    -.2825967    .5450869
+-------------+----------------------------------------------------------------
+total        |
+         INC |  -2.257135   .6515178    -3.46   0.001    -3.534086   -.9801832
+       HOVAL |   -.146929   .2403654    -0.61   0.541    -.6180365    .3241785
+------------------------------------------------------------------------------
+
+. 
+. **=====================================================**===============**===============
+. **>>>>>>> SDM
+. **=====================================================**===============**===============
+. spregress CRIME INC HOVAL, ml dvarlag(W_st) ivarlag(W_st: INC HOVAL)
+  (49 observations)
+  (49 observations (places) used)
+  (weighting matrix defines 49 places)
+
+Performing grid search ... finished 
+
+Optimizing concentrated log likelihood:
+
+Iteration 0:   log likelihood = -181.63946  
+Iteration 1:   log likelihood = -181.63926  
+Iteration 2:   log likelihood = -181.63925  
+
+Optimizing unconcentrated log likelihood:
+
+Iteration 0:   log likelihood = -181.63925  
+Iteration 1:   log likelihood = -181.63925  (backed up)
+
+Spatial autoregressive model                            Number of obs =     49
+Maximum likelihood estimates                            Wald chi2(5)  =  93.47
+                                                        Prob > chi2   = 0.0000
+Log likelihood = -181.63925                             Pseudo R2     = 0.6120
+
+------------------------------------------------------------------------------
+       CRIME | Coefficient  Std. err.      z    P>|z|     [95% conf. interval]
+-------------+----------------------------------------------------------------
+CRIME        |
+         INC |  -.9199061   .3395439    -2.71   0.007      -1.5854   -.2544122
+       HOVAL |  -.2971294   .0900249    -3.30   0.001     -.473575   -.1206838
+       _cons |   44.32001   14.18338     3.12   0.002     16.52109    72.11892
+-------------+----------------------------------------------------------------
+W_st         |
+         INC |  -.5839134   .6053404    -0.96   0.335    -1.770359    .6025321
+       HOVAL |   .2576843   .1850135     1.39   0.164    -.1049355    .6203042
+       CRIME |   .4034626   .1718368     2.35   0.019     .0666687    .7402565
+-------------+----------------------------------------------------------------
+ var(e.CRIME)|   93.27224   19.17105                      62.34442    139.5427
+------------------------------------------------------------------------------
+Wald test of spatial terms:          chi2(3) = 13.88      Prob > chi2 = 0.0031
+
+. estat impact
+
+progress   : 50% 100% 
+
+Average impacts                                 Number of obs     =         49
+
+------------------------------------------------------------------------------
+             |            Delta-Method
+             |      dy/dx   std. err.      z    P>|z|     [95% conf. interval]
+-------------+----------------------------------------------------------------
+direct       |
+         INC |  -1.024988   .3241534    -3.16   0.002    -1.660317   -.3896587
+       HOVAL |  -.2819673   .0911938    -3.09   0.002    -.4607038   -.1032309
+-------------+----------------------------------------------------------------
+indirect     |
+         INC |  -1.495926   .6979788    -2.14   0.032    -2.863939   -.1279128
+       HOVAL |    .215844   .2797595     0.77   0.440    -.3324746    .7641626
+-------------+----------------------------------------------------------------
+total        |
+         INC |  -2.520914   .7319696    -3.44   0.001    -3.955548    -1.08628
+       HOVAL |  -.0661233    .308123    -0.21   0.830    -.6700333    .5377866
+------------------------------------------------------------------------------
+
+. 
+. **=====================================================**===============**===============
+. **>>>>>>> SAC
+. **=====================================================**===============**===============
+. spregress CRIME INC HOVAL, ml dvarlag(W_st) errorlag(W_st)
+  (49 observations)
+  (49 observations (places) used)
+  (weighting matrix defines 49 places)
+
+Performing grid search ... finished 
+
+Optimizing concentrated log likelihood:
+
+Iteration 0:   log likelihood = -182.57166  
+Iteration 1:   log likelihood = -182.55505  
+Iteration 2:   log likelihood = -182.55502  
+Iteration 3:   log likelihood = -182.55502  
+
+Optimizing unconcentrated log likelihood:
+
+Iteration 0:   log likelihood = -182.55502  
+Iteration 1:   log likelihood = -182.55502  (backed up)
+
+Spatial autoregressive model                            Number of obs =     49
+Maximum likelihood estimates                            Wald chi2(3)  =  57.82
+                                                        Prob > chi2   = 0.0000
+Log likelihood = -182.55502                             Pseudo R2     = 0.5793
+
+------------------------------------------------------------------------------
+       CRIME | Coefficient  Std. err.      z    P>|z|     [95% conf. interval]
+-------------+----------------------------------------------------------------
+CRIME        |
+         INC |  -1.042749   .3357121    -3.11   0.002    -1.700733   -.3847656
+       HOVAL |  -.2798409     .09405    -2.98   0.003    -.4641755   -.0955063
+       _cons |   47.91536   9.298755     5.15   0.000     29.69013    66.14058
+-------------+----------------------------------------------------------------
+W_st         |
+       CRIME |   .3693743   .1792524     2.06   0.039      .018046    .7207026
+     e.CRIME |   .1464169   .2997182     0.49   0.625      -.44102    .7338538
+-------------+----------------------------------------------------------------
+ var(e.CRIME)|   97.04344   19.77021                      65.09608    144.6697
+------------------------------------------------------------------------------
+Wald test of spatial terms:          chi2(2) = 10.63      Prob > chi2 = 0.0049
+
+. estat impact
+
+progress   : 50% 100% 
+
+Average impacts                                 Number of obs     =         49
+
+------------------------------------------------------------------------------
+             |            Delta-Method
+             |      dy/dx   std. err.      z    P>|z|     [95% conf. interval]
+-------------+----------------------------------------------------------------
+direct       |
+         INC |  -1.080454   .3399106    -3.18   0.001    -1.746666   -.4142413
+       HOVAL |  -.2899596   .0958282    -3.03   0.002    -.4777794   -.1021397
+-------------+----------------------------------------------------------------
+indirect     |
+         INC |  -.5730615   .4220918    -1.36   0.175    -1.400346    .2542232
+       HOVAL |  -.1537916   .1161114    -1.32   0.185    -.3813657    .0737826
+-------------+----------------------------------------------------------------
+total        |
+         INC |  -1.653515   .6169502    -2.68   0.007    -2.862716    -.444315
+       HOVAL |  -.4437512   .1749537    -2.54   0.011    -.7866542   -.1008481
+------------------------------------------------------------------------------
+
+. 
+. **=====================================================**===============**===============
+. **>>>>>>> GNS
+. **=====================================================**===============**===============
+. spregress CRIME INC HOVAL, ml dvarlag(W_st) ivarlag(W_st: INC HOVAL) errorlag(W_st)
+  (49 observations)
+  (49 observations (places) used)
+  (weighting matrix defines 49 places)
+
+Performing grid search ... finished 
+
+Optimizing concentrated log likelihood:
+
+Iteration 0:   log likelihood = -181.60541  
+Iteration 1:   log likelihood = -181.58046  
+Iteration 2:   log likelihood = -181.58014  
+Iteration 3:   log likelihood = -181.58014  
+
+Optimizing unconcentrated log likelihood:
+
+Iteration 0:   log likelihood = -181.58014  
+Iteration 1:   log likelihood = -181.58014  (backed up)
+
+Spatial autoregressive model                            Number of obs =     49
+Maximum likelihood estimates                            Wald chi2(5)  =  62.57
+                                                        Prob > chi2   = 0.0000
+Log likelihood = -181.58014                             Pseudo R2     = 0.6115
+
+------------------------------------------------------------------------------
+       CRIME | Coefficient  Std. err.      z    P>|z|     [95% conf. interval]
+-------------+----------------------------------------------------------------
+CRIME        |
+         INC |  -.9587964   .3565187    -2.69   0.007     -1.65756   -.2600326
+       HOVAL |  -.2890341   .0924525    -3.13   0.002    -.4702378   -.1078305
+       _cons |   53.04797   31.45733     1.69   0.092    -8.607273    114.7032
+-------------+----------------------------------------------------------------
+W_st         |
+         INC |  -.7734089    .857107    -0.90   0.367    -2.453308    .9064901
+       HOVAL |   .2184638   .2304211     0.95   0.343    -.2331532    .6700808
+       CRIME |    .284377   .4183844     0.68   0.497    -.5356412    1.104395
+     e.CRIME |   .1632527   .4661932     0.35   0.726    -.7504693    1.076975
+-------------+----------------------------------------------------------------
+ var(e.CRIME)|   94.48532   19.32815                      63.27621    141.0874
+------------------------------------------------------------------------------
+Wald test of spatial terms:          chi2(4) = 12.51      Prob > chi2 = 0.0139
+
+. estat impact
+
+progress   : 50% 100% 
+
+Average impacts                                 Number of obs     =         49
+
+------------------------------------------------------------------------------
+             |            Delta-Method
+             |      dy/dx   std. err.      z    P>|z|     [95% conf. interval]
+-------------+----------------------------------------------------------------
+direct       |
+         INC |  -1.032865   .3233102    -3.19   0.001    -1.666541   -.3991884
+       HOVAL |  -.2793854    .091442    -3.06   0.002    -.4586084   -.1001624
+-------------+----------------------------------------------------------------
+indirect     |
+         INC |  -1.387691   .7255573    -1.91   0.056    -2.809757    .0343752
+       HOVAL |   .1807716    .272003     0.66   0.506    -.3523445    .7138877
+-------------+----------------------------------------------------------------
+total        |
+         INC |  -2.420556   .7598805    -3.19   0.001    -3.909894   -.9312173
+       HOVAL |  -.0986138   .2989643    -0.33   0.742     -.684573    .4873453
+------------------------------------------------------------------------------
+
+. 
+. **=====================================================
+. ******** Comparative table of point estimates
+. **=====================================================
+. eststo clear
+
+. 
+. eststo OLS:  qui reg CRIME INC HOVAL
+
+. eststo SAR:  qui spregress CRIME INC HOVAL, ml dvarlag(W_st)
+
+. eststo SEM:  qui spregress CRIME INC HOVAL, ml errorlag(W_st)
+
+. eststo SLX:  qui spregress CRIME INC HOVAL, ml ivarlag(W_st: INC HOVAL)
+
+. eststo SDEM: qui spregress CRIME INC HOVAL, ml ivarlag(W_st: INC HOVAL) errorlag(W_st)
+
+. eststo SDM:  qui spregress CRIME INC HOVAL, ml dvarlag(W_st) ivarlag(W_st: INC HOVAL)
+
+. eststo SAC:  qui spregress CRIME INC HOVAL, ml dvarlag(W_st) errorlag(W_st)
+
+. eststo GNS:  qui spregress CRIME INC HOVAL, ml dvarlag(W_st) ivarlag(W_st: INC HOVAL) errorlag(W_st)
+
+. 
+. esttab, se b(%7.2f) star(* 0.10 ** 0.05 *** 0.01)  stats(ll aic) mtitles("OLS" "SAR" "SEM" "SLX" "SDEM" "SDM" "SAC" "GNS")
+
+--------------------------------------------------------------------------------------------------------------------------------------------
+                      (1)             (2)             (3)             (4)             (5)             (6)             (7)             (8)   
+                      OLS             SAR             SEM             SLX            SDEM             SDM             SAC             GNS   
+--------------------------------------------------------------------------------------------------------------------------------------------
+main                                                                                                                                        
+INC                 -1.60***        -1.05***        -0.96**         -1.10***        -1.05***        -0.92***        -1.04***        -0.96***
+                   (0.33)          (0.33)          (0.38)          (0.35)          (0.32)          (0.34)          (0.34)          (0.36)   
+
+HOVAL               -0.27**         -0.27***        -0.30***        -0.29***        -0.28***        -0.30***        -0.28***        -0.29***
+                   (0.10)          (0.09)          (0.09)          (0.10)          (0.09)          (0.09)          (0.09)          (0.09)   
+
+_cons               68.62***        45.60***        60.28***        74.55***        73.65***        44.32***        47.92***        53.05*  
+                   (4.74)          (7.95)          (5.90)          (6.36)          (8.76)         (14.18)          (9.30)         (31.46)   
+--------------------------------------------------------------------------------------------------------------------------------------------
+W_st                                                                                                                                        
+CRIME                                0.42***                                                         0.40**          0.37**          0.28   
+                                   (0.13)                                                          (0.17)          (0.18)          (0.42)   
+
+e.CRIME                                              0.55***                         0.40**                          0.15            0.16   
+                                                   (0.16)                          (0.18)                          (0.30)          (0.47)   
+
+INC                                                                 -1.40***        -1.20**         -0.58                           -0.77   
+                                                                   (0.53)          (0.59)          (0.61)                          (0.86)   
+
+HOVAL                                                                0.21            0.13            0.26                            0.22   
+                                                                   (0.20)          (0.21)          (0.19)                          (0.23)   
+--------------------------------------------------------------------------------------------------------------------------------------------
+/                                                                                                                                           
+var(e.CRIME)                        96.86***        97.67***       106.82***        93.80***        93.27***        97.04***        94.49***
+                                  (19.78)         (20.44)         (21.58)         (19.30)         (19.17)         (19.77)         (19.33)   
+--------------------------------------------------------------------------------------------------------------------------------------------
+ll                -187.38         -182.67         -183.75         -183.97         -181.78         -181.64         -182.56         -181.58   
+aic                380.75          375.35          377.50          379.94          377.56          377.28          377.11          379.16   
+--------------------------------------------------------------------------------------------------------------------------------------------
+Standard errors in parentheses
+* p<0.10, ** p<0.05, *** p<0.01
+
+. eststo clear
+
+. 
+. **=====================================================
+. ******** Comparative table of marginal effects
+. **=====================================================
+. 
+. collect clear
+
+. 
+. quietly spregress CRIME INC HOVAL, ml dvarlag(W_st)
+
+. collect: quietly estat impact
+
+. 
+. quietly spregress CRIME INC HOVAL, ml ivarlag(W_st: INC HOVAL)
+
+. collect: quietly estat impact
+
+. 
+. quietly spregress CRIME INC HOVAL, ml dvarlag(W_st) ivarlag(W_st: INC HOVAL)
+
+. collect: quietly estat impact
+
+. 
+. quietly spregress CRIME INC HOVAL, ml ivarlag(W_st: INC HOVAL) errorlag(W_st)
+
+. collect: quietly estat impact
+
+. 
+. quietly spregress CRIME INC HOVAL, ml dvarlag(W_st) errorlag(W_st)
+
+. collect: quietly estat impact
+
+. 
+. quietly spregress CRIME INC HOVAL, ml dvarlag(W_st) ivarlag(W_st: INC HOVAL) errorlag(W_st)
+
+. collect: quietly estat impact
+
+. 
+. 
+. collect label list cmdset, all
+
+  Collection: default
+   Dimension: cmdset
+       Label: Command results index
+Level labels:
+           1  
+           2  
+           3  
+           4  
+           5  
+           6  
+
+. collect style autolevels result b_direct b_indirect  
+
+. collect label levels cmdset 1 "SAR" 2 "SLX" 3 "SDM" 4 "SDEM" 5 "SAC" 6 "GNS"
+
+. collect style cell, nformat(%7.2f)
+
+. collect layout (colname#result) (cmdset) 
+
+Collection: default
+      Rows: colname#result
+   Columns: cmdset
+   Table 1: 6 x 6
+
+--------------------------------------------------
+             |   SAR   SLX   SDM  SDEM   SAC   GNS
+-------------+------------------------------------
+Income       |                                    
+  b_direct   | -1.10 -1.10 -1.02 -1.05 -1.08 -1.03
+  b_indirect | -0.72 -1.40 -1.50 -1.20 -0.57 -1.39
+House value  |                                    
+  b_direct   | -0.28 -0.29 -0.28 -0.28 -0.29 -0.28
+  b_indirect | -0.18  0.21  0.22  0.13 -0.15  0.18
+--------------------------------------------------
+
+. 
+. 
+. **=====================================================
+. ******** Evaluation of the SDM model 
+. **=====================================================
+. 
+. qui spregress CRIME INC HOVAL, ml dvarlag(W_st) ivarlag(W_st: INC HOVAL)
+
+. 
+. * Wald test: Reduce SDM to SAR? (NO if p < 0.05)
+. test ([W_st]INC = 0) ([W_st]HOVAL = 0)
+
+ ( 1)  [W_st]INC = 0
+ ( 2)  [W_st]HOVAL = 0
+
+           chi2(  2) =    2.10
+         Prob > chi2 =    0.3494
+
+. 
+. * Wald test: Reduce SDM to SLX? (NO if p < 0.05)
+. test ([W_st]CRIME = 0)
+
+ ( 1)  [W_st]CRIME = 0
+
+           chi2(  1) =    5.51
+         Prob > chi2 =    0.0189
+
+. 
+. * Wald test: Reduce SDM to SEM? (NO if p < 0.05)
+. testnl ([W_st]INC = -[W_st]CRIME*[CRIME]INC) ([W_st]HOVAL = -[W_st]CRIME*[CRIME]HOVAL)
+
+  (1)  [W_st]INC = -[W_st]CRIME*[CRIME]INC
+  (2)  [W_st]HOVAL = -[W_st]CRIME*[CRIME]HOVAL
+
+               chi2(2) =        4.08
+           Prob > chi2 =        0.1300
+
+. 
+. 
+. * LR test Reduce SDM to SAR? (NO if p < 0.05)
+. eststo clear
+
+. eststo SDM: qui spregress CRIME INC HOVAL, ml dvarlag(W_st) ivarlag(W_st: INC HOVAL)
+
+. eststo SAR: qui spregress CRIME INC HOVAL, ml dvarlag(W_st)
+
+. lrtest SDM SAR
+
+Likelihood-ratio test
+Assumption: SAR nested within SDM
+
+ LR chi2(2) =   2.07
+Prob > chi2 = 0.3553
+
+. 
+. 
+. * LR test Reduce SDM to SLX? (NO if p < 0.05)
+. eststo clear
+
+. eststo SDM: qui spregress CRIME INC HOVAL, ml dvarlag(W_st) ivarlag(W_st: INC HOVAL)
+
+. eststo SLX: qui spregress CRIME INC HOVAL, ml ivarlag(W_st: INC HOVAL)
+
+. lrtest SDM SLX
+
+Likelihood-ratio test
+Assumption: SLX nested within SDM
+
+ LR chi2(1) =   4.66
+Prob > chi2 = 0.0308
+
+. 
+. * LR test Reduce SDM to SEM? (NO if p < 0.05)
+. eststo clear
+
+. eststo SDM: qui spregress CRIME INC HOVAL, ml dvarlag(W_st) ivarlag(W_st: INC HOVAL)
+
+. eststo SEM: qui spregress CRIME INC HOVAL, ml errorlag(W_st)
+
+. lrtest SDM SEM
+
+Likelihood-ratio test
+Assumption: SEM nested within SDM
+
+ LR chi2(2) =   4.22
+Prob > chi2 = 0.1212
+
+. 
+. 
+. 
+. **====================END==============================
+. ** Close log file
+. log close
+      name:  <unnamed>
+       log:  /Users/carlos/Github/QuaRCS-lab/tutorial-spatial-cross-section-columbus-crime/RegressionAnalysis/SPregressions.txt
+  log type:  text
+ closed on:   3 Aug 2022, 14:20:37
+----------------------------------------------------------------------------------------------------------------------------------------------------------------------
