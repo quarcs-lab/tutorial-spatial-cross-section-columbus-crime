@@ -2,7 +2,7 @@
       name:  <unnamed>
        log:  /Users/carlos/Github/QuaRCS-lab/tutorial-spatial-cross-section-columbus-crime/RegressionAnalysis/SPregressions.txt
   log type:  text
- opened on:   3 Aug 2022, 14:20:34
+ opened on:   3 Aug 2022, 15:16:40
 
 . **=====================================================
 . ** Program Name: Spatial cross-sectional regressions using the Columbus data 
@@ -12,7 +12,9 @@
 . ** Inputs/Ouputs:
 . * Data files used: W_bin.dta , data.dta
 . 
-. * Data files created as final product:
+. * Data files created as intermediate product: W_st.dta
+. 
+. * Data files created as final product: None
 . 
 . **=====================================================
 . 
@@ -26,7 +28,6 @@
 . *ssc install xsmle.pkg
 . *ssc install xtcsd
 . *ssc install geo2xy    
-. 
 . 
 . **=====================================================
 . ******** Construct W matrix in different formats 
@@ -48,7 +49,7 @@ Linked shapefile: <none>
  Spatial-unit ID: _ID (equal to POLY_ID)
      Coordinates: <none>
 
-. spmatrix fromdata W_st = _0-_48, normalize(row) replace
+. spmatrix fromdata  W_st = _0-_48, normalize(row) replace
 
 . spmatrix summarize W_st
 
@@ -138,6 +139,7 @@ Connectivity Information for the Spatial Weights Matrix
 . **=====================================================
 . use data.dta, clear
 
+. 
 . spset POLY_ID
 
       Sp dataset: data.dta
@@ -154,9 +156,11 @@ Linked shapefile: <none>
 . label var HOVAL "House value"
 
 . 
+. 
 . **=====================================================
-. ******** Construct spatial lags 
+. ******** Construct spatial lags and Moran's I regressions
 . **=====================================================
+. 
 . spgenerate W_CRIME = W_st*CRIME
 
 . spgenerate W_INC   = W_st*INC
@@ -222,6 +226,7 @@ Standard errors in parentheses
 . eststo clear
 
 . 
+. 
 . **=====================================================
 . ******** OLS with spatial diagnostics
 . **=====================================================
@@ -252,7 +257,6 @@ Moran test for spatial dependence
          chi2(1)      =     5.21
          Prob > chi2  =   0.0225
 
-. 
 . 
 . spatwmat using "W_st.dta", name(W_st4LM) eigenval(W_st4LMeigen) 
 
@@ -303,7 +307,6 @@ Spatial lag:                   |
 
 
 
-. 
 . 
 . **=====================================================
 . ******** SPATIAL models with marginal effects
@@ -836,7 +839,6 @@ Standard errors in parentheses
 . **=====================================================
 . ******** Comparative table of marginal effects
 . **=====================================================
-. 
 . collect clear
 
 . 
@@ -870,7 +872,6 @@ Standard errors in parentheses
 . collect: quietly estat impact
 
 . 
-. 
 . collect label list cmdset, all
 
   Collection: default
@@ -884,6 +885,7 @@ Level labels:
            5  
            6  
 
+. 
 . collect style autolevels result b_direct b_indirect  
 
 . collect label levels cmdset 1 "SAR" 2 "SLX" 3 "SDM" 4 "SDEM" 5 "SAC" 6 "GNS"
@@ -908,7 +910,6 @@ House value  |
   b_indirect | -0.18  0.21  0.22  0.13 -0.15  0.18
 --------------------------------------------------
 
-. 
 . 
 . **=====================================================
 . ******** Evaluation of the SDM model 
@@ -945,7 +946,6 @@ House value  |
                chi2(2) =        4.08
            Prob > chi2 =        0.1300
 
-. 
 . 
 . * LR test Reduce SDM to SAR? (NO if p < 0.05)
 . eststo clear
@@ -996,13 +996,11 @@ Assumption: SEM nested within SDM
 Prob > chi2 = 0.1212
 
 . 
-. 
-. 
 . **====================END==============================
 . ** Close log file
 . log close
       name:  <unnamed>
        log:  /Users/carlos/Github/QuaRCS-lab/tutorial-spatial-cross-section-columbus-crime/RegressionAnalysis/SPregressions.txt
   log type:  text
- closed on:   3 Aug 2022, 14:20:37
+ closed on:   3 Aug 2022, 15:16:43
 ----------------------------------------------------------------------------------------------------------------------------------------------------------------------
